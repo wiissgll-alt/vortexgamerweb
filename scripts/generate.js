@@ -383,10 +383,12 @@ async function main() {
   <p class="breadcrumb"><a href="../index.html" data-i18n="nav.prices">Precios</a> / ${escapeHtml(systemName)}</p>
   <h1>🔥 Top 20 ${escapeHtml(systemName)} <span data-i18n="prices.title"></span></h1>
   <p class="updated-note"><span data-i18n="prices.updated">Actualizado el</span> ${escapeHtml(prices.updated)} — <span data-i18n="prices.source">Fuente: PriceCharting</span></p>
+  <div class="price-table-wrap">
   <table class="price-table">
     <thead><tr><th data-i18n="prices.rank">Puesto</th><th data-i18n="prices.name">Juego</th><th data-i18n="prices.price">Precio</th></tr></thead>
     <tbody>${rows}</tbody>
   </table>
+  </div>
   <div class="panel-box" style="text-align:center;margin-top:24px;">
     <a class="btn btn-primary" href="${PLAY_STORE_URL}" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
   </div>
