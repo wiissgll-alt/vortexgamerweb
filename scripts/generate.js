@@ -115,9 +115,7 @@ function renderHead({ title, description, canonicalPath, image, jsonLd }) {
 <meta property="og:image" content="${img}">
 <meta property="og:url" content="${canonical}">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="${rel(canonicalPath, '/assets/favicon.png')}">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800&family=Inter:wght@400;500;700&display=swap">
-<link rel="stylesheet" href="${rel(canonicalPath, '/assets/style.css')}">
+<link rel="icon" href="${rel(canonicalPath, '/assets/favicon.png')}"><link rel="stylesheet" href="${rel(canonicalPath, '/assets/style.css')}">
 ${jsonLd ? `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>` : ''}`;
 }
 
@@ -212,6 +210,10 @@ ${renderHead({ title, description, canonicalPath, image, jsonLd })}
 </head>
 <body>
 ${renderHeader(canonicalPath)}
+<div class="cookie-notice" id="cookie-notice">
+  <p data-i18n="cookie.msg">Esta web no usa cookies de seguimiento ni publicidad. Solo guardamos tu idioma en tu propio navegador, para tu comodidad.</p>
+  <button class="cookie-notice__accept" data-i18n="cookie.accept">Entendido</button>
+</div>
 ${body}
 ${renderAppFeatures()}
 ${renderFooter(canonicalPath)}

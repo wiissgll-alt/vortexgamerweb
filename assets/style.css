@@ -1,5 +1,23 @@
 /* Vortex Gamer Web — tema oscuro neón, estilo arcade/esports, a juego con el icono de la app. */
 
+/* Tipografías autoalojadas -antes venían de fonts.googleapis.com en tiempo de carga, lo
+   que cuenta como transmisión de datos (IP) a Google sin avisar en la UE-. Evita también
+   tener que meter ningún aviso de cookies solo por esto. */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('fonts/inter.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url('fonts/orbitron.woff2') format('woff2');
+}
+
 :root {
   --bg: #0a0a14;
   --bg-alt: #10101e;
@@ -419,6 +437,32 @@ img { max-width: 100%; display: block; }
   padding: 10px 14px;
 }
 .app-features__item .emoji { font-size: 18px; flex-shrink: 0; }
+
+/* ---------- Aviso de cookies (informativo, sin necesidad de aceptar/rechazar nada
+   más: la web no usa cookies de seguimiento ni publicidad) ---------- */
+.cookie-notice {
+  /* En el flujo normal, justo bajo la cabecera -no "fixed": así no compite por espacio
+     con el banner de descarga que ya vive fijo abajo, ni tapa nada al superponerse-. */
+  display: none;
+  background: var(--surface-solid);
+  border-bottom: 1px solid var(--border);
+  padding: 10px 14px;
+  font-size: 12.5px;
+  color: var(--text-dim);
+}
+.cookie-notice.open { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.cookie-notice p { margin: 0; flex: 1; min-width: 180px; max-width: 720px; }
+.cookie-notice__accept {
+  flex-shrink: 0;
+  border: none;
+  background: var(--gradient);
+  color: #0a0a14;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 12.5px;
+}
 
 /* ---------- Popup / modal de descarga ---------- */
 .app-modal-backdrop {

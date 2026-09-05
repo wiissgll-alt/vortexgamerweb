@@ -12,6 +12,9 @@
     'nav.home': { es: 'Inicio', en: 'Home', fr: 'Accueil', it: 'Home' },
 
     'download.cta': { es: 'Descargar gratis en Google Play', en: 'Free download on Google Play', fr: 'Télécharger gratuitement sur Google Play', it: 'Scarica gratis su Google Play' },
+
+    'cookie.msg': { es: 'Esta web no usa cookies de seguimiento ni publicidad. Solo guardamos tu idioma en tu propio navegador, para tu comodidad.', en: 'This site does not use tracking or advertising cookies. We only save your language in your own browser, for your convenience.', fr: "Ce site n'utilise pas de cookies de suivi ni de publicité. Nous enregistrons uniquement votre langue dans votre navigateur, pour votre confort.", it: 'Questo sito non usa cookie di tracciamento o pubblicitari. Salviamo solo la tua lingua nel tuo browser, per comodità.' },
+    'cookie.accept': { es: 'Entendido', en: 'Got it', fr: "J'ai compris", it: 'Capito' },
     'download.short': { es: 'Descargar', en: 'Download', fr: 'Télécharger', it: 'Scarica' },
 
     'hero.tagline': { es: 'Explorador retro con más de 17.000 juegos, minijuegos arcade y guías técnicas — todo en una sola app.', en: 'A retro explorer with over 17,000 games, arcade minigames, and technical guides — all in one app.', fr: 'Un explorateur rétro avec plus de 17 000 jeux, des mini-jeux arcade et des guides techniques — le tout dans une seule application.', it: 'Un esploratore retro con oltre 17.000 giochi, minigiochi arcade e guide tecniche — tutto in un\'unica app.' },
@@ -148,6 +151,24 @@
           backdrop.classList.remove('open');
         }
       });
+    }
+
+    // Aviso de cookies: solo texto informativo -esta web no usa cookies de seguimiento
+    // ni publicidad, solo localStorage funcional para el idioma-, se recuerda una vez
+    // aceptado para no volver a mostrarlo en la misma visita ni en las siguientes.
+    var cookieKey = 'cookie_notice_dismissed';
+    var cookieBar = document.getElementById('cookie-notice');
+    if (cookieBar) {
+      var alreadyDismissed = false;
+      try { alreadyDismissed = localStorage.getItem(cookieKey) === '1'; } catch (e) { /* ignorar */ }
+      if (!alreadyDismissed) cookieBar.classList.add('open');
+      var acceptBtn = cookieBar.querySelector('.cookie-notice__accept');
+      if (acceptBtn) {
+        acceptBtn.addEventListener('click', function () {
+          cookieBar.classList.remove('open');
+          try { localStorage.setItem(cookieKey, '1'); } catch (e) { /* ignorar */ }
+        });
+      }
     }
   });
 
