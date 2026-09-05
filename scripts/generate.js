@@ -167,6 +167,28 @@ function renderFooter(canonicalPath) {
 <script src="${rel(canonicalPath, '/assets/i18n.js')}"></script>`;
 }
 
+// Escaparate de todo lo que tiene la app -no solo lo que se está mirando en esta página
+// concreta-, para que quede claro que hay noticias, minijuegos, guías técnicas, precios y
+// trucos completos esperando ahí, no solo el catálogo. Se muestra en TODAS las páginas.
+const APP_FEATURES = [
+  { emoji: '📰', key: 'features.news', fallback: 'Noticias de videojuegos cada día' },
+  { emoji: '🕹️', key: 'features.minigames', fallback: 'Minijuegos arcade con ranking en vivo' },
+  { emoji: '📘', key: 'features.guides', fallback: 'Guías técnicas: hardware, custom firmware y compatibilidad' },
+  { emoji: '💰', key: 'features.prices', fallback: 'Top de precios actualizado cada día' },
+  { emoji: '🎮', key: 'features.cheats', fallback: 'Trucos y consejos completos de cada juego' },
+];
+
+function renderAppFeatures() {
+  return `<section class="app-features">
+  <div class="wrap">
+    <p class="app-features__title" data-i18n="features.title">Todo esto y más, en la app</p>
+    <div class="app-features__grid">
+      ${APP_FEATURES.map(f => `<div class="app-features__item"><span class="emoji">${f.emoji}</span><span data-i18n="${f.key}">${f.fallback}</span></div>`).join('\n      ')}
+    </div>
+  </div>
+</section>`;
+}
+
 // Popup compartido: se abre al tocar cualquier elemento marcado con data-require-app
 // (filas de precios, el aviso encima de trucos/consejos difuminados...) en vez de dejar
 // ver/enlazar todo gratis. Un solo modal por página, controlado desde i18n.js.
@@ -191,6 +213,7 @@ ${renderHead({ title, description, canonicalPath, image, jsonLd })}
 <body>
 ${renderHeader(canonicalPath)}
 ${body}
+${renderAppFeatures()}
 ${renderFooter(canonicalPath)}
 ${renderDownloadBar()}
 ${renderDownloadModal(canonicalPath)}
@@ -270,8 +293,6 @@ async function main() {
 
       const langBlocks = (renderFn) => LANGS.map(l => `<div class="lang-panel${l === 'es' ? ' active' : ''}" data-lang="${l}">${renderFn(l)}</div>`).join('\n');
 
-      const hasCheatsOrTips = cheatsByLang && LANGS.some(l => (cheatsByLang[l] && cheatsByLang[l].length) || (tipsByLang[l] && tipsByLang[l].length));
-
       const body = `<main class="wrap">
   <p class="breadcrumb"><a href="../../../sistemas/index.html" data-i18n="nav.systems">Sistemas</a> / <a href="../index.html">${escapeHtml(systemName)}</a> / ${escapeHtml(g.name)}</p>
   <div class="game-header">
@@ -286,18 +307,20 @@ async function main() {
     </div>
   </div>
 
-  ${hasCheatsOrTips ? `<div class="panel-box">
+  <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
     ${langBlocks(l => {
       const tips = ((tipsByLang && tipsByLang[l]) || []).map(t => ({ t, isCheat: false }));
       const cheats = ((cheatsByLang && cheatsByLang[l]) || []).map(t => ({ t, isCheat: true }));
       const all = [...tips, ...cheats];
-      if (!all.length) return `<p>—</p>`;
+      const hintMore = `<p class="hint-more" data-i18n="game.moreInApp">Consulta los trucos y consejos completos y siempre actualizados de este juego en la app.</p>`;
 
-      // Adelanto: las 2 primeras entradas se ven enteras -para que Google indexe contenido
-      // real y el usuario vea que hay algo de valor-, el resto se difumina con una llamada
-      // a descargar la app en vez de enseñarlo todo gratis (el texto sigue en el HTML).
-      const VISIBLE = 2;
+      // Este aviso sale SIEMPRE -con 0, 1 o varias entradas-: la gracia es que quede
+      // claro que la app tiene esto (y más actualizado que esta foto fija), no dejar
+      // pensar que "no hay nada" cuando solo es que esta página no lo enseña entero.
+      if (!all.length) return hintMore;
+
+      const VISIBLE = 1;
       const visible = all.slice(0, VISIBLE);
       const rest = all.slice(VISIBLE);
       const itemHtml = item => `<li>${escapeHtml(item.t)}</li>`;
@@ -307,14 +330,16 @@ async function main() {
         html += `<div class="gated-wrap">
           <ul class="gated-blur">${rest.map(itemHtml).join('')}</ul>
           <div class="gated-cta" data-require-app>
-            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <p data-i18n="game.moreInApp">Consulta los trucos y consejos completos y siempre actualizados de este juego en la app.</p>
             <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
           </div>
         </div>`;
+      } else {
+        html += hintMore;
       }
       return html;
     })}
-  </div>` : ''}
+  </div>
 
   <div class="panel-box" style="text-align:center;">
     <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
@@ -341,10 +366,21 @@ async function main() {
       const listUrl = p === 1 ? `/sistemas/${systemId}/` : `/sistemas/${systemId}/page/${p}/`;
       const depthFix = p === 1 ? '' : '../../';
 
-      const cardsHtml = slice.map(gl => `<a class="card" href="${p === 1 ? gl.url.replace(`/sistemas/${systemId}/`, './') : '../../' + gl.url.replace(`/sistemas/${systemId}/`, '')}" data-search-name="${escapeHtml(gl.name.toLowerCase())}">
+      const cardHref = gl => p === 1
+        ? gl.url.replace(`/sistemas/${systemId}/`, './')
+        : '../../' + gl.url.replace(`/sistemas/${systemId}/`, '');
+      const cardHtml = gl => `<a class="card" href="${cardHref(gl)}">
         <div class="thumb">${gl.image ? `<img src="${escapeHtml(gl.image)}" alt="${escapeHtml(gl.name)}" loading="lazy">` : ''}</div>
         <div class="body"><div class="name">${escapeHtml(gl.name)}</div></div>
-      </a>`).join('\n');
+      </a>`;
+
+      // Adelanto también aquí: se ven bien los primeros juegos de la página, el resto se
+      // difumina con la llamada a verlos todos (con búsqueda de verdad) desde la app -en
+      // vez de un buscador cutre en la propia web que además contradice la idea de "no
+      // enseñarlo todo gratis"-. El HTML sigue completo para que Google lo indexe igual.
+      const VISIBLE_GAMES = 12;
+      const visibleCards = slice.slice(0, VISIBLE_GAMES).map(cardHtml).join('\n');
+      const restCards = slice.slice(VISIBLE_GAMES).map(cardHtml).join('\n');
 
       // OJO: la página 1 vive en /sistemas/{sistema}/ (no dentro de una subcarpeta "page/"),
       // mientras que el resto vive en /sistemas/{sistema}/page/N/ -por eso el enlace a una
@@ -379,10 +415,16 @@ async function main() {
   <p class="breadcrumb"><a href="${p === 1 ? '../index.html' : '../../../index.html'}" data-i18n="nav.systems">Sistemas</a> / ${escapeHtml(systemName)}</p>
   <h1 class="title-with-icon"><img src="${rel(listUrl, '/assets/consoles/' + systemId + '.png')}" alt="">${escapeHtml(systemName)}</h1>
   <p class="section-sub">${gameLinks.length} <span data-i18n="systems.count">juegos</span></p>
-  <input id="game-search" class="search-box" type="search" data-i18n-placeholder="search.placeholder" placeholder="Buscar un juego por nombre...">
   <div class="grid">
-    ${cardsHtml}
+    ${visibleCards}
   </div>
+  ${restCards ? `<div class="gated-wrap">
+    <div class="grid gated-blur-grid">${restCards}</div>
+    <div class="gated-cta" data-require-app>
+      <p data-i18n="list.seeAllInApp" data-i18n-count="${gameLinks.length}">Ver los ${gameLinks.length} juegos, con búsqueda y filtros, en la app</p>
+      <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+    </div>
+  </div>` : ''}
   ${pager}
 </main>`;
 

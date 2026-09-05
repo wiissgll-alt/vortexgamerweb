@@ -38,6 +38,16 @@
     'modal.title': { es: 'Esto es solo un adelanto', en: 'This is just a preview', fr: "Ceci n'est qu'un aperçu", it: 'Questa è solo un\'anteprima' },
     'modal.msg': { es: 'Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.', en: 'Download the free app to see all the information: full sheets, cheats, tips and detailed prices.', fr: "Téléchargez l'application gratuite pour voir toutes les informations : fiches complètes, astuces, conseils et prix détaillés.", it: 'Scarica l\'app gratuita per vedere tutte le informazioni: schede complete, trucchi, consigli e prezzi dettagliati.' },
 
+    'game.moreInApp': { es: 'Consulta los trucos y consejos completos y siempre actualizados de este juego en la app.', en: "Check this game's complete, always up-to-date cheats and tips in the app.", fr: "Consultez les astuces et conseils complets et toujours à jour de ce jeu dans l'application.", it: 'Consulta i trucchi e i consigli completi e sempre aggiornati di questo gioco nell\'app.' },
+    'list.seeAllInApp': { es: 'Ver los {count} juegos, con búsqueda y filtros, en la app', en: 'See all {count} games, with search and filters, in the app', fr: 'Voir les {count} jeux, avec recherche et filtres, dans l\'application', it: 'Vedi tutti i {count} giochi, con ricerca e filtri, nell\'app' },
+
+    'features.title': { es: 'Todo esto y más, en la app', en: 'All this and more, in the app', fr: 'Tout cela et bien plus, dans l\'application', it: 'Tutto questo e altro ancora, nell\'app' },
+    'features.news': { es: 'Noticias de videojuegos cada día', en: 'Daily gaming news', fr: 'Actualités jeux vidéo chaque jour', it: 'Notizie sui videogiochi ogni giorno' },
+    'features.minigames': { es: 'Minijuegos arcade con ranking en vivo', en: 'Arcade minigames with a live leaderboard', fr: 'Mini-jeux arcade avec classement en direct', it: 'Minigiochi arcade con classifica dal vivo' },
+    'features.guides': { es: 'Guías técnicas: hardware, custom firmware y compatibilidad', en: 'Technical guides: hardware, custom firmware and compatibility', fr: 'Guides techniques : matériel, custom firmware et compatibilité', it: 'Guide tecniche: hardware, custom firmware e compatibilità' },
+    'features.prices': { es: 'Top de precios actualizado cada día', en: 'Daily updated price rankings', fr: 'Classement des prix mis à jour chaque jour', it: 'Classifica dei prezzi aggiornata ogni giorno' },
+    'features.cheats': { es: 'Trucos y consejos completos de cada juego', en: 'Complete cheats and tips for every game', fr: 'Astuces et conseils complets pour chaque jeu', it: 'Trucchi e consigli completi per ogni gioco' },
+
     'news.title': { es: 'Últimas noticias de videojuegos', en: 'Latest gaming news', fr: 'Dernières actualités jeux vidéo', it: 'Ultime notizie sui videogiochi' },
     'news.sub': { es: 'Recopiladas cada día, en tu idioma.', en: 'Gathered daily, in your language.', fr: 'Rassemblées chaque jour, dans votre langue.', it: 'Raccolte ogni giorno, nella tua lingua.' },
     'news.readmore': { es: 'Leer noticia completa', en: 'Read full article', fr: "Lire l'article complet", it: "Leggi l'articolo completo" },
@@ -72,7 +82,12 @@
     document.querySelectorAll('[data-i18n]').forEach(function (el) {
       var key = el.getAttribute('data-i18n');
       var entry = DICTIONARY[key];
-      if (entry && entry[lang]) el.textContent = entry[lang];
+      if (entry && entry[lang]) {
+        var text = entry[lang];
+        var count = el.getAttribute('data-i18n-count');
+        if (count !== null) text = text.replace('{count}', count);
+        el.textContent = text;
+      }
     });
 
     document.querySelectorAll('[data-lang]').forEach(function (el) {

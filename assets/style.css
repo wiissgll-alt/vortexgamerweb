@@ -357,6 +357,69 @@ img { max-width: 100%; display: block; }
 .gated-cta .btn { pointer-events: none; }
 .gated-cta p { font-size: 12.5px; color: var(--text-dim); margin: 0 0 10px; text-align: center; padding: 0 12px; }
 
+/* Igual que .gated-blur pero pensado para una rejilla de tarjetas (listados de juegos)
+   en vez de una lista de texto -mismo degradado, más alto para que se note la rejilla-. */
+.gated-blur-grid {
+  filter: blur(4px);
+  user-select: none;
+  pointer-events: none;
+  max-height: 260px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, black 15%, transparent 90%);
+  mask-image: linear-gradient(to bottom, black 15%, transparent 90%);
+}
+
+/* Aviso corto de "hay más, y está en la app" cuando no hay nada que difuminar
+   (p.ej. un juego con un único truco, o directamente sin ninguno todavía). */
+.hint-more {
+  font-size: 12.5px;
+  color: var(--text-dim);
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: var(--app-gradient-soft, rgba(168, 85, 247, 0.08));
+  margin: 8px 0 0;
+}
+
+/* ---------- Escaparate "todo lo que tiene la app", en toda página ---------- */
+.app-features {
+  background: var(--surface-solid);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 24px 0;
+  margin-top: 12px;
+}
+.app-features__title {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  margin: 0 0 16px;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.app-features__grid {
+  max-width: 720px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  padding: 0 20px;
+}
+.app-features__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--text-dim);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 10px 14px;
+}
+.app-features__item .emoji { font-size: 18px; flex-shrink: 0; }
+
 /* ---------- Popup / modal de descarga ---------- */
 .app-modal-backdrop {
   display: none;
