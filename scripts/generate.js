@@ -342,11 +342,6 @@ async function main() {
       return html;
     })}
   </div>
-
-  <div class="panel-box" style="text-align:center;">
-    <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
-    <a class="btn btn-primary" href="${PLAY_STORE_URL}" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
-  </div>
 </main>`;
 
       writeFile(gamePath, page({
@@ -497,9 +492,6 @@ async function main() {
       <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
     </div>
   </div>` : ''}
-  <div class="panel-box" style="text-align:center;margin-top:12px;">
-    <a class="btn btn-primary" href="${PLAY_STORE_URL}" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
-  </div>
 </main>`;
 
       writeFile(`/precios/${systemId}/index.html`, page({
@@ -546,9 +538,6 @@ async function main() {
   <h1 data-i18n="news.title">Últimas noticias de videojuegos</h1>
   <p class="section-sub" data-i18n="news.sub">Recopiladas cada día, en tu idioma.</p>
   ${langBlocksNews}
-  <div class="panel-box" style="text-align:center;margin-top:24px;">
-    <a class="btn btn-primary" href="${PLAY_STORE_URL}" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
-  </div>
 </main>`;
 
     writeFile('/noticias/index.html', page({
@@ -571,7 +560,6 @@ async function main() {
     <h1>VORTEX GAMER</h1>
     <p class="tagline" data-i18n="hero.tagline">Explorador retro con más de 17.000 juegos, minijuegos arcade y guías técnicas — todo en una sola app.</p>
     <div class="cta-row">
-      <a class="btn btn-primary" href="${PLAY_STORE_URL}" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
       <a class="btn btn-ghost" href="sistemas/index.html" data-i18n="hero.explore">Explorar sistemas</a>
       <a class="btn btn-ghost" href="precios/index.html" data-i18n="hero.prices">💰 ¿Cuánto valen tus juegos?</a>
     </div>
