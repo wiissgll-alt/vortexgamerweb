@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>El modo de batalla automática es más rápido con turbo.</li><li>El truco de atacar a tus aliados aumenta la vida.</li><li>La magia se aprende instantáneamente usando el scroll secreto.</li><li>Obtén la espada Excalibur al inicio con el selector de ítems.</li><li>Pulsa Select+B para subir estadísticas al máximo.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Consigue dinero infinito vendiendo la armadura de oro.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Auto battle mode is faster with turbo.</li><li>The trick of attacking your allies increases health.</li><li>Magic is learned instantly using the secret scroll.</li><li>Get the Excalibur sword at the start with the item selector.</li><li>Press Select+B to raise stats to the maximum.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Get infinite money by selling the gold armor.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Le mode de combat automatique est plus rapide avec le turbo.</li><li>L'astuce consistant à attaquer vos alliés augmente la santé.</li><li>La magie s'apprend instantanément à l'aide du parchemin secret.</li><li>Obtenez l'épée Excalibur au début avec le sélecteur d'objets.</li><li>Appuyez sur Select+B pour augmenter les statistiques au maximum.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Obtenez de l'argent infini en vendant l'armure en or.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>La modalità battaglia automatica è più veloce con il turbo.</li><li>Il trucco di attaccare i tuoi alleati aumenta la salute.</li><li>La magia viene appresa istantaneamente utilizzando la pergamena segreta.</li><li>Ottieni la spada Excalibur all'inizio con il selettore oggetti.</li><li>Premi Select+B per aumentare le statistiche al massimo.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Ottieni soldi infiniti vendendo l'armatura d'oro.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>El modo de batalla automática es más rápido con turbo.</li><li>El truco de atacar a tus aliados aumenta la vida.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La magia se aprende instantáneamente usando el scroll secreto.</li><li>Obtén la espada Excalibur al inicio con el selector de ítems.</li><li>Pulsa Select+B para subir estadísticas al máximo.</li><li>Consigue dinero infinito vendiendo la armadura de oro.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Auto battle mode is faster with turbo.</li><li>The trick of attacking your allies increases health.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Magic is learned instantly using the secret scroll.</li><li>Get the Excalibur sword at the start with the item selector.</li><li>Press Select+B to raise stats to the maximum.</li><li>Get infinite money by selling the gold armor.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Le mode de combat automatique est plus rapide avec le turbo.</li><li>L'astuce consistant à attaquer vos alliés augmente la santé.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La magie s'apprend instantanément à l'aide du parchemin secret.</li><li>Obtenez l'épée Excalibur au début avec le sélecteur d'objets.</li><li>Appuyez sur Select+B pour augmenter les statistiques au maximum.</li><li>Obtenez de l'argent infini en vendant l'armure en or.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>La modalità battaglia automatica è più veloce con il turbo.</li><li>Il trucco di attaccare i tuoi alleati aumenta la salute.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La magia viene appresa istantaneamente utilizzando la pergamena segreta.</li><li>Ottieni la spada Excalibur all'inizio con il selettore oggetti.</li><li>Premi Select+B per aumentare le statistiche al massimo.</li><li>Ottieni soldi infiniti vendendo l'armatura d'oro.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

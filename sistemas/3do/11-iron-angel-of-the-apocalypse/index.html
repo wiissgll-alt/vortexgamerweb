@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Busca los paquetes de reparación en las áreas destruidas.</li><li>Gestiona el enfriamiento de tus armas principales.</li><li>Muévete constantemente para evitar los misiles enemigos.</li><li>Usa el radar para identificar amenazas lejanas.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Look for repair packages in the destroyed areas.</li><li>Manage the cooldown of your main weapons.</li><li>Move constantly to avoid enemy missiles.</li><li>Use radar to identify distant threats.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Recherchez des colis de réparation dans les zones détruites.</li><li>Gérez le temps de recharge de vos armes principales.</li><li>Déplacez-vous constamment pour éviter les missiles ennemis.</li><li>Utilisez le radar pour identifier les menaces lointaines.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Cerca i pacchetti di riparazione nelle aree distrutte.</li><li>Gestisci il tempo di recupero delle tue armi principali.</li><li>Muoviti costantemente per evitare i missili nemici.</li><li>Utilizza il radar per identificare le minacce lontane.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Busca los paquetes de reparación en las áreas destruidas.</li><li>Gestiona el enfriamiento de tus armas principales.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Muévete constantemente para evitar los misiles enemigos.</li><li>Usa el radar para identificar amenazas lejanas.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Look for repair packages in the destroyed areas.</li><li>Manage the cooldown of your main weapons.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Move constantly to avoid enemy missiles.</li><li>Use radar to identify distant threats.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Recherchez des colis de réparation dans les zones détruites.</li><li>Gérez le temps de recharge de vos armes principales.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Déplacez-vous constamment pour éviter les missiles ennemis.</li><li>Utilisez le radar pour identifier les menaces lointaines.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Cerca i pacchetti di riparazione nelle aree distrutte.</li><li>Gestisci il tempo di recupero delle tue armi principali.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Muoviti costantemente per evitare i missili nemici.</li><li>Utilizza il radar per identificare le minacce lontane.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

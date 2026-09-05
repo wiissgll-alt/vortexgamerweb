@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Blackjack: Planta siempre en 16 o más si la carta visible del dealer es baja.</li><li>Poker: No farolees demasiado; la IA suele pagar casi todas las apuestas.</li><li>Roulette: Apuesta a columnas o colores para tener una tasa de éxito más alta aunque el premio sea menor.</li><li>Slots: Busca las máquinas que indican mayor retorno; la suerte es el factor principal.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Blackjack: Always plant on 16 or higher if the dealer's visible card is low.</li><li>Poker: Don't bluff too much; AI usually pays almost all bets.</li><li>Roulette: Bet on columns or colors to have a higher success rate even if the prize is lower.</li><li>Slots: Look for the machines that indicate the highest return; luck is the main factor.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Blackjack : plantez toujours sur 16 ou plus si la carte visible du croupier est faible.</li><li>Poker : Ne bluffez pas trop ; L’IA paie généralement presque tous les paris.</li><li>Roulette : Misez sur les colonnes ou les couleurs pour avoir un taux de réussite plus élevé même si le prix est inférieur.</li><li>Machines à sous : recherchez les machines qui indiquent le rendement le plus élevé ; la chance est le facteur principal.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Blackjack: Punta sempre su 16 o più se la carta visibile del banco è bassa.</li><li>Poker: non bluffare troppo; L'intelligenza artificiale di solito paga quasi tutte le scommesse.</li><li>Roulette: scommetti su colonne o colori per avere una percentuale di successo più elevata anche se il premio è inferiore.</li><li>Slot: cerca le macchine che indicano il rendimento più alto; la fortuna è il fattore principale.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Blackjack: Planta siempre en 16 o más si la carta visible del dealer es baja.</li><li>Poker: No farolees demasiado; la IA suele pagar casi todas las apuestas.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Roulette: Apuesta a columnas o colores para tener una tasa de éxito más alta aunque el premio sea menor.</li><li>Slots: Busca las máquinas que indican mayor retorno; la suerte es el factor principal.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Blackjack: Always plant on 16 or higher if the dealer's visible card is low.</li><li>Poker: Don't bluff too much; AI usually pays almost all bets.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Roulette: Bet on columns or colors to have a higher success rate even if the prize is lower.</li><li>Slots: Look for the machines that indicate the highest return; luck is the main factor.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Blackjack : plantez toujours sur 16 ou plus si la carte visible du croupier est faible.</li><li>Poker : Ne bluffez pas trop ; L’IA paie généralement presque tous les paris.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Roulette : Misez sur les colonnes ou les couleurs pour avoir un taux de réussite plus élevé même si le prix est inférieur.</li><li>Machines à sous : recherchez les machines qui indiquent le rendement le plus élevé ; la chance est le facteur principal.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Blackjack: Punta sempre su 16 o più se la carta visibile del banco è bassa.</li><li>Poker: non bluffare troppo; L'intelligenza artificiale di solito paga quasi tutte le scommesse.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Roulette: scommetti su colonne o colori per avere una percentuale di successo più elevata anche se il premio è inferiore.</li><li>Slot: cerca le macchine che indicano il rendimento più alto; la fortuna è il fattore principale.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

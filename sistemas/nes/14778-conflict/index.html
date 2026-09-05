@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>El terreno afecta a tus unidades.</li><li>Estrategia militar; planea tus movimientos en el mapa.</li><li>La logística y el suministro son claves.</li><li>No expongas a tus unidades más débiles.</li><li>Piensa en el turno siguiente antes de actuar.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Terrain affects your units.</li><li>military strategy; Plan your movements on the map.</li><li>Logistics and supply are key.</li><li>Don't expose your weaker units.</li><li>Think about the next turn before acting.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Le terrain affecte vos unités.</li><li>stratégie militaire; Planifiez vos déplacements sur la carte.</li><li>La logistique et l’approvisionnement sont essentiels.</li><li>N'exposez pas vos unités les plus faibles.</li><li>Pensez au prochain tour avant d'agir.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Il terreno influenza le tue unità.</li><li>strategia militare; Pianifica i tuoi spostamenti sulla mappa.</li><li>La logistica e l’approvvigionamento sono fondamentali.</li><li>Non esporre le tue unità più deboli.</li><li>Pensa alla prossima svolta prima di agire.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>El terreno afecta a tus unidades.</li><li>Estrategia militar; planea tus movimientos en el mapa.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La logística y el suministro son claves.</li><li>No expongas a tus unidades más débiles.</li><li>Piensa en el turno siguiente antes de actuar.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Terrain affects your units.</li><li>military strategy; Plan your movements on the map.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Logistics and supply are key.</li><li>Don't expose your weaker units.</li><li>Think about the next turn before acting.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Le terrain affecte vos unités.</li><li>stratégie militaire; Planifiez vos déplacements sur la carte.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La logistique et l’approvisionnement sont essentiels.</li><li>N'exposez pas vos unités les plus faibles.</li><li>Pensez au prochain tour avant d'agir.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Il terreno influenza le tue unità.</li><li>strategia militare; Pianifica i tuoi spostamenti sulla mappa.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La logistica e l’approvvigionamento sono fondamentali.</li><li>Non esporre le tue unità più deboli.</li><li>Pensa alla prossima svolta prima di agire.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

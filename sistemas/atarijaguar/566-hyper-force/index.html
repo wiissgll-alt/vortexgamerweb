@@ -88,10 +88,34 @@ caratteristiche:
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Busca puertas secretas disparando a las paredes.</li><li>Presiona el botón de salto para evitar hoyos.</li><li>Quédate en las esquinas para cubrirte.</li><li>Recoge las tarjetas de acceso.</li><li>Usa el arma láser para enemigos fuertes.</li><li>Usa el reset para recargar salud.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Look for secret doors by shooting at the walls.</li><li>Press the jump button to avoid holes.</li><li>Stay in the corners for cover.</li><li>Collect the access cards.</li><li>Use the laser gun for strong enemies.</li><li>Use the reset to recharge health.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Cherchez les portes secrètes en tirant sur les murs.</li><li>Appuyez sur le bouton de saut pour éviter les trous.</li><li>Restez dans les coins pour vous couvrir.</li><li>Récupérez les cartes d’accès.</li><li>Utilisez le pistolet laser pour les ennemis puissants.</li><li>Utilisez la réinitialisation pour recharger la santé.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Cerca le porte segrete sparando ai muri.</li><li>Premi il pulsante di salto per evitare i buchi.</li><li>Rimani negli angoli per ripararti.</li><li>Raccogli le carte di accesso.</li><li>Usa la pistola laser per i nemici più forti.</li><li>Usa il ripristino per ricaricare la salute.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Busca puertas secretas disparando a las paredes.</li><li>Presiona el botón de salto para evitar hoyos.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Quédate en las esquinas para cubrirte.</li><li>Recoge las tarjetas de acceso.</li><li>Usa el arma láser para enemigos fuertes.</li><li>Usa el reset para recargar salud.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Look for secret doors by shooting at the walls.</li><li>Press the jump button to avoid holes.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Stay in the corners for cover.</li><li>Collect the access cards.</li><li>Use the laser gun for strong enemies.</li><li>Use the reset to recharge health.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Cherchez les portes secrètes en tirant sur les murs.</li><li>Appuyez sur le bouton de saut pour éviter les trous.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Restez dans les coins pour vous couvrir.</li><li>Récupérez les cartes d’accès.</li><li>Utilisez le pistolet laser pour les ennemis puissants.</li><li>Utilisez la réinitialisation pour recharger la santé.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Cerca le porte segrete sparando ai muri.</li><li>Premi il pulsante di salto per evitare i buchi.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Rimani negli angoli per ripararti.</li><li>Raccogli le carte di accesso.</li><li>Usa la pistola laser per i nemici più forti.</li><li>Usa il ripristino per ricaricare la salute.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -109,6 +133,15 @@ caratteristiche:
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

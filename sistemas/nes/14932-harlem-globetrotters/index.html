@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Aprovecha las habilidades especiales.</li><li>Diviértete con las animaciones.</li><li>Juego de baloncesto arcade; haz muchos trucos.</li><li>Lanza desde posiciones cómodas.</li><li>No te compliques en defensa, roba balones rápido.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Take advantage of special abilities.</li><li>Have fun with the animations.</li><li>Arcade basketball game; do a lot of tricks.</li><li>Throw from comfortable positions.</li><li>Don't complicate your defense, steal balls quickly.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Profitez de capacités spéciales.</li><li>Amusez-vous avec les animations.</li><li>Jeu de basket-ball d'arcade ; faire beaucoup de trucs.</li><li>Lancez-vous depuis des positions confortables.</li><li>Ne compliquez pas votre défense, volez les ballons rapidement.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Approfitta delle abilità speciali.</li><li>Divertiti con le animazioni.</li><li>Partita di basket arcade; fare un sacco di trucchi.</li><li>Lancia da posizioni comode.</li><li>Non complicare la tua difesa, ruba palloni velocemente.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Aprovecha las habilidades especiales.</li><li>Diviértete con las animaciones.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Juego de baloncesto arcade; haz muchos trucos.</li><li>Lanza desde posiciones cómodas.</li><li>No te compliques en defensa, roba balones rápido.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Take advantage of special abilities.</li><li>Have fun with the animations.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Arcade basketball game; do a lot of tricks.</li><li>Throw from comfortable positions.</li><li>Don't complicate your defense, steal balls quickly.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Profitez de capacités spéciales.</li><li>Amusez-vous avec les animations.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Jeu de basket-ball d'arcade ; faire beaucoup de trucs.</li><li>Lancez-vous depuis des positions confortables.</li><li>Ne compliquez pas votre défense, volez les ballons rapidement.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Approfitta delle abilità speciali.</li><li>Divertiti con le animazioni.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Partita di basket arcade; fare un sacco di trucchi.</li><li>Lancia da posizioni comode.</li><li>Non complicare la tua difesa, ruba palloni velocemente.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

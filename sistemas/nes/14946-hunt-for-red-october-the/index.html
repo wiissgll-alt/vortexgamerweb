@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Controla el sonar.</li><li>El sigilo es tu mejor arma.</li><li>Gestiona bien el torpedo.</li><li>Practica la navegación.</li><li>Simulación de submarino; aprende los sistemas.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Control the sonar.</li><li>Stealth is your best weapon.</li><li>Manage the torpedo well.</li><li>Practice navigation.</li><li>Submarine simulation; learn the systems.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Contrôlez le sonar.</li><li>La furtivité est votre meilleure arme.</li><li>Gérez bien la torpille.</li><li>Pratiquez la navigation.</li><li>Simulation sous-marine ; apprendre les systèmes.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Controlla il sonar.</li><li>La furtività è la tua arma migliore.</li><li>Gestisci bene il siluro.</li><li>Esercitati nella navigazione.</li><li>Simulazione sottomarina; imparare i sistemi.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Controla el sonar.</li><li>El sigilo es tu mejor arma.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Gestiona bien el torpedo.</li><li>Practica la navegación.</li><li>Simulación de submarino; aprende los sistemas.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Control the sonar.</li><li>Stealth is your best weapon.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Manage the torpedo well.</li><li>Practice navigation.</li><li>Submarine simulation; learn the systems.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Contrôlez le sonar.</li><li>La furtivité est votre meilleure arme.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Gérez bien la torpille.</li><li>Pratiquez la navigation.</li><li>Simulation sous-marine ; apprendre les systèmes.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Controlla il sonar.</li><li>La furtività è la tua arma migliore.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Gestisci bene il siluro.</li><li>Esercitati nella navigazione.</li><li>Simulazione sottomarina; imparare i sistemi.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Aprende qué enemigos dejan mejoras.</li><li>Los jefes requieren mucha movilidad.</li><li>Mejora tu disparo lo antes posible; es vital.</li><li>No te quedes en el borde; los enemigos aparecen ahí.</li><li>Usa las alas para saltar huecos grandes.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Learn which enemies leave buffs.</li><li>Bosses require a lot of mobility.</li><li>Improve your shooting as soon as possible; It is vital.</li><li>Don't stay on the edge; Enemies appear there.</li><li>Use your wings to jump over large gaps.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Découvrez quels ennemis laissent des buffs.</li><li>Les patrons nécessitent beaucoup de mobilité.</li><li>Améliorez votre tir au plus vite ; C'est vital.</li><li>Ne restez pas à la limite ; Des ennemis y apparaissent.</li><li>Utilisez vos ailes pour sauter par-dessus de grands espaces.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Scopri quali nemici lasciano buff.</li><li>I capi richiedono molta mobilità.</li><li>Migliora le tue riprese il prima possibile; È vitale.</li><li>Non restare al limite; I nemici appaiono lì.</li><li>Usa le tue ali per saltare su grandi spazi vuoti.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Aprende qué enemigos dejan mejoras.</li><li>Los jefes requieren mucha movilidad.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Mejora tu disparo lo antes posible; es vital.</li><li>No te quedes en el borde; los enemigos aparecen ahí.</li><li>Usa las alas para saltar huecos grandes.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Learn which enemies leave buffs.</li><li>Bosses require a lot of mobility.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Improve your shooting as soon as possible; It is vital.</li><li>Don't stay on the edge; Enemies appear there.</li><li>Use your wings to jump over large gaps.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Découvrez quels ennemis laissent des buffs.</li><li>Les patrons nécessitent beaucoup de mobilité.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Améliorez votre tir au plus vite ; C'est vital.</li><li>Ne restez pas à la limite ; Des ennemis y apparaissent.</li><li>Utilisez vos ailes pour sauter par-dessus de grands espaces.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Scopri quali nemici lasciano buff.</li><li>I capi richiedono molta mobilità.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Migliora le tue riprese il prima possibile; È vitale.</li><li>Non restare al limite; I nemici appaiono lì.</li><li>Usa le tue ali per saltare su grandi spazi vuoti.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

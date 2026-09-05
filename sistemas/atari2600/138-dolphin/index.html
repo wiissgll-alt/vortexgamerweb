@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Céntrate en tu objetivo.</li><li>La agilidad es tu mejor baza.</li><li>Nada rápido para evitar al tiburón.</li><li>Sigue las corrientes de burbujas.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Focus on your goal.</li><li>Agility is your best asset.</li><li>Swim fast to avoid the shark.</li><li>Follow the bubble streams.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Concentrez-vous sur votre objectif.</li><li>L'agilité est votre meilleur atout.</li><li>Nagez vite pour éviter le requin.</li><li>Suivez les flux de bulles.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Concentrati sul tuo obiettivo.</li><li>L’agilità è la tua migliore risorsa.</li><li>Nuota velocemente per evitare lo squalo.</li><li>Segui i flussi di bolle.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Céntrate en tu objetivo.</li><li>La agilidad es tu mejor baza.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Nada rápido para evitar al tiburón.</li><li>Sigue las corrientes de burbujas.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Focus on your goal.</li><li>Agility is your best asset.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Swim fast to avoid the shark.</li><li>Follow the bubble streams.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Concentrez-vous sur votre objectif.</li><li>L'agilité est votre meilleur atout.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Nagez vite pour éviter le requin.</li><li>Suivez les flux de bulles.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Concentrati sul tuo obiettivo.</li><li>L’agilità è la tua migliore risorsa.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Nuota velocemente per evitare lo squalo.</li><li>Segui i flussi di bolle.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Ajusta precios cada mes.</li><li>Asegura la seguridad del parque.</li><li>La limpieza es más importante que las atracciones.</li><li>No pongas comida salada cerca de atracciones de agua.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Adjust prices every month.</li><li>Ensures the safety of the park.</li><li>Cleanliness is more important than attractions.</li><li>Don't put salty food near water attractions.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Ajustez les prix chaque mois.</li><li>Assure la sécurité du parc.</li><li>La propreté est plus importante que les attractions.</li><li>Ne placez pas de nourriture salée à proximité des attractions aquatiques.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Adegua i prezzi ogni mese.</li><li>Garantisce la sicurezza del parco.</li><li>La pulizia è più importante delle attrazioni.</li><li>Non mettere cibo salato vicino alle attrazioni acquatiche.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Ajusta precios cada mes.</li><li>Asegura la seguridad del parque.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La limpieza es más importante que las atracciones.</li><li>No pongas comida salada cerca de atracciones de agua.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Adjust prices every month.</li><li>Ensures the safety of the park.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Cleanliness is more important than attractions.</li><li>Don't put salty food near water attractions.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Ajustez les prix chaque mois.</li><li>Assure la sécurité du parc.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La propreté est plus importante que les attractions.</li><li>Ne placez pas de nourriture salée à proximité des attractions aquatiques.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Adegua i prezzi ogni mese.</li><li>Garantisce la sicurezza del parco.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La pulizia è più importante delle attrazioni.</li><li>Non mettere cibo salato vicino alle attrazioni acquatiche.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

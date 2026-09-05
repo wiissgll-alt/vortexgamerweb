@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Inclina la moto en las curvas cerradas.</li><li>Presiona el botón para acelerar.</li><li>Presiona select para ver la posición.</li><li>Quédate en el centro para evitar colisiones.</li><li>Usa el freno solo al final de la recta.</li><li>Usa el nitro al salir de la curva.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Lean the bike in tight turns.</li><li>Press the button to accelerate.</li><li>Press select to see the position.</li><li>Stay in the center to avoid collisions.</li><li>Use the brake only at the end of the straight.</li><li>Use the nitro when exiting the corner.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Inclinez le vélo dans les virages serrés.</li><li>Appuyez sur le bouton pour accélérer.</li><li>Appuyez sur Sélectionner pour voir la position.</li><li>Restez au centre pour éviter les collisions.</li><li>Utilisez le frein uniquement à la fin de la ligne droite.</li><li>Utilisez la nitro en sortant du coin.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Inclinare la bici nelle curve strette.</li><li>Premere il pulsante per accelerare.</li><li>Premere Seleziona per vedere la posizione.</li><li>Rimani al centro per evitare collisioni.</li><li>Usare il freno solo alla fine del rettilineo.</li><li>Usa la nitro quando esci dall'angolo.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Inclina la moto en las curvas cerradas.</li><li>Presiona el botón para acelerar.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Presiona select para ver la posición.</li><li>Quédate en el centro para evitar colisiones.</li><li>Usa el freno solo al final de la recta.</li><li>Usa el nitro al salir de la curva.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Lean the bike in tight turns.</li><li>Press the button to accelerate.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Press select to see the position.</li><li>Stay in the center to avoid collisions.</li><li>Use the brake only at the end of the straight.</li><li>Use the nitro when exiting the corner.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Inclinez le vélo dans les virages serrés.</li><li>Appuyez sur le bouton pour accélérer.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Appuyez sur Sélectionner pour voir la position.</li><li>Restez au centre pour éviter les collisions.</li><li>Utilisez le frein uniquement à la fin de la ligne droite.</li><li>Utilisez la nitro en sortant du coin.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Inclinare la bici nelle curve strette.</li><li>Premere il pulsante per accelerare.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Premere Seleziona per vedere la posizione.</li><li>Rimani al centro per evitare collisioni.</li><li>Usare il freno solo alla fine del rettilineo.</li><li>Usa la nitro quando esci dall'angolo.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>El coche es imparable.</li><li>El tiempo no baja.</li><li>Gana el rally al instante.</li><li>La pista es fácil de seguir.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>La invencibilidad al chocar.</li><li>Pulsa Select para turbo infinito.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>The car is unstoppable.</li><li>The time does not slow down.</li><li>Win the rally instantly.</li><li>The track is easy to follow.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Invincibility when crashing.</li><li>Press Select for infinite turbo.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>La voiture est imparable.</li><li>Le temps ne ralentit pas.</li><li>Gagnez le rallye instantanément.</li><li>La piste est facile à suivre.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Invincibilité en cas de crash.</li><li>Appuyez sur Sélectionner pour un turbo infini.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>L'auto è inarrestabile.</li><li>Il tempo non rallenta.</li><li>Vinci immediatamente il rally.</li><li>La traccia è facile da seguire.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Invincibilità in caso di incidente.</li><li>Premi Seleziona per un turbo infinito.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>El coche es imparable.</li><li>El tiempo no baja.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Gana el rally al instante.</li><li>La pista es fácil de seguir.</li><li>La invencibilidad al chocar.</li><li>Pulsa Select para turbo infinito.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>The car is unstoppable.</li><li>The time does not slow down.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Win the rally instantly.</li><li>The track is easy to follow.</li><li>Invincibility when crashing.</li><li>Press Select for infinite turbo.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>La voiture est imparable.</li><li>Le temps ne ralentit pas.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Gagnez le rallye instantanément.</li><li>La piste est facile à suivre.</li><li>Invincibilité en cas de crash.</li><li>Appuyez sur Sélectionner pour un turbo infini.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>L'auto è inarrestabile.</li><li>Il tempo non rallenta.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Vinci immediatamente il rally.</li><li>La traccia è facile da seguire.</li><li>Invincibilità in caso di incidente.</li><li>Premi Seleziona per un turbo infinito.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

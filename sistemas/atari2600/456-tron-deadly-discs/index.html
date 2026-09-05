@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Atrapa el disco enemigo para ganar puntos dobles.</li><li>Esquiva en círculos para confundir a los enemigos.</li><li>Mantente en el centro para una posición defensiva óptima.</li><li>Mantén el botón presionado para disparar ráfagas.</li><li>Muévete a la esquina superior para evitar discos.</li><li>Usa el reset para reiniciar el nivel con enemigos lentos.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Catch the enemy disc to earn double points.</li><li>Dodge in circles to confuse enemies.</li><li>Stay in the center for optimal defensive position.</li><li>Hold the button to fire bursts.</li><li>Move to the top corner to avoid discs.</li><li>Use the reset to restart the level with slow enemies.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Attrapez le disque ennemi pour gagner le double de points.</li><li>Esquivez en rond pour confondre les ennemis.</li><li>Restez au centre pour une position défensive optimale.</li><li>Maintenez le bouton enfoncé pour tirer des rafales.</li><li>Déplacez-vous vers le coin supérieur pour éviter les disques.</li><li>Utilisez la réinitialisation pour redémarrer le niveau avec des ennemis lents.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Prendi il disco nemico per guadagnare punti doppi.</li><li>Schiva in tondo per confondere i nemici.</li><li>Rimani al centro per una posizione difensiva ottimale.</li><li>Tieni premuto il pulsante per sparare raffiche.</li><li>Spostarsi nell'angolo in alto per evitare i dischi.</li><li>Usa il ripristino per riavviare il livello con nemici lenti.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Atrapa el disco enemigo para ganar puntos dobles.</li><li>Esquiva en círculos para confundir a los enemigos.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Mantente en el centro para una posición defensiva óptima.</li><li>Mantén el botón presionado para disparar ráfagas.</li><li>Muévete a la esquina superior para evitar discos.</li><li>Usa el reset para reiniciar el nivel con enemigos lentos.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Catch the enemy disc to earn double points.</li><li>Dodge in circles to confuse enemies.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Stay in the center for optimal defensive position.</li><li>Hold the button to fire bursts.</li><li>Move to the top corner to avoid discs.</li><li>Use the reset to restart the level with slow enemies.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Attrapez le disque ennemi pour gagner le double de points.</li><li>Esquivez en rond pour confondre les ennemis.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Restez au centre pour une position défensive optimale.</li><li>Maintenez le bouton enfoncé pour tirer des rafales.</li><li>Déplacez-vous vers le coin supérieur pour éviter les disques.</li><li>Utilisez la réinitialisation pour redémarrer le niveau avec des ennemis lents.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Prendi il disco nemico per guadagnare punti doppi.</li><li>Schiva in tondo per confondere i nemici.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Rimani al centro per una posizione difensiva ottimale.</li><li>Tieni premuto il pulsante per sparare raffiche.</li><li>Spostarsi nell'angolo in alto per evitare i dischi.</li><li>Usa il ripristino per riavviare il livello con nemici lenti.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Cuidado con los guardias.</li><li>Juego de acción y sigilo.</li><li>No te precipites.</li><li>Planifica tu ruta.</li><li>Usa el sigilo para avanzar sin ser visto.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Be careful with the guards.</li><li>Action and stealth game.</li><li>Don't rush.</li><li>Plan your route.</li><li>Use stealth to advance without being seen.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Soyez prudent avec les gardes.</li><li>Jeu d'action et d'infiltration.</li><li>Ne vous précipitez pas.</li><li>Planifiez votre itinéraire.</li><li>Utilisez la furtivité pour avancer sans être vu.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Stai attento con le guardie.</li><li>Gioco d'azione e stealth.</li><li>Non avere fretta.</li><li>Pianifica il tuo percorso.</li><li>Usa la furtività per avanzare senza essere visto.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Cuidado con los guardias.</li><li>Juego de acción y sigilo.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>No te precipites.</li><li>Planifica tu ruta.</li><li>Usa el sigilo para avanzar sin ser visto.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Be careful with the guards.</li><li>Action and stealth game.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Don't rush.</li><li>Plan your route.</li><li>Use stealth to advance without being seen.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Soyez prudent avec les gardes.</li><li>Jeu d'action et d'infiltration.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Ne vous précipitez pas.</li><li>Planifiez votre itinéraire.</li><li>Utilisez la furtivité pour avancer sans être vu.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Stai attento con le guardie.</li><li>Gioco d'azione e stealth.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Non avere fretta.</li><li>Pianifica il tuo percorso.</li><li>Usa la furtività per avanzare senza essere visto.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

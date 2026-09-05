@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Anticipa el movimiento del rival.</li><li>Controla el ángulo del golpe.</li><li>El efecto en la bola puede ser decisivo.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Anticipate the opponent's movement.</li><li>Control the angle of the blow.</li><li>The spin on the ball can be decisive.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Anticipez le mouvement de l'adversaire.</li><li>Contrôlez l'angle du coup.</li><li>La rotation du ballon peut être décisive.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Anticipare il movimento dell'avversario.</li><li>Controlla l'angolo del colpo.</li><li>La rotazione della palla può essere decisiva.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Anticipa el movimiento del rival.</li><li>Controla el ángulo del golpe.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>El efecto en la bola puede ser decisivo.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Anticipate the opponent's movement.</li><li>Control the angle of the blow.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>The spin on the ball can be decisive.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Anticipez le mouvement de l'adversaire.</li><li>Contrôlez l'angle du coup.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La rotation du ballon peut être décisive.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Anticipare il movimento dell'avversario.</li><li>Controlla l'angolo del colpo.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La rotazione della palla può essere decisiva.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Busca sangre para tu energía.</li><li>Explora la noche; evita la luz.</li><li>La paciencia es tu ventaja.</li><li>No te dejes atrapar por los humanos.</li><li>Sé rápido y silencioso.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Seek blood for your energy.</li><li>Explore the night; avoid light.</li><li>Patience is your advantage.</li><li>Don't get caught by humans.</li><li>Be fast and quiet.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Cherchez du sang pour votre énergie.</li><li>Explorez la nuit ; éviter la lumière.</li><li>La patience est votre avantage.</li><li>Ne vous laissez pas attraper par les humains.</li><li>Soyez rapide et silencieux.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Cerca il sangue per la tua energia.</li><li>Esplora la notte; evitare la luce.</li><li>La pazienza è il tuo vantaggio.</li><li>Non farti prendere dagli umani.</li><li>Sii veloce e silenzioso.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Busca sangre para tu energía.</li><li>Explora la noche; evita la luz.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La paciencia es tu ventaja.</li><li>No te dejes atrapar por los humanos.</li><li>Sé rápido y silencioso.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Seek blood for your energy.</li><li>Explore the night; avoid light.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Patience is your advantage.</li><li>Don't get caught by humans.</li><li>Be fast and quiet.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Cherchez du sang pour votre énergie.</li><li>Explorez la nuit ; éviter la lumière.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La patience est votre avantage.</li><li>Ne vous laissez pas attraper par les humains.</li><li>Soyez rapide et silencieux.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Cerca il sangue per la tua energia.</li><li>Esplora la notte; evitare la luce.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La pazienza è il tuo vantaggio.</li><li>Non farti prendere dagli umani.</li><li>Sii veloce e silenzioso.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

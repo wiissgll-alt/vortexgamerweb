@@ -64,10 +64,34 @@ il gioco è nello stile della mappatura strutturata 3D con la storia raccontata 
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Dispara a los enemigos antes de que entren en tu rango de visión.</li><li>El escudo recargable es vital; no lo agotes.</li><li>Memoriza las rutas de los niveles.</li><li>Usa el turbo con precaución.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Shoot enemies before they enter your range of vision.</li><li>The rechargeable shield is vital; don't exhaust it.</li><li>Memorize the routes of the levels.</li><li>Use the turbo with caution.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Tirez sur les ennemis avant qu'ils n'entrent dans votre champ de vision.</li><li>Le bouclier rechargeable est vital ; ne l'épuisez pas.</li><li>Mémorisez les itinéraires des niveaux.</li><li>Utilisez le turbo avec prudence.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Spara ai nemici prima che entrino nel tuo campo visivo.</li><li>Lo scudo ricaricabile è vitale; non esaurirlo.</li><li>Memorizza i percorsi dei livelli.</li><li>Utilizzare il turbo con cautela.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Dispara a los enemigos antes de que entren en tu rango de visión.</li><li>El escudo recargable es vital; no lo agotes.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Memoriza las rutas de los niveles.</li><li>Usa el turbo con precaución.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Shoot enemies before they enter your range of vision.</li><li>The rechargeable shield is vital; don't exhaust it.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Memorize the routes of the levels.</li><li>Use the turbo with caution.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Tirez sur les ennemis avant qu'ils n'entrent dans votre champ de vision.</li><li>Le bouclier rechargeable est vital ; ne l'épuisez pas.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Mémorisez les itinéraires des niveaux.</li><li>Utilisez le turbo avec prudence.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Spara ai nemici prima che entrino nel tuo campo visivo.</li><li>Lo scudo ricaricabile è vitale; non esaurirlo.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Memorizza i percorsi dei livelli.</li><li>Utilizzare il turbo con cautela.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -85,6 +109,15 @@ il gioco è nello stile della mappatura strutturata 3D con la storia raccontata 
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

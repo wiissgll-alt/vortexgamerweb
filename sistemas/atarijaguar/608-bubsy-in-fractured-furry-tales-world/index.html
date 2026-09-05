@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Planea para cruzar abismos.</li><li>Presiona el botón para saltar.</li><li>Presiona select para ver el mapa.</li><li>Quédate en plataformas altas.</li><li>Recoge las bolas de lana.</li><li>Salta sobre los enemigos.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Plan to cross chasms.</li><li>Press the button to jump.</li><li>Press select to view the map.</li><li>Stay on high platforms.</li><li>Collect the wool balls.</li><li>Jump over the enemies.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Prévoyez de traverser des gouffres.</li><li>Appuyez sur le bouton pour sauter.</li><li>Appuyez sur Sélectionner pour afficher la carte.</li><li>Restez sur les plates-formes élevées.</li><li>Récupérez les boules de laine.</li><li>Sautez par-dessus les ennemis.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Pianifica di attraversare gli abissi.</li><li>Premi il pulsante per saltare.</li><li>Premere Seleziona per visualizzare la mappa.</li><li>Rimani su piattaforme alte.</li><li>Raccogli i gomitoli di lana.</li><li>Salta sopra i nemici.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Planea para cruzar abismos.</li><li>Presiona el botón para saltar.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Presiona select para ver el mapa.</li><li>Quédate en plataformas altas.</li><li>Recoge las bolas de lana.</li><li>Salta sobre los enemigos.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Plan to cross chasms.</li><li>Press the button to jump.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Press select to view the map.</li><li>Stay on high platforms.</li><li>Collect the wool balls.</li><li>Jump over the enemies.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Prévoyez de traverser des gouffres.</li><li>Appuyez sur le bouton pour sauter.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Appuyez sur Sélectionner pour afficher la carte.</li><li>Restez sur les plates-formes élevées.</li><li>Récupérez les boules de laine.</li><li>Sautez par-dessus les ennemis.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Pianifica di attraversare gli abissi.</li><li>Premi il pulsante per saltare.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Premere Seleziona per visualizzare la mappa.</li><li>Rimani su piattaforme alte.</li><li>Raccogli i gomitoli di lana.</li><li>Salta sopra i nemici.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

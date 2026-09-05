@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Accede a todas las rondas.</li><li>Desbloquea modos especiales.</li><li>Gana al instante.</li><li>Pulsa Select para respuesta correcta.</li><li>Suerte máxima.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Dinero infinito.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Access all rounds.</li><li>Unlock special modes.</li><li>Win instantly.</li><li>Press Select for correct answer.</li><li>Maximum luck.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Infinite money.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Accédez à tous les tours.</li><li>Débloquez des modes spéciaux.</li><li>Gagnez instantanément.</li><li>Appuyez sur Sélectionner pour obtenir la bonne réponse.</li><li>Chance maximale.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>De l'argent infini.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Accedi a tutti i round.</li><li>Sblocca modalità speciali.</li><li>Vinci immediatamente.</li><li>Premere Seleziona per la risposta corretta.</li><li>Massima fortuna.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Soldi infiniti.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Accede a todas las rondas.</li><li>Desbloquea modos especiales.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Gana al instante.</li><li>Pulsa Select para respuesta correcta.</li><li>Suerte máxima.</li><li>Dinero infinito.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Access all rounds.</li><li>Unlock special modes.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Win instantly.</li><li>Press Select for correct answer.</li><li>Maximum luck.</li><li>Infinite money.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Accédez à tous les tours.</li><li>Débloquez des modes spéciaux.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Gagnez instantanément.</li><li>Appuyez sur Sélectionner pour obtenir la bonne réponse.</li><li>Chance maximale.</li><li>De l'argent infini.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Accedi a tutti i round.</li><li>Sblocca modalità speciali.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Vinci immediatamente.</li><li>Premere Seleziona per la risposta corretta.</li><li>Massima fortuna.</li><li>Soldi infiniti.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

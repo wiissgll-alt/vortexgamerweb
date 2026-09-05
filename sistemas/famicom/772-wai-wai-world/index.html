@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Cada uno tiene una utilidad distinta.</li><li>Desbloquea a los personajes de Konami pronto.</li><li>El mapa es clave para la progresión.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Each one has a different utility.</li><li>Unlock Konami characters soon.</li><li>The map is key to progression.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Chacun a une utilité différente.</li><li>Débloquez bientôt les personnages Konami.</li><li>La carte est la clé de la progression.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Ognuno ha un'utilità diversa.</li><li>Sblocca presto i personaggi Konami.</li><li>La mappa è la chiave per la progressione.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Cada uno tiene una utilidad distinta.</li><li>Desbloquea a los personajes de Konami pronto.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>El mapa es clave para la progresión.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Each one has a different utility.</li><li>Unlock Konami characters soon.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>The map is key to progression.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Chacun a une utilité différente.</li><li>Débloquez bientôt les personnages Konami.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La carte est la clé de la progression.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Ognuno ha un'utilità diversa.</li><li>Sblocca presto i personaggi Konami.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La mappa è la chiave per la progressione.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

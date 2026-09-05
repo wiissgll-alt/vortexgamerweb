@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Es un juego de acción muy sólido y variado.</li><li>Explora para subir de nivel y aprender magias.</li><li>Los jefes son un reto; estudia sus puntos débiles.</li><li>Muchos tipos de patadas; aprende a usarlas todas.</li><li>No ignores los objetos que sueltan los enemigos.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>It is a very solid and varied action game.</li><li>Explore to level up and learn magic.</li><li>Bosses are a challenge; Study your weak points.</li><li>Many types of kicks; Learn to use them all.</li><li>Don't ignore items dropped by enemies.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>C'est un jeu d'action très solide et varié.</li><li>Explorez pour passer au niveau supérieur et apprendre la magie.</li><li>Les patrons sont un défi ; Étudiez vos points faibles.</li><li>De nombreux types de coups de pied ; Apprenez à tous les utiliser.</li><li>N'ignorez pas les objets lâchés par les ennemis.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>È un gioco d'azione molto solido e vario.</li><li>Esplora per salire di livello e imparare la magia.</li><li>I capi sono una sfida; Studia i tuoi punti deboli.</li><li>Molti tipi di calci; Impara ad usarli tutti.</li><li>Non ignorare gli oggetti lasciati dai nemici.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Es un juego de acción muy sólido y variado.</li><li>Explora para subir de nivel y aprender magias.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Los jefes son un reto; estudia sus puntos débiles.</li><li>Muchos tipos de patadas; aprende a usarlas todas.</li><li>No ignores los objetos que sueltan los enemigos.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>It is a very solid and varied action game.</li><li>Explore to level up and learn magic.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Bosses are a challenge; Study your weak points.</li><li>Many types of kicks; Learn to use them all.</li><li>Don't ignore items dropped by enemies.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>C'est un jeu d'action très solide et varié.</li><li>Explorez pour passer au niveau supérieur et apprendre la magie.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Les patrons sont un défi ; Étudiez vos points faibles.</li><li>De nombreux types de coups de pied ; Apprenez à tous les utiliser.</li><li>N'ignorez pas les objets lâchés par les ennemis.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>È un gioco d'azione molto solido e vario.</li><li>Esplora per salire di livello e imparare la magia.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>I capi sono una sfida; Studia i tuoi punti deboli.</li><li>Molti tipi di calci; Impara ad usarli tutti.</li><li>Non ignorare gli oggetti lasciati dai nemici.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

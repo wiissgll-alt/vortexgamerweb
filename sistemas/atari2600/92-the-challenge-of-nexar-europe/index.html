@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>El disparo continuo es necesario.</li><li>Gestiona tus escudos.</li><li>Muévete rápido para esquivar.</li><li>Prioriza los enemigos que bloquean tu paso.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Continuous shooting is necessary.</li><li>Manage your shields.</li><li>Move fast to dodge.</li><li>Prioritize enemies blocking your path.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Une prise de vue continue est nécessaire.</li><li>Gérez vos boucliers.</li><li>Déplacez-vous rapidement pour esquiver.</li><li>Donnez la priorité aux ennemis qui bloquent votre chemin.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>È necessario lo scatto continuo.</li><li>Gestisci i tuoi scudi.</li><li>Muoviti velocemente per schivare.</li><li>Dai la priorità ai nemici che bloccano il tuo cammino.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>El disparo continuo es necesario.</li><li>Gestiona tus escudos.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Muévete rápido para esquivar.</li><li>Prioriza los enemigos que bloquean tu paso.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Continuous shooting is necessary.</li><li>Manage your shields.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Move fast to dodge.</li><li>Prioritize enemies blocking your path.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Une prise de vue continue est nécessaire.</li><li>Gérez vos boucliers.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Déplacez-vous rapidement pour esquiver.</li><li>Donnez la priorité aux ennemis qui bloquent votre chemin.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>È necessario lo scatto continuo.</li><li>Gestisci i tuoi scudi.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Muoviti velocemente per schivare.</li><li>Dai la priorità ai nemici che bloccano il tuo cammino.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Aprende los patrones de los jefes prehistóricos.</li><li>Cuidado con los saltos precisos sobre lava o agua.</li><li>El juego cooperativo es muy divertido y recomendable.</li><li>Recoge comida para recuperar vida constantemente.</li><li>Usa el ataque de carga para hacer mucho daño.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Learn the patterns of prehistoric bosses.</li><li>Be careful with precise jumps over lava or water.</li><li>The cooperative game is very fun and recommended.</li><li>Collect food to constantly recover life.</li><li>Use the charge attack to do a lot of damage.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Apprenez les modèles des patrons préhistoriques.</li><li>Soyez prudent avec les sauts précis au-dessus de la lave ou de l'eau.</li><li>Le jeu coopératif est très amusant et recommandé.</li><li>Collectez de la nourriture pour récupérer constamment la vie.</li><li>Utilisez l’attaque chargée pour faire beaucoup de dégâts.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Impara gli schemi dei boss preistorici.</li><li>Fai attenzione ai salti precisi sulla lava o sull'acqua.</li><li>Il gioco cooperativo è molto divertente e consigliato.</li><li>Raccogli il cibo per recuperare costantemente la vita.</li><li>Usa l'attacco caricato per fare molti danni.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Aprende los patrones de los jefes prehistóricos.</li><li>Cuidado con los saltos precisos sobre lava o agua.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>El juego cooperativo es muy divertido y recomendable.</li><li>Recoge comida para recuperar vida constantemente.</li><li>Usa el ataque de carga para hacer mucho daño.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Learn the patterns of prehistoric bosses.</li><li>Be careful with precise jumps over lava or water.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>The cooperative game is very fun and recommended.</li><li>Collect food to constantly recover life.</li><li>Use the charge attack to do a lot of damage.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Apprenez les modèles des patrons préhistoriques.</li><li>Soyez prudent avec les sauts précis au-dessus de la lave ou de l'eau.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Le jeu coopératif est très amusant et recommandé.</li><li>Collectez de la nourriture pour récupérer constamment la vie.</li><li>Utilisez l’attaque chargée pour faire beaucoup de dégâts.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Impara gli schemi dei boss preistorici.</li><li>Fai attenzione ai salti precisi sulla lava o sull'acqua.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Il gioco cooperativo è molto divertente e consigliato.</li><li>Raccogli il cibo per recuperare costantemente la vita.</li><li>Usa l'attacco caricato per fare molti danni.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Dispara a los enemigos antes de que aterricen.</li><li>Presiona el botón para ataque masivo.</li><li>Presiona select para cambiar arma.</li><li>Quédate en el centro para cubrir el mapa.</li><li>Recoge power-ups de velocidad.</li><li>Usa el escudo para absorber impactos.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Shoot enemies before they land.</li><li>Press the button for massive attack.</li><li>Press select to change weapon.</li><li>Stay in the center to cover the map.</li><li>Collect speed power-ups.</li><li>Use the shield to absorb impacts.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Tirez sur les ennemis avant qu'ils n'atterrissent.</li><li>Appuyez sur le bouton pour une attaque massive.</li><li>Appuyez sur Sélectionner pour changer d'arme.</li><li>Restez au centre pour couvrir la carte.</li><li>Collectez des bonus de vitesse.</li><li>Utilisez le bouclier pour absorber les impacts.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Spara ai nemici prima che atterrino.</li><li>Premi il pulsante per un attacco massiccio.</li><li>Premi Seleziona per cambiare arma.</li><li>Rimani al centro per coprire la mappa.</li><li>Raccogli potenziamenti di velocità.</li><li>Usa lo scudo per assorbire gli impatti.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Dispara a los enemigos antes de que aterricen.</li><li>Presiona el botón para ataque masivo.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Presiona select para cambiar arma.</li><li>Quédate en el centro para cubrir el mapa.</li><li>Recoge power-ups de velocidad.</li><li>Usa el escudo para absorber impactos.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Shoot enemies before they land.</li><li>Press the button for massive attack.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Press select to change weapon.</li><li>Stay in the center to cover the map.</li><li>Collect speed power-ups.</li><li>Use the shield to absorb impacts.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Tirez sur les ennemis avant qu'ils n'atterrissent.</li><li>Appuyez sur le bouton pour une attaque massive.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Appuyez sur Sélectionner pour changer d'arme.</li><li>Restez au centre pour couvrir la carte.</li><li>Collectez des bonus de vitesse.</li><li>Utilisez le bouclier pour absorber les impacts.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Spara ai nemici prima che atterrino.</li><li>Premi il pulsante per un attacco massiccio.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Premi Seleziona per cambiare arma.</li><li>Rimani al centro per coprire la mappa.</li><li>Raccogli potenziamenti di velocità.</li><li>Usa lo scudo per assorbire gli impatti.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

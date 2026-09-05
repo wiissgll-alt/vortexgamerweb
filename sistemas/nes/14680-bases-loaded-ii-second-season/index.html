@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Aprende cuándo realizar un doble play.</li><li>La velocidad de los corredores es tu mejor arma.</li><li>No cambies tu estilo de juego si te funciona.</li><li>No lances siempre a la misma zona.</li><li>Similar al primero, pero con mejores equipos.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Learn when to play a double play.</li><li>Runners' speed is your best weapon.</li><li>Don't change your play style if it works for you.</li><li>Don't always cast to the same area.</li><li>Similar to the first, but with better equipment.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Apprenez quand jouer un double jeu.</li><li>La vitesse des coureurs est votre meilleure arme.</li><li>Ne changez pas votre style de jeu si cela fonctionne pour vous.</li><li>Ne diffusez pas toujours dans la même zone.</li><li>Similaire au premier, mais avec un meilleur équipement.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Impara quando giocare un doppio gioco.</li><li>La velocità dei corridori è la tua arma migliore.</li><li>Non cambiare il tuo stile di gioco se funziona per te.</li><li>Non lanciare sempre nella stessa area.</li><li>Simile al primo, ma con una migliore attrezzatura.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Aprende cuándo realizar un doble play.</li><li>La velocidad de los corredores es tu mejor arma.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>No cambies tu estilo de juego si te funciona.</li><li>No lances siempre a la misma zona.</li><li>Similar al primero, pero con mejores equipos.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Learn when to play a double play.</li><li>Runners' speed is your best weapon.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Don't change your play style if it works for you.</li><li>Don't always cast to the same area.</li><li>Similar to the first, but with better equipment.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Apprenez quand jouer un double jeu.</li><li>La vitesse des coureurs est votre meilleure arme.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Ne changez pas votre style de jeu si cela fonctionne pour vous.</li><li>Ne diffusez pas toujours dans la même zone.</li><li>Similaire au premier, mais avec un meilleur équipement.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Impara quando giocare un doppio gioco.</li><li>La velocità dei corridori è la tua arma migliore.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Non cambiare il tuo stile di gioco se funziona per te.</li><li>Non lanciare sempre nella stessa area.</li><li>Simile al primo, ma con una migliore attrezzatura.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

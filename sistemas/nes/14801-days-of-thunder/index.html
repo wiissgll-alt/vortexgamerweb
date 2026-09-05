@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Carreras NASCAR; controla la velocidad en curvas.</li><li>Gestiona los neumáticos.</li><li>Mantén la concentración.</li><li>No choques con otros coches.</li><li>Usa el rebufo para adelantar.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>NASCAR racing; controls speed in curves.</li><li>Manage tires.</li><li>Stay focused.</li><li>Don't crash with other cars.</li><li>Use the slipstream to overtake.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Courses NASCAR ; contrôle la vitesse dans les virages.</li><li>Gérer les pneus.</li><li>Restez concentré.</li><li>Ne vous écrasez pas avec d'autres voitures.</li><li>Utilisez le sillage pour dépasser.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>corse NASCAR; controlla la velocità in curva.</li><li>Gestisci gli pneumatici.</li><li>Rimani concentrato.</li><li>Non scontrarti con altre auto.</li><li>Usa la scia per sorpassare.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Carreras NASCAR; controla la velocidad en curvas.</li><li>Gestiona los neumáticos.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Mantén la concentración.</li><li>No choques con otros coches.</li><li>Usa el rebufo para adelantar.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>NASCAR racing; controls speed in curves.</li><li>Manage tires.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Stay focused.</li><li>Don't crash with other cars.</li><li>Use the slipstream to overtake.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Courses NASCAR ; contrôle la vitesse dans les virages.</li><li>Gérer les pneus.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Restez concentré.</li><li>Ne vous écrasez pas avec d'autres voitures.</li><li>Utilisez le sillage pour dépasser.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>corse NASCAR; controlla la velocità in curva.</li><li>Gestisci gli pneumatici.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Rimani concentrato.</li><li>Non scontrarti con altre auto.</li><li>Usa la scia per sorpassare.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

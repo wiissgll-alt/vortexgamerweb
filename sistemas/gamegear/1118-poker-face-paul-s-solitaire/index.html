@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Desbloquea modos especiales.</li><li>El rival siempre pierde.</li><li>Gana al instante.</li><li>La suerte es máxima.</li><li>Pulsa Select para ganar partida.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>La baraja es infinita.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Unlock special modes.</li><li>The rival always loses.</li><li>Win instantly.</li><li>Luck is maximum.</li><li>Press Select to win the game.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>The deck is infinite.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Débloquez des modes spéciaux.</li><li>Le rival perd toujours.</li><li>Gagnez instantanément.</li><li>La chance est maximale.</li><li>Appuyez sur Sélectionner pour gagner la partie.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Le deck est infini.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Sblocca modalità speciali.</li><li>Il rivale perde sempre.</li><li>Vinci immediatamente.</li><li>La fortuna è massima.</li><li>Premi Seleziona per vincere la partita.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Il mazzo è infinito.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Desbloquea modos especiales.</li><li>El rival siempre pierde.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Gana al instante.</li><li>La suerte es máxima.</li><li>Pulsa Select para ganar partida.</li><li>La baraja es infinita.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Unlock special modes.</li><li>The rival always loses.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Win instantly.</li><li>Luck is maximum.</li><li>Press Select to win the game.</li><li>The deck is infinite.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Débloquez des modes spéciaux.</li><li>Le rival perd toujours.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Gagnez instantanément.</li><li>La chance est maximale.</li><li>Appuyez sur Sélectionner pour gagner la partie.</li><li>Le deck est infini.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Sblocca modalità speciali.</li><li>Il rivale perde sempre.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Vinci immediatamente.</li><li>La fortuna è massima.</li><li>Premi Seleziona per vincere la partita.</li><li>Il mazzo è infinito.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

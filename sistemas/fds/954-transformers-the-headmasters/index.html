@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Accede a todos los niveles.</li><li>Derrota jefes rápido.</li><li>La transformación es permanente.</li><li>La velocidad es máxima.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>La invencibilidad al daño.</li><li>Pulsa Select para energía infinita.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Access all levels.</li><li>Defeat bosses fast.</li><li>The transformation is permanent.</li><li>The speed is maximum.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Invincibility to damage.</li><li>Press Select for infinite energy.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Accédez à tous les niveaux.</li><li>Battez les boss rapidement.</li><li>La transformation est permanente.</li><li>La vitesse est maximale.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Invincibilité aux dégâts.</li><li>Appuyez sur Select pour une énergie infinie.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Accedi a tutti i livelli.</li><li>Sconfiggi i boss velocemente.</li><li>La trasformazione è permanente.</li><li>La velocità è massima.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Invincibilità al danno.</li><li>Premi Seleziona per l'energia infinita.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Accede a todos los niveles.</li><li>Derrota jefes rápido.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La transformación es permanente.</li><li>La velocidad es máxima.</li><li>La invencibilidad al daño.</li><li>Pulsa Select para energía infinita.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Access all levels.</li><li>Defeat bosses fast.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>The transformation is permanent.</li><li>The speed is maximum.</li><li>Invincibility to damage.</li><li>Press Select for infinite energy.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Accédez à tous les niveaux.</li><li>Battez les boss rapidement.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La transformation est permanente.</li><li>La vitesse est maximale.</li><li>Invincibilité aux dégâts.</li><li>Appuyez sur Select pour une énergie infinie.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Accedi a tutti i livelli.</li><li>Sconfiggi i boss velocemente.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La trasformazione è permanente.</li><li>La velocità è massima.</li><li>Invincibilità al danno.</li><li>Premi Seleziona per l'energia infinita.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

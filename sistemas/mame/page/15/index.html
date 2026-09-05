@@ -39,7 +39,7 @@
 </header>
 <main class="wrap">
   <p class="breadcrumb"><a href="../../../index.html" data-i18n="nav.systems">Sistemas</a> / Arcade (MAME)</p>
-  <h1>Arcade (MAME)</h1>
+  <h1 class="title-with-icon"><img src="../../../../assets/consoles/mame.png" alt="">Arcade (MAME)</h1>
   <p class="section-sub">6421 <span data-i18n="systems.count">juegos</span></p>
   <input id="game-search" class="search-box" type="search" data-i18n-placeholder="search.placeholder" placeholder="Buscar un juego por nombre...">
   <div class="grid">
@@ -845,41 +845,15 @@
       </a>
   </div>
   <div class="pagination">
-        <a href="../14/" data-i18n="pagination.prev">Anterior</a>
+        <a class="arrow" href="../14/" data-i18n="pagination.prev" aria-label="anterior">◀</a>
         <a href="../../">1</a>
-        <a href="../2/">2</a>
-        <a href="../3/">3</a>
-        <a href="../4/">4</a>
-        <a href="../5/">5</a>
-        <a href="../6/">6</a>
-        <a href="../7/">7</a>
-        <a href="../8/">8</a>
-        <a href="../9/">9</a>
-        <a href="../10/">10</a>
-        <a href="../11/">11</a>
-        <a href="../12/">12</a>
-        <a href="../13/">13</a>
+        <span class="ellipsis">…</span>
         <a href="../14/">14</a>
         <span class="current">15</span>
         <a href="../16/">16</a>
-        <a href="../17/">17</a>
-        <a href="../18/">18</a>
-        <a href="../19/">19</a>
-        <a href="../20/">20</a>
-        <a href="../21/">21</a>
-        <a href="../22/">22</a>
-        <a href="../23/">23</a>
-        <a href="../24/">24</a>
-        <a href="../25/">25</a>
-        <a href="../26/">26</a>
-        <a href="../27/">27</a>
-        <a href="../28/">28</a>
-        <a href="../29/">29</a>
-        <a href="../30/">30</a>
-        <a href="../31/">31</a>
-        <a href="../32/">32</a>
+        <span class="ellipsis">…</span>
         <a href="../33/">33</a>
-        <a href="../16/" data-i18n="pagination.next">Siguiente</a>
+        <a class="arrow" href="../16/" data-i18n="pagination.next" aria-label="siguiente">▶</a>
       </div>
 </main>
 <footer class="site-footer">
@@ -892,6 +866,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

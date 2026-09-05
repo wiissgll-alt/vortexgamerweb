@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>El arma de largo alcance es la más efectiva contra jefes.</li><li>El nivel se completa rápido si pulsas A+B en el puente.</li><li>El truco de la pared permite saltar secciones enteras.</li><li>La vida se recupera al 100% en las casas de té.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>El gato de la suerte otorga invencibilidad temporal.</li><li>Pulsa Select para obtener monedas infinitas.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>The long range weapon is the most effective against bosses.</li><li>The level is completed quickly if you press A+B on the bridge.</li><li>The wall trick allows you to skip entire sections.</li><li>Life recovers 100% in the tea houses.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>The lucky cat grants temporary invincibility.</li><li>Press Select to get infinite coins.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>L'arme à longue portée est la plus efficace contre les boss.</li><li>Le niveau est terminé rapidement si vous appuyez sur A+B sur le pont.</li><li>L'astuce du mur vous permet de sauter des sections entières.</li><li>La vie reprend à 100% dans les salons de thé.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Le chat porte-bonheur confère une invincibilité temporaire.</li><li>Appuyez sur Sélectionner pour obtenir des pièces infinies.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>L'arma a lungo raggio è la più efficace contro i boss.</li><li>Il livello viene completato rapidamente se premi A+B sul ponte.</li><li>Il trucco del muro ti consente di saltare intere sezioni.</li><li>La vita riprende al 100% nelle case da tè.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Il gatto fortunato garantisce l'invincibilità temporanea.</li><li>Premi Seleziona per ottenere monete infinite.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>El arma de largo alcance es la más efectiva contra jefes.</li><li>El nivel se completa rápido si pulsas A+B en el puente.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>El truco de la pared permite saltar secciones enteras.</li><li>La vida se recupera al 100% en las casas de té.</li><li>El gato de la suerte otorga invencibilidad temporal.</li><li>Pulsa Select para obtener monedas infinitas.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>The long range weapon is the most effective against bosses.</li><li>The level is completed quickly if you press A+B on the bridge.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>The wall trick allows you to skip entire sections.</li><li>Life recovers 100% in the tea houses.</li><li>The lucky cat grants temporary invincibility.</li><li>Press Select to get infinite coins.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>L'arme à longue portée est la plus efficace contre les boss.</li><li>Le niveau est terminé rapidement si vous appuyez sur A+B sur le pont.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>L'astuce du mur vous permet de sauter des sections entières.</li><li>La vie reprend à 100% dans les salons de thé.</li><li>Le chat porte-bonheur confère une invincibilité temporaire.</li><li>Appuyez sur Sélectionner pour obtenir des pièces infinies.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>L'arma a lungo raggio è la più efficace contro i boss.</li><li>Il livello viene completato rapidamente se premi A+B sul ponte.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Il trucco del muro ti consente di saltare intere sezioni.</li><li>La vita riprende al 100% nelle case da tè.</li><li>Il gatto fortunato garantisce l'invincibilità temporanea.</li><li>Premi Seleziona per ottenere monete infinite.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

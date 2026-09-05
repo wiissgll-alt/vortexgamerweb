@@ -16,7 +16,7 @@
 
     'hero.tagline': { es: 'Explorador retro con más de 17.000 juegos, minijuegos arcade y guías técnicas — todo en una sola app.', en: 'A retro explorer with over 17,000 games, arcade minigames, and technical guides — all in one app.', fr: 'Un explorateur rétro avec plus de 17 000 jeux, des mini-jeux arcade et des guides techniques — le tout dans une seule application.', it: 'Un esploratore retro con oltre 17.000 giochi, minigiochi arcade e guide tecniche — tutto in un\'unica app.' },
     'hero.explore': { es: 'Explorar sistemas', en: 'Explore systems', fr: 'Explorer les systèmes', it: 'Esplora i sistemi' },
-    'hero.prices': { es: 'Ver top de precios', en: 'See top prices', fr: 'Voir le top des prix', it: 'Vedi il top dei prezzi' },
+    'hero.prices': { es: '💰 ¿Cuánto valen tus juegos?', en: '💰 How much are your games worth?', fr: '💰 Combien valent vos jeux ?', it: '💰 Quanto valgono i tuoi giochi?' },
 
     'systems.title': { es: 'Explora por sistema', en: 'Explore by system', fr: 'Explorer par système', it: 'Esplora per sistema' },
     'systems.sub': { es: 'Miles de juegos clásicos organizados por consola.', en: 'Thousands of classic games organized by console.', fr: 'Des milliers de jeux classiques organisés par console.', it: 'Migliaia di giochi classici organizzati per console.' },
@@ -32,6 +32,11 @@
     'prices.price': { es: 'Precio', en: 'Price', fr: 'Prix', it: 'Prezzo' },
     'prices.source': { es: 'Fuente: PriceCharting', en: 'Source: PriceCharting', fr: 'Source : PriceCharting', it: 'Fonte: PriceCharting' },
     'prices.hub.title': { es: 'Los juegos retro más caros del mercado', en: "The most expensive retro games on the market", fr: 'Les jeux rétro les plus chers du marché', it: 'I giochi retro più costosi sul mercato' },
+    'prices.hub.sub': { es: '¿Cuánto valen tus juegos clásicos? Consulta el ranking por consola.', en: 'How much are your classic games worth? Check the ranking by console.', fr: 'Combien valent vos jeux classiques ? Consultez le classement par console.', it: 'Quanto valgono i tuoi giochi classici? Consulta la classifica per console.' },
+    'prices.tapinfo': { es: 'Toca una fila para ver más detalles en la app', en: 'Tap a row to see more details in the app', fr: "Touchez une ligne pour voir plus de détails dans l'application", it: 'Tocca una riga per vedere altri dettagli nell\'app' },
+
+    'modal.title': { es: 'Esto es solo un adelanto', en: 'This is just a preview', fr: "Ceci n'est qu'un aperçu", it: 'Questa è solo un\'anteprima' },
+    'modal.msg': { es: 'Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.', en: 'Download the free app to see all the information: full sheets, cheats, tips and detailed prices.', fr: "Téléchargez l'application gratuite pour voir toutes les informations : fiches complètes, astuces, conseils et prix détaillés.", it: 'Scarica l\'app gratuita per vedere tutte le informazioni: schede complete, trucchi, consigli e prezzi dettagliati.' },
 
     'news.title': { es: 'Últimas noticias de videojuegos', en: 'Latest gaming news', fr: 'Dernières actualités jeux vidéo', it: 'Ultime notizie sui videogiochi' },
     'news.sub': { es: 'Recopiladas cada día, en tu idioma.', en: 'Gathered daily, in your language.', fr: 'Rassemblées chaque jour, dans votre langue.', it: 'Raccolte ogni giorno, nella tua lingua.' },
@@ -74,6 +79,12 @@
       el.classList.toggle('active', el.getAttribute('data-lang') === lang);
     });
 
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n-placeholder');
+      var entry = DICTIONARY[key];
+      if (entry && entry[lang]) el.setAttribute('placeholder', entry[lang]);
+    });
+
     document.querySelectorAll('.flag-button').forEach(function (btn) {
       btn.classList.toggle('active', btn.getAttribute('data-flag') === lang);
     });
@@ -103,6 +114,24 @@
           var name = card.getAttribute('data-search-name');
           card.style.display = name.indexOf(q) !== -1 ? '' : 'none';
         });
+      });
+    }
+
+    // Popup "descarga la app": se dispara al tocar contenido de adelanto (trucos
+    // difuminados, filas de precios...) en vez de enseñar todo gratis o enlazar a
+    // sitios externos. Un solo modal reutilizado por toda la página.
+    var backdrop = document.getElementById('app-modal-backdrop');
+    if (backdrop) {
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('[data-require-app]')) {
+          e.preventDefault();
+          backdrop.classList.add('open');
+        }
+      });
+      backdrop.addEventListener('click', function (e) {
+        if (e.target === backdrop || e.target.closest('.app-modal-close')) {
+          backdrop.classList.remove('open');
+        }
       });
     }
   });

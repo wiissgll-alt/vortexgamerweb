@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Defiende el centro del campo.</li><li>La velocidad del disparo es clave.</li><li>No cargues demasiado al portero enemigo.</li><li>Usa el pase lateral para confundir al portero.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Defends the center of the field.</li><li>The speed of the shot is key.</li><li>Don't burden the enemy goalkeeper too much.</li><li>Use the lateral pass to confuse the goalkeeper.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Défend le centre du terrain.</li><li>La vitesse du tir est essentielle.</li><li>Ne surchargez pas trop le gardien ennemi.</li><li>Utilisez la passe latérale pour confondre le gardien de but.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Difende il centro del campo.</li><li>La velocità del tiro è fondamentale.</li><li>Non appesantire troppo il portiere avversario.</li><li>Usa il passaggio laterale per confondere il portiere.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Defiende el centro del campo.</li><li>La velocidad del disparo es clave.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>No cargues demasiado al portero enemigo.</li><li>Usa el pase lateral para confundir al portero.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Defends the center of the field.</li><li>The speed of the shot is key.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Don't burden the enemy goalkeeper too much.</li><li>Use the lateral pass to confuse the goalkeeper.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Défend le centre du terrain.</li><li>La vitesse du tir est essentielle.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Ne surchargez pas trop le gardien ennemi.</li><li>Utilisez la passe latérale pour confondre le gardien de but.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Difende il centro del campo.</li><li>La velocità del tiro è fondamentale.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Non appesantire troppo il portiere avversario.</li><li>Usa il passaggio laterale per confondere il portiere.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

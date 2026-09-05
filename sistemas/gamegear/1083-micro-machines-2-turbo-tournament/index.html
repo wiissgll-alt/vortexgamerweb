@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Desbloquea todos los vehículos.</li><li>Gana el torneo al instante.</li><li>La velocidad es máxima.</li><li>No hay errores de giro.</li><li>Pulsa Select para ganar carrera.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>La invencibilidad al choque.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Unlock all vehicles.</li><li>Win the tournament instantly.</li><li>The speed is maximum.</li><li>There are no turning errors.</li><li>Press Select to win the race.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Invincibility to shock.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Débloquez tous les véhicules.</li><li>Gagnez le tournoi instantanément.</li><li>La vitesse est maximale.</li><li>Il n'y a pas d'erreurs de tournage.</li><li>Appuyez sur Sélectionner pour gagner la course.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Invincibilité au choc.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Sblocca tutti i veicoli.</li><li>Vinci subito il torneo.</li><li>La velocità è massima.</li><li>Non ci sono errori di svolta.</li><li>Premi Seleziona per vincere la gara.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Invincibilità allo shock.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Desbloquea todos los vehículos.</li><li>Gana el torneo al instante.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La velocidad es máxima.</li><li>No hay errores de giro.</li><li>Pulsa Select para ganar carrera.</li><li>La invencibilidad al choque.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Unlock all vehicles.</li><li>Win the tournament instantly.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>The speed is maximum.</li><li>There are no turning errors.</li><li>Press Select to win the race.</li><li>Invincibility to shock.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Débloquez tous les véhicules.</li><li>Gagnez le tournoi instantanément.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La vitesse est maximale.</li><li>Il n'y a pas d'erreurs de tournage.</li><li>Appuyez sur Sélectionner pour gagner la course.</li><li>Invincibilité au choc.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Sblocca tutti i veicoli.</li><li>Vinci subito il torneo.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La velocità è massima.</li><li>Non ci sono errori di svolta.</li><li>Premi Seleziona per vincere la gara.</li><li>Invincibilità allo shock.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

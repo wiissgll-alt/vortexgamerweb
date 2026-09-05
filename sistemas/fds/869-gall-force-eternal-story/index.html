@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Los enemigos son derrotados con un toque.</li><li>Obtén el arma especial al inicio.</li><li>Supera niveles rápidamente con el truco de la nave.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>El ataque principal es infinito.</li><li>La invencibilidad se activa con A+B.</li><li>Pulsa Select para vidas infinitas.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Enemies are defeated with a touch.</li><li>Get the special weapon at the start.</li><li>Clear levels quickly with the ship trick.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>The main attack is infinite.</li><li>Invincibility is activated with A+B.</li><li>Press Select for infinite lives.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Les ennemis sont vaincus d'un simple toucher.</li><li>Obtenez l'arme spéciale au début.</li><li>Terminez les niveaux rapidement avec l'astuce du navire.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>L'attaque principale est infinie.</li><li>L'invincibilité est activée avec A+B.</li><li>Appuyez sur Select pour des vies infinies.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>I nemici vengono sconfitti con un tocco.</li><li>Ottieni l'arma speciale all'inizio.</li><li>Completa rapidamente i livelli con il trucco della nave.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>L'attacco principale è infinito.</li><li>L'invincibilità si attiva con A+B.</li><li>Premi Seleziona per vite infinite.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Los enemigos son derrotados con un toque.</li><li>Obtén el arma especial al inicio.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Supera niveles rápidamente con el truco de la nave.</li><li>El ataque principal es infinito.</li><li>La invencibilidad se activa con A+B.</li><li>Pulsa Select para vidas infinitas.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Enemies are defeated with a touch.</li><li>Get the special weapon at the start.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Clear levels quickly with the ship trick.</li><li>The main attack is infinite.</li><li>Invincibility is activated with A+B.</li><li>Press Select for infinite lives.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Les ennemis sont vaincus d'un simple toucher.</li><li>Obtenez l'arme spéciale au début.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Terminez les niveaux rapidement avec l'astuce du navire.</li><li>L'attaque principale est infinie.</li><li>L'invincibilité est activée avec A+B.</li><li>Appuyez sur Select pour des vies infinies.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>I nemici vengono sconfitti con un tocco.</li><li>Ottieni l'arma speciale all'inizio.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Completa rapidamente i livelli con il trucco della nave.</li><li>L'attacco principale è infinito.</li><li>L'invincibilità si attiva con A+B.</li><li>Premi Seleziona per vite infinite.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

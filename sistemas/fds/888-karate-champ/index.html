@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>El oponente no se mueve.</li><li>Gana el torneo con el truco.</li><li>Gana todos los puntos.</li><li>La velocidad de ataque es máxima.</li><li>Pulsa Select para ganar el combate.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>La invencibilidad es total.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>The opponent does not move.</li><li>Win the tournament with the trick.</li><li>Earn all the points.</li><li>Attack speed is maximum.</li><li>Press Select to win the fight.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Invincibility is total.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>L'adversaire ne bouge pas.</li><li>Gagnez le tournoi avec l'astuce.</li><li>Gagnez tous les points.</li><li>La vitesse d'attaque est maximale.</li><li>Appuyez sur Sélectionner pour gagner le combat.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>L'invincibilité est totale.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>L'avversario non si muove.</li><li>Vinci il torneo con il trucco.</li><li>Guadagna tutti i punti.</li><li>La velocità d'attacco è massima.</li><li>Premi Seleziona per vincere il combattimento.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>L'invincibilità è totale.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>El oponente no se mueve.</li><li>Gana el torneo con el truco.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Gana todos los puntos.</li><li>La velocidad de ataque es máxima.</li><li>Pulsa Select para ganar el combate.</li><li>La invencibilidad es total.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>The opponent does not move.</li><li>Win the tournament with the trick.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Earn all the points.</li><li>Attack speed is maximum.</li><li>Press Select to win the fight.</li><li>Invincibility is total.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>L'adversaire ne bouge pas.</li><li>Gagnez le tournoi avec l'astuce.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Gagnez tous les points.</li><li>La vitesse d'attaque est maximale.</li><li>Appuyez sur Sélectionner pour gagner le combat.</li><li>L'invincibilité est totale.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>L'avversario non si muove.</li><li>Vinci il torneo con il trucco.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Guadagna tutti i punti.</li><li>La velocità d'attacco è massima.</li><li>Premi Seleziona per vincere il combattimento.</li><li>L'invincibilità è totale.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

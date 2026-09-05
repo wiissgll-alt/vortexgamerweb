@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Busca todos los ítems en cada nivel.</li><li>Coordina a los personajes para resolver puzzles.</li><li>Los enemigos suelen tener patrones fijos.</li><li>Usa el salto para evitar trampas en el suelo.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Find all the items in each level.</li><li>Coordinate characters to solve puzzles.</li><li>Enemies usually have fixed patterns.</li><li>Use the jump to avoid traps on the ground.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Trouvez tous les éléments de chaque niveau.</li><li>Coordonnez les personnages pour résoudre des énigmes.</li><li>Les ennemis ont généralement des schémas fixes.</li><li>Utilisez le saut pour éviter les pièges au sol.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Trova tutti gli oggetti in ogni livello.</li><li>Coordina i personaggi per risolvere enigmi.</li><li>I nemici di solito hanno schemi fissi.</li><li>Usa il salto per evitare le trappole a terra.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Busca todos los ítems en cada nivel.</li><li>Coordina a los personajes para resolver puzzles.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Los enemigos suelen tener patrones fijos.</li><li>Usa el salto para evitar trampas en el suelo.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Find all the items in each level.</li><li>Coordinate characters to solve puzzles.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Enemies usually have fixed patterns.</li><li>Use the jump to avoid traps on the ground.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Trouvez tous les éléments de chaque niveau.</li><li>Coordonnez les personnages pour résoudre des énigmes.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Les ennemis ont généralement des schémas fixes.</li><li>Utilisez le saut pour éviter les pièges au sol.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Trova tutti gli oggetti in ogni livello.</li><li>Coordina i personaggi per risolvere enigmi.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>I nemici di solito hanno schemi fissi.</li><li>Usa il salto per evitare le trappole a terra.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

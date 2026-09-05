@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Empuja la bola con el botón de disparo.</li><li>Muévete hacia la portería enemiga rápidamente.</li><li>Presiona select para ajustar la dificultad.</li><li>Quédate frente a la bola para interceptarla.</li><li>Usa el turbo para ganar velocidad de giro.</li><li>Usa las paredes para rebotar la bola hacia la meta.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Push the ball with the fire button.</li><li>Move towards the enemy goal quickly.</li><li>Press select to adjust the difficulty.</li><li>Stay in front of the ball to intercept it.</li><li>Use the turbo to gain turning speed.</li><li>Use the walls to bounce the ball towards the goal.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Poussez la balle avec le bouton de tir.</li><li>Avancez rapidement vers le but ennemi.</li><li>Appuyez sur Sélectionner pour régler la difficulté.</li><li>Restez devant le ballon pour l'intercepter.</li><li>Utilisez le turbo pour gagner en vitesse de rotation.</li><li>Utilisez les murs pour faire rebondir le ballon vers le but.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Spingi la palla con il pulsante di fuoco.</li><li>Muoviti rapidamente verso l'obiettivo nemico.</li><li>Premi Seleziona per regolare la difficoltà.</li><li>Rimani davanti alla palla per intercettarla.</li><li>Usa il turbo per guadagnare velocità di svolta.</li><li>Usa le pareti per far rimbalzare la palla verso la porta.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Empuja la bola con el botón de disparo.</li><li>Muévete hacia la portería enemiga rápidamente.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Presiona select para ajustar la dificultad.</li><li>Quédate frente a la bola para interceptarla.</li><li>Usa el turbo para ganar velocidad de giro.</li><li>Usa las paredes para rebotar la bola hacia la meta.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Push the ball with the fire button.</li><li>Move towards the enemy goal quickly.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Press select to adjust the difficulty.</li><li>Stay in front of the ball to intercept it.</li><li>Use the turbo to gain turning speed.</li><li>Use the walls to bounce the ball towards the goal.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Poussez la balle avec le bouton de tir.</li><li>Avancez rapidement vers le but ennemi.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Appuyez sur Sélectionner pour régler la difficulté.</li><li>Restez devant le ballon pour l'intercepter.</li><li>Utilisez le turbo pour gagner en vitesse de rotation.</li><li>Utilisez les murs pour faire rebondir le ballon vers le but.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Spingi la palla con il pulsante di fuoco.</li><li>Muoviti rapidamente verso l'obiettivo nemico.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Premi Seleziona per regolare la difficoltà.</li><li>Rimani davanti alla palla per intercettarla.</li><li>Usa il turbo per guadagnare velocità di svolta.</li><li>Usa le pareti per far rimbalzare la palla verso la porta.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

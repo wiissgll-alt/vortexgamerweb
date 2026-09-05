@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Aprende a usar los pods de apoyo.</li><li>Gestiona tus mejoras.</li><li>Memoriza las oleadas.</li><li>No te quedes en el centro de la pantalla.</li><li>Shoot'em up exigente.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Learn how to use support pods.</li><li>Manage your improvements.</li><li>Memorize the waves.</li><li>Don't stay in the center of the screen.</li><li>Demanding shoot'em up.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Découvrez comment utiliser les modules de support.</li><li>Gérez vos améliorations.</li><li>Mémorisez les vagues.</li><li>Ne restez pas au centre de l'écran.</li><li>Exiger des shoot'em up.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Scopri come utilizzare i pod di supporto.</li><li>Gestisci i tuoi miglioramenti.</li><li>Memorizza le onde.</li><li>Non rimanere al centro dello schermo.</li><li>Sparatutto impegnativo.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Aprende a usar los pods de apoyo.</li><li>Gestiona tus mejoras.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Memoriza las oleadas.</li><li>No te quedes en el centro de la pantalla.</li><li>Shoot'em up exigente.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Learn how to use support pods.</li><li>Manage your improvements.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Memorize the waves.</li><li>Don't stay in the center of the screen.</li><li>Demanding shoot'em up.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Découvrez comment utiliser les modules de support.</li><li>Gérez vos améliorations.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Mémorisez les vagues.</li><li>Ne restez pas au centre de l'écran.</li><li>Exiger des shoot'em up.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Scopri come utilizzare i pod di supporto.</li><li>Gestisci i tuoi miglioramenti.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Memorizza le onde.</li><li>Non rimanere al centro dello schermo.</li><li>Sparatutto impegnativo.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

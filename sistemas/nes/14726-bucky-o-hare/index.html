@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Aprende el alcance de cada arma.</li><li>Cambia de personaje según la situación; cada uno tiene una habilidad única.</li><li>Los jefes requieren mucha movilidad.</li><li>Los niveles son muy desafiantes; mantén la concentración.</li><li>No dejes de disparar; la pantalla se limpia mejor así.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Learn the range of each weapon.</li><li>Change characters depending on the situation; each one has a unique ability.</li><li>Bosses require a lot of mobility.</li><li>The levels are very challenging; stay focused.</li><li>Don't stop shooting; The screen cleans better this way.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Apprenez la portée de chaque arme.</li><li>Changez de personnage en fonction de la situation ; chacun a une capacité unique.</li><li>Les patrons nécessitent beaucoup de mobilité.</li><li>Les niveaux sont très difficiles ; restez concentré.</li><li>N'arrêtez pas de tirer ; L'écran nettoie mieux de cette façon.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Impara la portata di ogni arma.</li><li>Cambia i personaggi a seconda della situazione; ognuno ha un'abilità unica.</li><li>I capi richiedono molta mobilità.</li><li>I livelli sono molto impegnativi; rimani concentrato.</li><li>Non smettere di sparare; Lo schermo si pulisce meglio in questo modo.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Aprende el alcance de cada arma.</li><li>Cambia de personaje según la situación; cada uno tiene una habilidad única.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Los jefes requieren mucha movilidad.</li><li>Los niveles son muy desafiantes; mantén la concentración.</li><li>No dejes de disparar; la pantalla se limpia mejor así.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Learn the range of each weapon.</li><li>Change characters depending on the situation; each one has a unique ability.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Bosses require a lot of mobility.</li><li>The levels are very challenging; stay focused.</li><li>Don't stop shooting; The screen cleans better this way.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Apprenez la portée de chaque arme.</li><li>Changez de personnage en fonction de la situation ; chacun a une capacité unique.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Les patrons nécessitent beaucoup de mobilité.</li><li>Les niveaux sont très difficiles ; restez concentré.</li><li>N'arrêtez pas de tirer ; L'écran nettoie mieux de cette façon.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Impara la portata di ogni arma.</li><li>Cambia i personaggi a seconda della situazione; ognuno ha un'abilità unica.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>I capi richiedono molta mobilità.</li><li>I livelli sono molto impegnativi; rimani concentrato.</li><li>Non smettere di sparare; Lo schermo si pulisce meglio in questo modo.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

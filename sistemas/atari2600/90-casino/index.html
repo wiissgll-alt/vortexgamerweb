@@ -158,10 +158,34 @@ nessun'altra combinazione farà guadagnare punti. I punti più alti possibili so
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Conoce las reglas de los juegos de cartas.</li><li>Gestiona tus fichas con lógica.</li><li>No busques el golpe de suerte excesivo.</li><li>Observa la frecuencia de los resultados.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Know the rules of card games.</li><li>Manage your chips logically.</li><li>Don't look for the excessive stroke of luck.</li><li>Observe the frequency of the results.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Connaître les règles des jeux de cartes.</li><li>Gérez vos jetons de manière logique.</li><li>Ne cherchez pas le coup de chance excessif.</li><li>Observez la fréquence des résultats.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Conoscere le regole dei giochi di carte.</li><li>Gestisci le tue chips in modo logico.</li><li>Non cercare l'eccessivo colpo di fortuna.</li><li>Osservare la frequenza dei risultati.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Conoce las reglas de los juegos de cartas.</li><li>Gestiona tus fichas con lógica.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>No busques el golpe de suerte excesivo.</li><li>Observa la frecuencia de los resultados.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Know the rules of card games.</li><li>Manage your chips logically.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Don't look for the excessive stroke of luck.</li><li>Observe the frequency of the results.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Connaître les règles des jeux de cartes.</li><li>Gérez vos jetons de manière logique.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Ne cherchez pas le coup de chance excessif.</li><li>Observez la fréquence des résultats.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Conoscere le regole dei giochi di carte.</li><li>Gestisci le tue chips in modo logico.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Non cercare l'eccessivo colpo di fortuna.</li><li>Osservare la frequenza dei risultati.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -179,6 +203,15 @@ nessun'altra combinazione farà guadagnare punti. I punti più alti possibili so
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

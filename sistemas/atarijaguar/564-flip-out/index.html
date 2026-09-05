@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Busca los huecos ocultos para más puntos.</li><li>Completa niveles rápido para desbloquear arte.</li><li>Gira todas las piezas antes de que acabe el tiempo.</li><li>Mantén la calma en niveles de alta velocidad.</li><li>Presiona select para ver la solución del puzzle.</li><li>Usa el botón de reinicio si te bloqueas.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Look for the hidden gaps for more points.</li><li>Complete levels quickly to unlock art.</li><li>Rotate all the pieces before time runs out.</li><li>Stay calm at high speed levels.</li><li>Press select to see the solution to the puzzle.</li><li>Use the reset button if you get stuck.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Recherchez les lacunes cachées pour plus de points.</li><li>Terminez les niveaux rapidement pour débloquer des œuvres d'art.</li><li>Faites pivoter toutes les pièces avant la fin du temps imparti.</li><li>Restez calme à des vitesses élevées.</li><li>Appuyez sur Sélectionner pour voir la solution du puzzle.</li><li>Utilisez le bouton de réinitialisation si vous êtes bloqué.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Cerca le lacune nascoste per più punti.</li><li>Completa rapidamente i livelli per sbloccare l'arte.</li><li>Ruotare tutti i pezzi prima che scada il tempo.</li><li>Mantieni la calma ad alta velocità.</li><li>Premi Seleziona per vedere la soluzione del puzzle.</li><li>Usa il pulsante di ripristino se rimani bloccato.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Busca los huecos ocultos para más puntos.</li><li>Completa niveles rápido para desbloquear arte.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Gira todas las piezas antes de que acabe el tiempo.</li><li>Mantén la calma en niveles de alta velocidad.</li><li>Presiona select para ver la solución del puzzle.</li><li>Usa el botón de reinicio si te bloqueas.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Look for the hidden gaps for more points.</li><li>Complete levels quickly to unlock art.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Rotate all the pieces before time runs out.</li><li>Stay calm at high speed levels.</li><li>Press select to see the solution to the puzzle.</li><li>Use the reset button if you get stuck.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Recherchez les lacunes cachées pour plus de points.</li><li>Terminez les niveaux rapidement pour débloquer des œuvres d'art.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Faites pivoter toutes les pièces avant la fin du temps imparti.</li><li>Restez calme à des vitesses élevées.</li><li>Appuyez sur Sélectionner pour voir la solution du puzzle.</li><li>Utilisez le bouton de réinitialisation si vous êtes bloqué.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Cerca le lacune nascoste per più punti.</li><li>Completa rapidamente i livelli per sbloccare l'arte.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Ruotare tutti i pezzi prima che scada il tempo.</li><li>Mantieni la calma ad alta velocità.</li><li>Premi Seleziona per vedere la soluzione del puzzle.</li><li>Usa il pulsante di ripristino se rimani bloccato.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

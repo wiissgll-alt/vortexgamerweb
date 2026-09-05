@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Atraviesa niveles volando con el ítem de la hoja.</li><li>El ataque de pelo se maximiza con el power-up secreto.</li><li>Las monedas ocultas reaparecen si pulsas Start.</li><li>Los jefes se vencen fácilmente con el ataque cargado.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>El modo invencibilidad se activa saltando en el pozo.</li><li>Pulsa Select para vidas infinitas.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Fly through levels with the leaf item.</li><li>The hair attack is maximized with the secret power-up.</li><li>Hidden coins reappear if you press Start.</li><li>Bosses are easily defeated with the charged attack.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Invincibility mode is activated by jumping into the pit.</li><li>Press Select for infinite lives.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Parcourez les niveaux avec l'objet feuille.</li><li>L'attaque des cheveux est maximisée grâce au power-up secret.</li><li>Les pièces cachées réapparaissent si vous appuyez sur Démarrer.</li><li>Les boss sont facilement vaincus avec l'attaque chargée.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Le mode Invincibilité est activé en sautant dans la fosse.</li><li>Appuyez sur Select pour des vies infinies.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Vola attraverso i livelli con l'oggetto foglia.</li><li>L'attacco dei capelli è massimizzato con il potenziamento segreto.</li><li>Le monete nascoste riappaiono se premi Start.</li><li>I boss vengono facilmente sconfitti con l'attacco caricato.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>La modalità Invincibilità si attiva saltando nella fossa.</li><li>Premi Seleziona per vite infinite.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Atraviesa niveles volando con el ítem de la hoja.</li><li>El ataque de pelo se maximiza con el power-up secreto.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Las monedas ocultas reaparecen si pulsas Start.</li><li>Los jefes se vencen fácilmente con el ataque cargado.</li><li>El modo invencibilidad se activa saltando en el pozo.</li><li>Pulsa Select para vidas infinitas.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Fly through levels with the leaf item.</li><li>The hair attack is maximized with the secret power-up.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Hidden coins reappear if you press Start.</li><li>Bosses are easily defeated with the charged attack.</li><li>Invincibility mode is activated by jumping into the pit.</li><li>Press Select for infinite lives.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Parcourez les niveaux avec l'objet feuille.</li><li>L'attaque des cheveux est maximisée grâce au power-up secret.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Les pièces cachées réapparaissent si vous appuyez sur Démarrer.</li><li>Les boss sont facilement vaincus avec l'attaque chargée.</li><li>Le mode Invincibilité est activé en sautant dans la fosse.</li><li>Appuyez sur Select pour des vies infinies.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Vola attraverso i livelli con l'oggetto foglia.</li><li>L'attacco dei capelli è massimizzato con il potenziamento segreto.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Le monete nascoste riappaiono se premi Start.</li><li>I boss vengono facilmente sconfitti con l'attacco caricato.</li><li>La modalità Invincibilità si attiva saltando nella fossa.</li><li>Premi Seleziona per vite infinite.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>El control del salto es errático, ten cuidado con las caídas.</li><li>Es un juego con muchos fallos técnicos; sé paciente.</li><li>La dificultad radica más en los fallos del juego que en los enemigos.</li><li>No intentes explorar zonas que parecen rotas.</li><li>Usa la capacidad de cambio de personaje.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>The jump control is erratic, be careful with falls.</li><li>It is a game with many technical errors; be patient.</li><li>The difficulty lies more in the game's flaws than in the enemies.</li><li>Don't try to explore areas that look broken.</li><li>Use the character change ability.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Le contrôle des sauts est irrégulier, soyez prudent en cas de chute.</li><li>C'est un jeu avec de nombreuses erreurs techniques ; sois patient.</li><li>La difficulté réside davantage dans les défauts du jeu que dans les ennemis.</li><li>N'essayez pas d'explorer des zones qui semblent brisées.</li><li>Utilisez la capacité de changement de personnage.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Il controllo del salto è irregolare, fai attenzione alle cadute.</li><li>E' una partita con tanti errori tecnici; essere pazientare.</li><li>La difficoltà sta più nei difetti del gioco che nei nemici.</li><li>Non cercare di esplorare aree che sembrano rotte.</li><li>Usa l'abilità di cambiare personaggio.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>El control del salto es errático, ten cuidado con las caídas.</li><li>Es un juego con muchos fallos técnicos; sé paciente.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La dificultad radica más en los fallos del juego que en los enemigos.</li><li>No intentes explorar zonas que parecen rotas.</li><li>Usa la capacidad de cambio de personaje.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>The jump control is erratic, be careful with falls.</li><li>It is a game with many technical errors; be patient.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>The difficulty lies more in the game's flaws than in the enemies.</li><li>Don't try to explore areas that look broken.</li><li>Use the character change ability.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Le contrôle des sauts est irrégulier, soyez prudent en cas de chute.</li><li>C'est un jeu avec de nombreuses erreurs techniques ; sois patient.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La difficulté réside davantage dans les défauts du jeu que dans les ennemis.</li><li>N'essayez pas d'explorer des zones qui semblent brisées.</li><li>Utilisez la capacité de changement de personnage.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Il controllo del salto è irregolare, fai attenzione alle cadute.</li><li>E' una partita con tanti errori tecnici; essere pazientare.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La difficoltà sta più nei difetti del gioco che nei nemici.</li><li>Non cercare di esplorare aree che sembrano rotte.</li><li>Usa l'abilità di cambiare personaggio.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

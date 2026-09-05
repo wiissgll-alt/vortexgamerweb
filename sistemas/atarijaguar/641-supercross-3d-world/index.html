@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>El peso del piloto afecta al aterrizaje.</li><li>La trazada interior gana carreras.</li><li>Mantén la moto derecha en el aire.</li><li>No saltes en paralelo a las rampas.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>The pilot's weight affects landing.</li><li>The inside track wins races.</li><li>Keep the bike upright in the air.</li><li>Do not jump parallel to the ramps.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Le poids du pilote affecte l'atterrissage.</li><li>La piste intérieure gagne les courses.</li><li>Gardez le vélo droit dans les airs.</li><li>Ne sautez pas parallèlement aux rampes.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Il peso del pilota influisce sull'atterraggio.</li><li>La pista interna vince le gare.</li><li>Tieni la bici in posizione verticale in aria.</li><li>Non saltare parallelamente alle rampe.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>El peso del piloto afecta al aterrizaje.</li><li>La trazada interior gana carreras.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Mantén la moto derecha en el aire.</li><li>No saltes en paralelo a las rampas.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>The pilot's weight affects landing.</li><li>The inside track wins races.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Keep the bike upright in the air.</li><li>Do not jump parallel to the ramps.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Le poids du pilote affecte l'atterrissage.</li><li>La piste intérieure gagne les courses.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Gardez le vélo droit dans les airs.</li><li>Ne sautez pas parallèlement aux rampes.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Il peso del pilota influisce sull'atterraggio.</li><li>La pista interna vince le gare.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Tieni la bici in posizione verticale in aria.</li><li>Non saltare parallelamente alle rampe.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

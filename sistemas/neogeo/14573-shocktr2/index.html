@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Aprende cuándo disparar y cuándo rodar para esquivar.</li><li>El ataque especial de cada personaje es vital contra jefes.</li><li>La variedad de armas es enorme; elige la que mejor se adapte al nivel.</li><li>No te quedes estático; el movimiento es vida.</li><li>Usa los vehículos siempre que puedas.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Learn when to shoot and when to roll to dodge.</li><li>Each character's special attack is vital against bosses.</li><li>The variety of weapons is enormous; Choose the one that best suits the level.</li><li>Don't stay static; movement is life.</li><li>Use vehicles whenever you can.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Apprenez quand tirer et quand rouler pour esquiver.</li><li>L'attaque spéciale de chaque personnage est vitale contre les boss.</li><li>La variété des armes est énorme ; Choisissez celui qui correspond le mieux au niveau.</li><li>Ne restez pas statique ; le mouvement, c'est la vie.</li><li>Utilisez des véhicules chaque fois que vous le pouvez.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Impara quando sparare e quando rotolare per schivare.</li><li>L'attacco speciale di ogni personaggio è vitale contro i boss.</li><li>La varietà di armi è enorme; Scegli quello più adatto al livello.</li><li>Non rimanere statico; il movimento è vita.</li><li>Usa i veicoli ogni volta che puoi.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Aprende cuándo disparar y cuándo rodar para esquivar.</li><li>El ataque especial de cada personaje es vital contra jefes.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La variedad de armas es enorme; elige la que mejor se adapte al nivel.</li><li>No te quedes estático; el movimiento es vida.</li><li>Usa los vehículos siempre que puedas.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Learn when to shoot and when to roll to dodge.</li><li>Each character's special attack is vital against bosses.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>The variety of weapons is enormous; Choose the one that best suits the level.</li><li>Don't stay static; movement is life.</li><li>Use vehicles whenever you can.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Apprenez quand tirer et quand rouler pour esquiver.</li><li>L'attaque spéciale de chaque personnage est vitale contre les boss.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La variété des armes est énorme ; Choisissez celui qui correspond le mieux au niveau.</li><li>Ne restez pas statique ; le mouvement, c'est la vie.</li><li>Utilisez des véhicules chaque fois que vous le pouvez.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Impara quando sparare e quando rotolare per schivare.</li><li>L'attacco speciale di ogni personaggio è vitale contro i boss.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La varietà di armi è enorme; Scegli quello più adatto al livello.</li><li>Non rimanere statico; il movimento è vita.</li><li>Usa i veicoli ogni volta che puoi.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

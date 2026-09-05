@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Choca contra otros coches para sacarlos de la pista.</li><li>No pierdas velocidad en las zonas de agua.</li><li>Recoge los *power-ups* de puntuación.</li><li>Salta los abismos calculando bien la distancia.</li><li>Si el coche se desgasta, ten cuidado.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Crash into other cars to knock them off the track.</li><li>Don't lose speed in water areas.</li><li>Collect scoring *power-ups*.</li><li>Jump over chasms by calculating the distance well.</li><li>If the car wears out, be careful.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Écrasez d'autres voitures pour les faire sortir de la piste.</li><li>Ne perdez pas de vitesse dans les zones aquatiques.</li><li>Collectez des *power-ups*.</li><li>Sautez par-dessus les gouffres en calculant bien la distance.</li><li>Si la voiture s'use, soyez prudent.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Schiantati contro altre auto per buttarle fuori pista.</li><li>Non perdere velocità nelle zone acquatiche.</li><li>Raccogli il punteggio *power-up*.</li><li>Salta gli abissi calcolando bene la distanza.</li><li>Se l'auto si consuma, fai attenzione.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Choca contra otros coches para sacarlos de la pista.</li><li>No pierdas velocidad en las zonas de agua.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Recoge los *power-ups* de puntuación.</li><li>Salta los abismos calculando bien la distancia.</li><li>Si el coche se desgasta, ten cuidado.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Crash into other cars to knock them off the track.</li><li>Don't lose speed in water areas.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Collect scoring *power-ups*.</li><li>Jump over chasms by calculating the distance well.</li><li>If the car wears out, be careful.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Écrasez d'autres voitures pour les faire sortir de la piste.</li><li>Ne perdez pas de vitesse dans les zones aquatiques.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Collectez des *power-ups*.</li><li>Sautez par-dessus les gouffres en calculant bien la distance.</li><li>Si la voiture s'use, soyez prudent.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Schiantati contro altre auto per buttarle fuori pista.</li><li>Non perdere velocità nelle zone acquatiche.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Raccogli il punteggio *power-up*.</li><li>Salta gli abissi calcolando bene la distanza.</li><li>Se l'auto si consuma, fai attenzione.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

@@ -72,10 +72,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Destruye los OVNIs para puntos extra.</li><li>Dispara a los asteroides grandes primero.</li><li>Mantén el botón de disparo presionado.</li><li>Presiona reset para reiniciar la velocidad de los asteroides.</li><li>Quédate en el centro para disparar a todo.</li><li>Usa el modo hiperspacio solo en emergencias.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Destroy the UFOs for extra points.</li><li>Shoot the big asteroids first.</li><li>Keep the fire button pressed.</li><li>Press reset to reset the asteroids speed.</li><li>Stay in the center to shoot everything.</li><li>Use hyperspace mode only in emergencies.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Détruisez les ovnis pour des points supplémentaires.</li><li>Tirez d'abord sur les gros astéroïdes.</li><li>Maintenez le bouton de tir enfoncé.</li><li>Appuyez sur réinitialiser pour réinitialiser la vitesse des astéroïdes.</li><li>Restez au centre pour tout filmer.</li><li>Utilisez le mode hyperespace uniquement en cas d'urgence.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Distruggi gli UFO per ottenere punti extra.</li><li>Spara prima ai grandi asteroidi.</li><li>Tieni premuto il pulsante di fuoco.</li><li>Premi reset per ripristinare la velocità degli asteroidi.</li><li>Rimani al centro per riprendere tutto.</li><li>Usa la modalità iperspazio solo in caso di emergenza.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Destruye los OVNIs para puntos extra.</li><li>Dispara a los asteroides grandes primero.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Mantén el botón de disparo presionado.</li><li>Presiona reset para reiniciar la velocidad de los asteroides.</li><li>Quédate en el centro para disparar a todo.</li><li>Usa el modo hiperspacio solo en emergencias.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Destroy the UFOs for extra points.</li><li>Shoot the big asteroids first.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Keep the fire button pressed.</li><li>Press reset to reset the asteroids speed.</li><li>Stay in the center to shoot everything.</li><li>Use hyperspace mode only in emergencies.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Détruisez les ovnis pour des points supplémentaires.</li><li>Tirez d'abord sur les gros astéroïdes.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Maintenez le bouton de tir enfoncé.</li><li>Appuyez sur réinitialiser pour réinitialiser la vitesse des astéroïdes.</li><li>Restez au centre pour tout filmer.</li><li>Utilisez le mode hyperespace uniquement en cas d'urgence.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Distruggi gli UFO per ottenere punti extra.</li><li>Spara prima ai grandi asteroidi.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Tieni premuto il pulsante di fuoco.</li><li>Premi reset per ripristinare la velocità degli asteroidi.</li><li>Rimani al centro per riprendere tutto.</li><li>Usa la modalità iperspazio solo in caso di emergenza.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -93,6 +117,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

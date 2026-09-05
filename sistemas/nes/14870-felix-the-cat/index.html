@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>El diseño de nivel es plataformero clásico.</li><li>Mejora el nivel de tu bolsa recogiendo iconos.</li><li>Memoriza los patrones de los jefes.</li><li>No te arriesgues demasiado.</li><li>Tu bolsa te da distintos poderes; úsalos bien.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>The level design is classic platformer.</li><li>Improve your bag level by collecting icons.</li><li>Memorize boss patterns.</li><li>Don't take too much risk.</li><li>Your bag gives you different powers; use them well.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>La conception des niveaux est un jeu de plateforme classique.</li><li>Améliorez le niveau de votre sac en collectant des icônes.</li><li>Mémorisez les modèles de patron.</li><li>Ne prenez pas trop de risques.</li><li>Votre sac vous donne différents pouvoirs ; utilisez-les bien.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Il design dei livelli è quello classico del platform.</li><li>Migliora il livello della tua borsa raccogliendo icone.</li><li>Memorizza gli schemi dei boss.</li><li>Non correre troppi rischi.</li><li>La tua borsa ti dà poteri diversi; usali bene.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>El diseño de nivel es plataformero clásico.</li><li>Mejora el nivel de tu bolsa recogiendo iconos.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Memoriza los patrones de los jefes.</li><li>No te arriesgues demasiado.</li><li>Tu bolsa te da distintos poderes; úsalos bien.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>The level design is classic platformer.</li><li>Improve your bag level by collecting icons.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Memorize boss patterns.</li><li>Don't take too much risk.</li><li>Your bag gives you different powers; use them well.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>La conception des niveaux est un jeu de plateforme classique.</li><li>Améliorez le niveau de votre sac en collectant des icônes.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Mémorisez les modèles de patron.</li><li>Ne prenez pas trop de risques.</li><li>Votre sac vous donne différents pouvoirs ; utilisez-les bien.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Il design dei livelli è quello classico del platform.</li><li>Migliora il livello della tua borsa raccogliendo icone.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Memorizza gli schemi dei boss.</li><li>Non correre troppi rischi.</li><li>La tua borsa ti dà poteri diversi; usali bene.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

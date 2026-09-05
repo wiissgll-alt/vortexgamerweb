@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Busca las mejoras de ataque.</li><li>Combate cuerpo a cuerpo; aprende el tiempo de golpeo.</li><li>La salud es muy importante, no la pierdas tontamente.</li><li>Los jefes requieren paciencia y bloqueo.</li><li>No te rodees de enemigos; muévete siempre.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Look for attack upgrades.</li><li>Hand-to-hand combat; learn the timing of hitting.</li><li>Health is very important, don't lose it foolishly.</li><li>Bosses require patience and blocking.</li><li>Don't surround yourself with enemies; always move.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Recherchez les améliorations d'attaque.</li><li>Combat au corps à corps ; apprendre le moment où il faut frapper.</li><li>La santé est très importante, ne la perdez pas bêtement.</li><li>Les patrons demandent de la patience et du blocage.</li><li>Ne vous entourez pas d'ennemis ; toujours bouger.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Cerca potenziamenti di attacco.</li><li>Combattimento corpo a corpo; imparare i tempi di colpire.</li><li>La salute è molto importante, non perdetela stupidamente.</li><li>I boss richiedono pazienza e blocco.</li><li>Non circondarti di nemici; muoviti sempre.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Busca las mejoras de ataque.</li><li>Combate cuerpo a cuerpo; aprende el tiempo de golpeo.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La salud es muy importante, no la pierdas tontamente.</li><li>Los jefes requieren paciencia y bloqueo.</li><li>No te rodees de enemigos; muévete siempre.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Look for attack upgrades.</li><li>Hand-to-hand combat; learn the timing of hitting.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Health is very important, don't lose it foolishly.</li><li>Bosses require patience and blocking.</li><li>Don't surround yourself with enemies; always move.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Recherchez les améliorations d'attaque.</li><li>Combat au corps à corps ; apprendre le moment où il faut frapper.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La santé est très importante, ne la perdez pas bêtement.</li><li>Les patrons demandent de la patience et du blocage.</li><li>Ne vous entourez pas d'ennemis ; toujours bouger.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Cerca potenziamenti di attacco.</li><li>Combattimento corpo a corpo; imparare i tempi di colpire.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La salute è molto importante, non perdetela stupidamente.</li><li>I boss richiedono pazienza e blocco.</li><li>Non circondarti di nemici; muoviti sempre.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

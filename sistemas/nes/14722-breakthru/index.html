@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>El *timing* en los saltos es estricto.</li><li>El salto es la mecánica principal; úsalo para saltar abismos y enemigos.</li><li>Mantén el botón de aceleración cuando estés en terreno seguro.</li><li>Memoriza dónde salen los enemigos.</li><li>No choques contra otros coches; es una muerte instantánea.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>The *timing* on the jumps is strict.</li><li>Jumping is the main mechanic; use it to jump chasms and enemies.</li><li>Hold the acceleration button when you are on safe ground.</li><li>Memorize where the enemies come out.</li><li>Don't crash into other cars; It is instant death.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Le *timing* sur les sauts est strict.</li><li>Le saut est le mécanisme principal ; utilisez-le pour sauter des gouffres et des ennemis.</li><li>Maintenez le bouton d'accélération lorsque vous êtes sur un terrain sûr.</li><li>Mémorisez d'où sortent les ennemis.</li><li>Ne vous écrasez pas contre d'autres voitures ; C'est une mort instantanée.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Il *tempismo* dei salti è rigoroso.</li><li>Saltare è la meccanica principale; usalo per saltare abissi e nemici.</li><li>Tieni premuto il pulsante di accelerazione quando sei su un terreno sicuro.</li><li>Memorizza dove escono i nemici.</li><li>Non scontrarti con altre auto; È la morte istantanea.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>El *timing* en los saltos es estricto.</li><li>El salto es la mecánica principal; úsalo para saltar abismos y enemigos.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Mantén el botón de aceleración cuando estés en terreno seguro.</li><li>Memoriza dónde salen los enemigos.</li><li>No choques contra otros coches; es una muerte instantánea.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>The *timing* on the jumps is strict.</li><li>Jumping is the main mechanic; use it to jump chasms and enemies.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Hold the acceleration button when you are on safe ground.</li><li>Memorize where the enemies come out.</li><li>Don't crash into other cars; It is instant death.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Le *timing* sur les sauts est strict.</li><li>Le saut est le mécanisme principal ; utilisez-le pour sauter des gouffres et des ennemis.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Maintenez le bouton d'accélération lorsque vous êtes sur un terrain sûr.</li><li>Mémorisez d'où sortent les ennemis.</li><li>Ne vous écrasez pas contre d'autres voitures ; C'est une mort instantanée.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Il *tempismo* dei salti è rigoroso.</li><li>Saltare è la meccanica principale; usalo per saltare abissi e nemici.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Tieni premuto il pulsante di accelerazione quando sei su un terreno sicuro.</li><li>Memorizza dove escono i nemici.</li><li>Non scontrarti con altre auto; È la morte istantanea.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

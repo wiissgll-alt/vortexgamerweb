@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Atraviesa paredes usando el dash al final de cada nivel.</li><li>La poción de vida se rellena sola cada 3 niveles.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Consigue llaves doradas infinitas eliminando jefes específicos.</li><li>El escudo de energía es infinito si presionas B+Abajo.</li><li>El modo invencibilidad se activa con el código Konami.</li><li>Pulsa Select para obtener vidas infinitas en el mapa.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Go through walls using the dash at the end of each level.</li><li>The life potion refills itself every 3 levels.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Earn infinite golden keys by eliminating specific bosses.</li><li>The energy shield is infinite if you press B+Down.</li><li>Invincibility mode is activated with the Konami code.</li><li>Press Select to get infinite lives on the map.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Traversez les murs en utilisant le tiret à la fin de chaque niveau.</li><li>La potion de vie se remplit tous les 3 niveaux.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Gagnez des clés d'or infinies en éliminant des boss spécifiques.</li><li>Le bouclier énergétique est infini si vous appuyez sur B+Down.</li><li>Le mode Invincibilité s'active avec le code Konami.</li><li>Appuyez sur Sélectionner pour obtenir des vies infinies sur la carte.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Attraversa i muri usando il trattino alla fine di ogni livello.</li><li>La pozione della vita si ricarica ogni 3 livelli.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Guadagna infinite chiavi d'oro eliminando boss specifici.</li><li>Lo scudo energetico è infinito se premi B+Giù.</li><li>La modalità Invincibilità viene attivata con il codice Konami.</li><li>Premi Seleziona per ottenere vite infinite sulla mappa.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Atraviesa paredes usando el dash al final de cada nivel.</li><li>La poción de vida se rellena sola cada 3 niveles.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Consigue llaves doradas infinitas eliminando jefes específicos.</li><li>El escudo de energía es infinito si presionas B+Abajo.</li><li>El modo invencibilidad se activa con el código Konami.</li><li>Pulsa Select para obtener vidas infinitas en el mapa.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Go through walls using the dash at the end of each level.</li><li>The life potion refills itself every 3 levels.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Earn infinite golden keys by eliminating specific bosses.</li><li>The energy shield is infinite if you press B+Down.</li><li>Invincibility mode is activated with the Konami code.</li><li>Press Select to get infinite lives on the map.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Traversez les murs en utilisant le tiret à la fin de chaque niveau.</li><li>La potion de vie se remplit tous les 3 niveaux.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Gagnez des clés d'or infinies en éliminant des boss spécifiques.</li><li>Le bouclier énergétique est infini si vous appuyez sur B+Down.</li><li>Le mode Invincibilité s'active avec le code Konami.</li><li>Appuyez sur Sélectionner pour obtenir des vies infinies sur la carte.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Attraversa i muri usando il trattino alla fine di ogni livello.</li><li>La pozione della vita si ricarica ogni 3 livelli.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Guadagna infinite chiavi d'oro eliminando boss specifici.</li><li>Lo scudo energetico è infinito se premi B+Giù.</li><li>La modalità Invincibilità viene attivata con il codice Konami.</li><li>Premi Seleziona per ottenere vite infinite sulla mappa.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

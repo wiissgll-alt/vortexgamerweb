@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Atrapa la bola y lánzala hacia el castillo enemigo.</li><li>Mantén el escudo pegado a tu castillo todo el tiempo.</li><li>Mantén el escudo pequeño para más velocidad.</li><li>Mueve el escudo siguiendo el movimiento de la bola.</li><li>Presiona el botón para lanzar un ataque rápido.</li><li>Usa las paredes laterales para rebotar la bola hacia atrás.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Catch the ball and throw it towards the enemy castle.</li><li>Keep the shield attached to your castle at all times.</li><li>Keep the shield small for more speed.</li><li>Move the shield following the movement of the ball.</li><li>Press the button to launch a quick attack.</li><li>Use the side walls to bounce the ball back.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Attrapez la balle et lancez-la vers le château ennemi.</li><li>Gardez le bouclier attaché à votre château à tout moment.</li><li>Gardez le bouclier petit pour plus de vitesse.</li><li>Déplacez le bouclier en suivant le mouvement de la balle.</li><li>Appuyez sur le bouton pour lancer une attaque rapide.</li><li>Utilisez les parois latérales pour faire rebondir la balle.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Prendi la palla e lanciala verso il castello nemico.</li><li>Mantieni lo scudo sempre attaccato al tuo castello.</li><li>Mantieni lo scudo piccolo per una maggiore velocità.</li><li>Muovi lo scudo seguendo il movimento della palla.</li><li>Premi il pulsante per lanciare un attacco rapido.</li><li>Usa le pareti laterali per far rimbalzare la palla.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Atrapa la bola y lánzala hacia el castillo enemigo.</li><li>Mantén el escudo pegado a tu castillo todo el tiempo.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Mantén el escudo pequeño para más velocidad.</li><li>Mueve el escudo siguiendo el movimiento de la bola.</li><li>Presiona el botón para lanzar un ataque rápido.</li><li>Usa las paredes laterales para rebotar la bola hacia atrás.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Catch the ball and throw it towards the enemy castle.</li><li>Keep the shield attached to your castle at all times.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Keep the shield small for more speed.</li><li>Move the shield following the movement of the ball.</li><li>Press the button to launch a quick attack.</li><li>Use the side walls to bounce the ball back.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Attrapez la balle et lancez-la vers le château ennemi.</li><li>Gardez le bouclier attaché à votre château à tout moment.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Gardez le bouclier petit pour plus de vitesse.</li><li>Déplacez le bouclier en suivant le mouvement de la balle.</li><li>Appuyez sur le bouton pour lancer une attaque rapide.</li><li>Utilisez les parois latérales pour faire rebondir la balle.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Prendi la palla e lanciala verso il castello nemico.</li><li>Mantieni lo scudo sempre attaccato al tuo castello.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Mantieni lo scudo piccolo per una maggiore velocità.</li><li>Muovi lo scudo seguendo il movimento della palla.</li><li>Premi il pulsante per lanciare un attacco rapido.</li><li>Usa le pareti laterali per far rimbalzare la palla.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

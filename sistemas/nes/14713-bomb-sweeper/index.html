@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Asegura las zonas antes de intentar desactivar la bomba.</li><li>La planificación es todo; no te muevas sin mirar el camino.</li><li>La velocidad aumenta, no te confíes en los niveles avanzados.</li><li>Memoriza el patrón de los enemigos; no son aleatorios.</li><li>Usa los obstáculos a tu favor para cortar el paso a los enemigos.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Secure areas before attempting to defuse the bomb.</li><li>Planning is everything; Don't move without looking at the road.</li><li>The speed increases, do not trust yourself in the advanced levels.</li><li>Memorize the pattern of enemies; They are not random.</li><li>Use obstacles to your advantage to cut off enemies.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Sécurisez les zones avant de tenter de désamorcer la bombe.</li><li>La planification est primordiale ; Ne bougez pas sans regarder la route.</li><li>La vitesse augmente, ne vous fiez pas aux niveaux avancés.</li><li>Mémorisez le schéma des ennemis ; Ils ne sont pas aléatoires.</li><li>Utilisez les obstacles à votre avantage pour couper les ennemis.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Proteggere le aree prima di tentare di disinnescare la bomba.</li><li>La pianificazione è tutto; Non muoverti senza guardare la strada.</li><li>La velocità aumenta, non fidarti di te stesso nei livelli avanzati.</li><li>Memorizza lo schema dei nemici; Non sono casuali.</li><li>Usa gli ostacoli a tuo vantaggio per eliminare i nemici.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Asegura las zonas antes de intentar desactivar la bomba.</li><li>La planificación es todo; no te muevas sin mirar el camino.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La velocidad aumenta, no te confíes en los niveles avanzados.</li><li>Memoriza el patrón de los enemigos; no son aleatorios.</li><li>Usa los obstáculos a tu favor para cortar el paso a los enemigos.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Secure areas before attempting to defuse the bomb.</li><li>Planning is everything; Don't move without looking at the road.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>The speed increases, do not trust yourself in the advanced levels.</li><li>Memorize the pattern of enemies; They are not random.</li><li>Use obstacles to your advantage to cut off enemies.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Sécurisez les zones avant de tenter de désamorcer la bombe.</li><li>La planification est primordiale ; Ne bougez pas sans regarder la route.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La vitesse augmente, ne vous fiez pas aux niveaux avancés.</li><li>Mémorisez le schéma des ennemis ; Ils ne sont pas aléatoires.</li><li>Utilisez les obstacles à votre avantage pour couper les ennemis.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Proteggere le aree prima di tentare di disinnescare la bomba.</li><li>La pianificazione è tutto; Non muoverti senza guardare la strada.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La velocità aumenta, non fidarti di te stesso nei livelli avanzati.</li><li>Memorizza lo schema dei nemici; Non sono casuali.</li><li>Usa gli ostacoli a tuo vantaggio per eliminare i nemici.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

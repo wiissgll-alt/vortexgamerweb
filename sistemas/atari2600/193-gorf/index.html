@@ -88,10 +88,34 @@ il quarto e ultimo livello è ancora simile al primo, con alcune differenze fond
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>El disparo continuo es vital en la fase final.</li><li>Memoriza los patrones de cada nivel (son cíclicos).</li><li>No te quedes cerca de los bordes.</li><li>Prioriza las naves que disparan misiles guiados.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Continuous shooting is vital in the final phase.</li><li>Memorize the patterns of each level (they are cyclical).</li><li>Don't stay close to the edges.</li><li>Prioritize ships that fire guided missiles.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>La prise de vue en continu est vitale dans la phase finale.</li><li>Mémorisez les schémas de chaque niveau (ils sont cycliques).</li><li>Ne restez pas près des bords.</li><li>Donnez la priorité aux navires qui tirent des missiles guidés.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Lo scatto continuo è vitale nella fase finale.</li><li>Memorizza gli schemi di ogni livello (sono ciclici).</li><li>Non stare vicino ai bordi.</li><li>Dai priorità alle navi che lanciano missili guidati.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>El disparo continuo es vital en la fase final.</li><li>Memoriza los patrones de cada nivel (son cíclicos).</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>No te quedes cerca de los bordes.</li><li>Prioriza las naves que disparan misiles guiados.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Continuous shooting is vital in the final phase.</li><li>Memorize the patterns of each level (they are cyclical).</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Don't stay close to the edges.</li><li>Prioritize ships that fire guided missiles.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>La prise de vue en continu est vitale dans la phase finale.</li><li>Mémorisez les schémas de chaque niveau (ils sont cycliques).</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Ne restez pas près des bords.</li><li>Donnez la priorité aux navires qui tirent des missiles guidés.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Lo scatto continuo è vitale nella fase finale.</li><li>Memorizza gli schemi di ogni livello (sono ciclici).</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Non stare vicino ai bordi.</li><li>Dai priorità alle navi che lanciano missili guidati.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -109,6 +133,15 @@ il quarto e ultimo livello è ancora simile al primo, con alcune differenze fond
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

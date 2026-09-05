@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>El codazo es el mejor movimiento; domínalo.</li><li>El cooperativo facilita mucho las cosas.</li><li>Lanza a los enemigos contra peligros.</li><li>No te dejes acorralar por dos enemigos a la vez.</li><li>Usa armas del suelo para ganar ventaja.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>The nudge is the best move; master it.</li><li>The cooperative makes things a lot easier.</li><li>Throw enemies into danger.</li><li>Don't let yourself be cornered by two enemies at the same time.</li><li>Use ground weapons to gain the advantage.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Le coup de pouce est la meilleure décision ; maîtrisez-le.</li><li>La coopérative rend les choses beaucoup plus faciles.</li><li>Jetez les ennemis en danger.</li><li>Ne vous laissez pas acculer par deux ennemis en même temps.</li><li>Utilisez des armes au sol pour prendre l'avantage.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>La spinta è la mossa migliore; padroneggiarlo.</li><li>La cooperativa rende le cose molto più facili.</li><li>Getta i nemici in pericolo.</li><li>Non lasciarti mettere alle strette da due nemici allo stesso tempo.</li><li>Usa le armi terrestri per ottenere il vantaggio.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>El codazo es el mejor movimiento; domínalo.</li><li>El cooperativo facilita mucho las cosas.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Lanza a los enemigos contra peligros.</li><li>No te dejes acorralar por dos enemigos a la vez.</li><li>Usa armas del suelo para ganar ventaja.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>The nudge is the best move; master it.</li><li>The cooperative makes things a lot easier.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Throw enemies into danger.</li><li>Don't let yourself be cornered by two enemies at the same time.</li><li>Use ground weapons to gain the advantage.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Le coup de pouce est la meilleure décision ; maîtrisez-le.</li><li>La coopérative rend les choses beaucoup plus faciles.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Jetez les ennemis en danger.</li><li>Ne vous laissez pas acculer par deux ennemis en même temps.</li><li>Utilisez des armes au sol pour prendre l'avantage.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>La spinta è la mossa migliore; padroneggiarlo.</li><li>La cooperativa rende le cose molto più facili.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Getta i nemici in pericolo.</li><li>Non lasciarti mettere alle strette da due nemici allo stesso tempo.</li><li>Usa le armi terrestri per ottenere il vantaggio.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

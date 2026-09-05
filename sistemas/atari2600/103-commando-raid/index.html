@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Céntrate en los enemigos con lanzacohetes.</li><li>Defiende tu posición contra oleadas.</li><li>Gestiona tus vidas con precaución.</li><li>No desperdicies munición.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Focus on enemies with rocket launchers.</li><li>Defend your position against waves.</li><li>Manage your lives with caution.</li><li>Don't waste ammo.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Concentrez-vous sur les ennemis avec des lance-roquettes.</li><li>Défendez votre position contre les vagues.</li><li>Gérez votre vie avec prudence.</li><li>Ne gaspillez pas de munitions.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Concentrati sui nemici con i lanciarazzi.</li><li>Difendi la tua posizione dalle onde.</li><li>Gestite le vostre vite con cautela.</li><li>Non sprecare munizioni.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Céntrate en los enemigos con lanzacohetes.</li><li>Defiende tu posición contra oleadas.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Gestiona tus vidas con precaución.</li><li>No desperdicies munición.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Focus on enemies with rocket launchers.</li><li>Defend your position against waves.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Manage your lives with caution.</li><li>Don't waste ammo.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Concentrez-vous sur les ennemis avec des lance-roquettes.</li><li>Défendez votre position contre les vagues.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Gérez votre vie avec prudence.</li><li>Ne gaspillez pas de munitions.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Concentrati sui nemici con i lanciarazzi.</li><li>Difendi la tua posizione dalle onde.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Gestite le vostre vite con cautela.</li><li>Non sprecare munizioni.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

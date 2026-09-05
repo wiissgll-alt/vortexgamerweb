@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Corre hacia el espacio vacío.</li><li>Elige la jugada correcta según la defensa.</li><li>Presiona el botón para lanzar el balón.</li><li>Presiona select para ver estadísticas.</li><li>Quédate en la zona de anotación.</li><li>Usa el reset para cambiar el equipo.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Run towards the empty space.</li><li>Choose the correct play according to the defense.</li><li>Press the button to throw the ball.</li><li>Press select to view statistics.</li><li>Stay in the end zone.</li><li>Use the reset to change the equipment.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Courez vers l’espace vide.</li><li>Choisissez le bon jeu en fonction de la défense.</li><li>Appuyez sur le bouton pour lancer la balle.</li><li>Appuyez sur Sélectionner pour afficher les statistiques.</li><li>Restez dans la zone des buts.</li><li>Utilisez la réinitialisation pour changer d'équipement.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Corri verso lo spazio vuoto.</li><li>Scegli il gioco corretto in base alla difesa.</li><li>Premi il pulsante per lanciare la palla.</li><li>Premere Seleziona per visualizzare le statistiche.</li><li>Rimani nella end zone.</li><li>Utilizzare il ripristino per modificare l'attrezzatura.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Corre hacia el espacio vacío.</li><li>Elige la jugada correcta según la defensa.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Presiona el botón para lanzar el balón.</li><li>Presiona select para ver estadísticas.</li><li>Quédate en la zona de anotación.</li><li>Usa el reset para cambiar el equipo.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Run towards the empty space.</li><li>Choose the correct play according to the defense.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Press the button to throw the ball.</li><li>Press select to view statistics.</li><li>Stay in the end zone.</li><li>Use the reset to change the equipment.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Courez vers l’espace vide.</li><li>Choisissez le bon jeu en fonction de la défense.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Appuyez sur le bouton pour lancer la balle.</li><li>Appuyez sur Sélectionner pour afficher les statistiques.</li><li>Restez dans la zone des buts.</li><li>Utilisez la réinitialisation pour changer d'équipement.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Corri verso lo spazio vuoto.</li><li>Scegli il gioco corretto in base alla difesa.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Premi il pulsante per lanciare la palla.</li><li>Premere Seleziona per visualizzare le statistiche.</li><li>Rimani nella end zone.</li><li>Utilizzare il ripristino per modificare l'attrezzatura.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

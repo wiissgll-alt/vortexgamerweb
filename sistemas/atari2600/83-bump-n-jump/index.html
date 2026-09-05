@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Calcula el espacio para saltar.</li><li>No caigas en los huecos de los puentes.</li><li>Recoge los bonus de puntuación en el camino.</li><li>Salta los coches enemigos para empujarlos.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Calculate the space to jump.</li><li>Don't fall into the gaps in the bridges.</li><li>Collect score bonuses along the way.</li><li>Jump over enemy cars to push them.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Calculez l'espace pour sauter.</li><li>Ne tombez pas dans les interstices des ponts.</li><li>Collectez des bonus de score en cours de route.</li><li>Sautez par-dessus les voitures ennemies pour les pousser.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Calcola lo spazio per saltare.</li><li>Non cadere negli spazi vuoti dei ponti.</li><li>Raccogli i bonus di punteggio lungo il percorso.</li><li>Salta sopra le auto nemiche per spingerle.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Calcula el espacio para saltar.</li><li>No caigas en los huecos de los puentes.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Recoge los bonus de puntuación en el camino.</li><li>Salta los coches enemigos para empujarlos.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Calculate the space to jump.</li><li>Don't fall into the gaps in the bridges.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Collect score bonuses along the way.</li><li>Jump over enemy cars to push them.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Calculez l'espace pour sauter.</li><li>Ne tombez pas dans les interstices des ponts.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Collectez des bonus de score en cours de route.</li><li>Sautez par-dessus les voitures ennemies pour les pousser.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Calcola lo spazio per saltare.</li><li>Non cadere negli spazi vuoti dei ponti.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Raccogli i bonus di punteggio lungo il percorso.</li><li>Salta sopra le auto nemiche per spingerle.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

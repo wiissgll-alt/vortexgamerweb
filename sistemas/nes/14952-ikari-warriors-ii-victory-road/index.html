@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Aprende a esquivar disparos.</li><li>Explora bien los niveles.</li><li>Juega coordinado.</li><li>La gestión de armas es vital.</li><li>Más difícil que el primero.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Learn to dodge shots.</li><li>Explore the levels well.</li><li>Play coordinated.</li><li>Weapons management is vital.</li><li>More difficult than the first.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Apprenez à esquiver les tirs.</li><li>Explorez bien les niveaux.</li><li>Jouez de manière coordonnée.</li><li>La gestion des armes est vitale.</li><li>Plus difficile que le premier.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Impara a schivare i colpi.</li><li>Esplora bene i livelli.</li><li>Gioca coordinato.</li><li>La gestione delle armi è vitale.</li><li>Più difficile del primo.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Aprende a esquivar disparos.</li><li>Explora bien los niveles.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Juega coordinado.</li><li>La gestión de armas es vital.</li><li>Más difícil que el primero.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Learn to dodge shots.</li><li>Explore the levels well.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Play coordinated.</li><li>Weapons management is vital.</li><li>More difficult than the first.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Apprenez à esquiver les tirs.</li><li>Explorez bien les niveaux.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Jouez de manière coordonnée.</li><li>La gestion des armes est vitale.</li><li>Plus difficile que le premier.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Impara a schivare i colpi.</li><li>Esplora bene i livelli.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Gioca coordinato.</li><li>La gestione delle armi è vitale.</li><li>Più difficile del primo.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

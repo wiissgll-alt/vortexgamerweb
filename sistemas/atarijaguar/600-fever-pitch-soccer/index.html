@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Dispara desde fuera del área.</li><li>Pasa el balón para abrir huecos.</li><li>Presiona el botón para el tiro.</li><li>Presiona select para cambiar táctica.</li><li>Quédate en posición defensiva.</li><li>Usa el sprint con moderación.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Shoot from outside the area.</li><li>Pass the ball to open spaces.</li><li>Press the button to shoot.</li><li>Press select to change tactics.</li><li>Stay in a defensive position.</li><li>Use sprinting sparingly.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Tirez depuis l’extérieur de la zone.</li><li>Passez le ballon vers des espaces ouverts.</li><li>Appuyez sur le bouton pour tirer.</li><li>Appuyez sur Sélectionner pour changer de tactique.</li><li>Restez dans une position défensive.</li><li>Utilisez le sprint avec parcimonie.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Tirare da fuori area.</li><li>Passa la palla negli spazi aperti.</li><li>Premi il pulsante per sparare.</li><li>Premi Seleziona per cambiare tattica.</li><li>Rimani in una posizione difensiva.</li><li>Usa lo sprint con parsimonia.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Dispara desde fuera del área.</li><li>Pasa el balón para abrir huecos.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Presiona el botón para el tiro.</li><li>Presiona select para cambiar táctica.</li><li>Quédate en posición defensiva.</li><li>Usa el sprint con moderación.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Shoot from outside the area.</li><li>Pass the ball to open spaces.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Press the button to shoot.</li><li>Press select to change tactics.</li><li>Stay in a defensive position.</li><li>Use sprinting sparingly.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Tirez depuis l’extérieur de la zone.</li><li>Passez le ballon vers des espaces ouverts.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Appuyez sur le bouton pour tirer.</li><li>Appuyez sur Sélectionner pour changer de tactique.</li><li>Restez dans une position défensive.</li><li>Utilisez le sprint avec parcimonie.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Tirare da fuori area.</li><li>Passa la palla negli spazi aperti.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Premi il pulsante per sparare.</li><li>Premi Seleziona per cambiare tattica.</li><li>Rimani in una posizione difensiva.</li><li>Usa lo sprint con parsimonia.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

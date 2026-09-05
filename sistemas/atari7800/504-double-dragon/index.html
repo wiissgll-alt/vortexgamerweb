@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Presiona el botón de golpe mientras saltas.</li><li>Presiona select para cambiar de arma.</li><li>Quédate en el centro para controlar enemigos.</li><li>Recoge los bates para mayor daño.</li><li>Usa el combo de patadas para derrotar rápido.</li><li>Usa las paredes para arrinconar enemigos.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Press the hit button while jumping.</li><li>Press select to change weapons.</li><li>Stay in the center to control enemies.</li><li>Pick up the bats for more damage.</li><li>Use the kick combo to defeat quickly.</li><li>Use the walls to corner enemies.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Appuyez sur le bouton Hit tout en sautant.</li><li>Appuyez sur Sélectionner pour changer d'arme.</li><li>Restez au centre pour contrôler les ennemis.</li><li>Ramassez les chauves-souris pour plus de dégâts.</li><li>Utilisez le combo de coups de pied pour vaincre rapidement.</li><li>Utilisez les murs pour coincer les ennemis.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Premi il pulsante &quot;colpisci&quot; mentre salti.</li><li>Premi Seleziona per cambiare arma.</li><li>Rimani al centro per controllare i nemici.</li><li>Raccogli i pipistrelli per ulteriori danni.</li><li>Usa la combinazione di calci per sconfiggere rapidamente.</li><li>Usa i muri per mettere all'angolo i nemici.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Presiona el botón de golpe mientras saltas.</li><li>Presiona select para cambiar de arma.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Quédate en el centro para controlar enemigos.</li><li>Recoge los bates para mayor daño.</li><li>Usa el combo de patadas para derrotar rápido.</li><li>Usa las paredes para arrinconar enemigos.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Press the hit button while jumping.</li><li>Press select to change weapons.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Stay in the center to control enemies.</li><li>Pick up the bats for more damage.</li><li>Use the kick combo to defeat quickly.</li><li>Use the walls to corner enemies.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Appuyez sur le bouton Hit tout en sautant.</li><li>Appuyez sur Sélectionner pour changer d'arme.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Restez au centre pour contrôler les ennemis.</li><li>Ramassez les chauves-souris pour plus de dégâts.</li><li>Utilisez le combo de coups de pied pour vaincre rapidement.</li><li>Utilisez les murs pour coincer les ennemis.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Premi il pulsante &quot;colpisci&quot; mentre salti.</li><li>Premi Seleziona per cambiare arma.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Rimani al centro per controllare i nemici.</li><li>Raccogli i pipistrelli per ulteriori danni.</li><li>Usa la combinazione di calci per sconfiggere rapidamente.</li><li>Usa i muri per mettere all'angolo i nemici.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

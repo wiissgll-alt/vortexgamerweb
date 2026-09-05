@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Ajusta el ángulo de tiro con precisión antes de lanzar.</li><li>Calcula la fuerza necesaria según la superficie.</li><li>Recoge los bonus de puntuación distribuidos en el mapa.</li><li>Usa la pared para realizar rebotes estratégicos.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Adjust the shooting angle precisely before launching.</li><li>Calculate the necessary force according to the surface.</li><li>Collect the score bonuses distributed on the map.</li><li>Use the wall to perform strategic bounces.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Ajustez précisément l’angle de prise de vue avant le lancement.</li><li>Calculez la force nécessaire en fonction de la surface.</li><li>Récupérez les bonus de score répartis sur la carte.</li><li>Utilisez le mur pour effectuer des rebonds stratégiques.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Regola con precisione l'angolo di ripresa prima del lancio.</li><li>Calcolare la forza necessaria in base alla superficie.</li><li>Raccogli i bonus punteggio distribuiti sulla mappa.</li><li>Usa il muro per eseguire rimbalzi strategici.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Ajusta el ángulo de tiro con precisión antes de lanzar.</li><li>Calcula la fuerza necesaria según la superficie.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Recoge los bonus de puntuación distribuidos en el mapa.</li><li>Usa la pared para realizar rebotes estratégicos.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Adjust the shooting angle precisely before launching.</li><li>Calculate the necessary force according to the surface.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Collect the score bonuses distributed on the map.</li><li>Use the wall to perform strategic bounces.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Ajustez précisément l’angle de prise de vue avant le lancement.</li><li>Calculez la force nécessaire en fonction de la surface.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Récupérez les bonus de score répartis sur la carte.</li><li>Utilisez le mur pour effectuer des rebonds stratégiques.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Regola con precisione l'angolo di ripresa prima del lancio.</li><li>Calcolare la forza necessaria in base alla superficie.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Raccogli i bonus punteggio distribuiti sulla mappa.</li><li>Usa il muro per eseguire rimbalzi strategici.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

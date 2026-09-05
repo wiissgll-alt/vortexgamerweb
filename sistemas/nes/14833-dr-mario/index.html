@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Busca crear combos grandes.</li><li>Juega con alguien para más emoción.</li><li>La velocidad aumenta, prepárate.</li><li>No permitas que la pantalla se llene.</li><li>Organiza las pastillas para eliminar virus.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Look to create big combos.</li><li>Play with someone for more excitement.</li><li>The speed increases, get ready.</li><li>Don't let the screen fill up.</li><li>Organize the pills to eliminate viruses.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Cherchez à créer de gros combos.</li><li>Jouez avec quelqu'un pour plus d'excitation.</li><li>La vitesse augmente, préparez-vous.</li><li>Ne laissez pas l'écran se remplir.</li><li>Organisez les pilules pour éliminer les virus.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Cerca di creare grandi combinazioni.</li><li>Gioca con qualcuno per più eccitazione.</li><li>La velocità aumenta, preparati.</li><li>Non lasciare che lo schermo si riempia.</li><li>Organizza le pillole per eliminare i virus.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Busca crear combos grandes.</li><li>Juega con alguien para más emoción.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La velocidad aumenta, prepárate.</li><li>No permitas que la pantalla se llene.</li><li>Organiza las pastillas para eliminar virus.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Look to create big combos.</li><li>Play with someone for more excitement.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>The speed increases, get ready.</li><li>Don't let the screen fill up.</li><li>Organize the pills to eliminate viruses.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Cherchez à créer de gros combos.</li><li>Jouez avec quelqu'un pour plus d'excitation.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La vitesse augmente, préparez-vous.</li><li>Ne laissez pas l'écran se remplir.</li><li>Organisez les pilules pour éliminer les virus.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Cerca di creare grandi combinazioni.</li><li>Gioca con qualcuno per più eccitazione.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La velocità aumenta, preparati.</li><li>Non lasciare che lo schermo si riempia.</li><li>Organizza le pillole per eliminare i virus.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

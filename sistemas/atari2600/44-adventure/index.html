@@ -64,10 +64,34 @@ adventure è stato il primo gioco di azione e avventura su una videoconsole, il 
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>El castillo negro tiene pasadizos secretos.</li><li>Evita el dragón si no tienes la espada.</li><li>La llave de puente sirve para cruzar barreras.</li><li>Usa el imán para atraer objetos ocultos.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>The black castle has secret passages.</li><li>Avoid the dragon if you don't have the sword.</li><li>The bridge key is used to cross barriers.</li><li>Use the magnet to attract hidden objects.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Le château noir possède des passages secrets.</li><li>Évitez le dragon si vous n'avez pas l'épée.</li><li>La clé du pont est utilisée pour franchir les barrières.</li><li>Utilisez l'aimant pour attirer les objets cachés.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Il castello nero ha passaggi segreti.</li><li>Evita il drago se non hai la spada.</li><li>La chiave del ponte viene utilizzata per attraversare le barriere.</li><li>Usa il magnete per attirare oggetti nascosti.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>El castillo negro tiene pasadizos secretos.</li><li>Evita el dragón si no tienes la espada.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La llave de puente sirve para cruzar barreras.</li><li>Usa el imán para atraer objetos ocultos.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>The black castle has secret passages.</li><li>Avoid the dragon if you don't have the sword.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>The bridge key is used to cross barriers.</li><li>Use the magnet to attract hidden objects.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Le château noir possède des passages secrets.</li><li>Évitez le dragon si vous n'avez pas l'épée.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La clé du pont est utilisée pour franchir les barrières.</li><li>Utilisez l'aimant pour attirer les objets cachés.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Il castello nero ha passaggi segreti.</li><li>Evita il drago se non hai la spada.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La chiave del ponte viene utilizzata per attraversare le barriere.</li><li>Usa il magnete per attirare oggetti nascosti.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -85,6 +109,15 @@ adventure è stato il primo gioco di azione e avventura su una videoconsole, il 
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

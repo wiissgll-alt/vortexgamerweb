@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Aprovecha el terreno para empujar a los rivales.</li><li>El portero es fuerte, pero un tiro cargado lo puede empujar.</li><li>Es un juego de fútbol violento; golpea para quitar el balón.</li><li>No te preocupes por las faltas, aquí no existen.</li><li>Usa el super-tiro cuando estés cerca del área.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Take advantage of the terrain to push your rivals.</li><li>The goalkeeper is strong, but a loaded shot can push him.</li><li>It is a violent football game; hits to remove the ball.</li><li>Don't worry about faults, they don't exist here.</li><li>Use the super shot when you are close to the area.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Profitez du terrain pour pousser vos rivaux.</li><li>Le gardien est fort, mais un tir chargé peut le pousser.</li><li>C'est un match de football violent ; frappe pour retirer la balle.</li><li>Ne vous inquiétez pas des défauts, ils n'existent pas ici.</li><li>Utilisez le super shot lorsque vous êtes proche de la zone.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Approfitta del terreno per spingere i tuoi rivali.</li><li>Il portiere è forte, ma un tiro caricato può spingerlo.</li><li>È una partita di calcio violenta; colpisce per rimuovere la palla.</li><li>Non preoccuparti dei difetti, qui non esistono.</li><li>Usa il super tiro quando sei vicino all'area.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Aprovecha el terreno para empujar a los rivales.</li><li>El portero es fuerte, pero un tiro cargado lo puede empujar.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Es un juego de fútbol violento; golpea para quitar el balón.</li><li>No te preocupes por las faltas, aquí no existen.</li><li>Usa el super-tiro cuando estés cerca del área.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Take advantage of the terrain to push your rivals.</li><li>The goalkeeper is strong, but a loaded shot can push him.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>It is a violent football game; hits to remove the ball.</li><li>Don't worry about faults, they don't exist here.</li><li>Use the super shot when you are close to the area.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Profitez du terrain pour pousser vos rivaux.</li><li>Le gardien est fort, mais un tir chargé peut le pousser.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>C'est un match de football violent ; frappe pour retirer la balle.</li><li>Ne vous inquiétez pas des défauts, ils n'existent pas ici.</li><li>Utilisez le super shot lorsque vous êtes proche de la zone.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Approfitta del terreno per spingere i tuoi rivali.</li><li>Il portiere è forte, ma un tiro caricato può spingerlo.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>È una partita di calcio violenta; colpisce per rimuovere la palla.</li><li>Non preoccuparti dei difetti, qui non esistono.</li><li>Usa il super tiro quando sei vicino all'area.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

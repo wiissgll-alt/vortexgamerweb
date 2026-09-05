@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Juega como si fuera ajedrez real; las reglas no cambian.</li><li>Las animaciones de combate son lo mejor del juego.</li><li>No ignores la estrategia por ver las peleas.</li><li>Si te aburres, puedes acelerar el combate.</li><li>Usa la lógica ajedrecística, no la estética.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Play as if it were real chess; the rules don't change.</li><li>The combat animations are the best thing about the game.</li><li>Don't ignore strategy to watch the fights.</li><li>If you get bored, you can speed up the combat.</li><li>Use chess logic, not aesthetics.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Jouez comme s’il s’agissait de vrais échecs ; les règles ne changent pas.</li><li>Les animations de combat sont ce qu'il y a de mieux dans le jeu.</li><li>N'ignorez pas la stratégie pour regarder les combats.</li><li>Si vous vous ennuyez, vous pouvez accélérer le combat.</li><li>Utilisez la logique des échecs, pas l’esthétique.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Gioca come se fossero veri scacchi; le regole non cambiano</li><li>Le animazioni di combattimento sono la cosa migliore del gioco.</li><li>Non ignorare la strategia per guardare i combattimenti.</li><li>Se ti annoi, puoi accelerare il combattimento.</li><li>Usa la logica degli scacchi, non l'estetica.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Juega como si fuera ajedrez real; las reglas no cambian.</li><li>Las animaciones de combate son lo mejor del juego.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>No ignores la estrategia por ver las peleas.</li><li>Si te aburres, puedes acelerar el combate.</li><li>Usa la lógica ajedrecística, no la estética.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Play as if it were real chess; the rules don't change.</li><li>The combat animations are the best thing about the game.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Don't ignore strategy to watch the fights.</li><li>If you get bored, you can speed up the combat.</li><li>Use chess logic, not aesthetics.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Jouez comme s’il s’agissait de vrais échecs ; les règles ne changent pas.</li><li>Les animations de combat sont ce qu'il y a de mieux dans le jeu.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>N'ignorez pas la stratégie pour regarder les combats.</li><li>Si vous vous ennuyez, vous pouvez accélérer le combat.</li><li>Utilisez la logique des échecs, pas l’esthétique.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Gioca come se fossero veri scacchi; le regole non cambiano</li><li>Le animazioni di combattimento sono la cosa migliore del gioco.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Non ignorare la strategia per guardare i combattimenti.</li><li>Se ti annoi, puoi accelerare il combattimento.</li><li>Usa la logica degli scacchi, non l'estetica.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

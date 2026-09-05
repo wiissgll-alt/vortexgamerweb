@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Busca en los muebles para encontrar piezas.</li><li>Evita los robots moviéndote rápido.</li><li>Mantén el botón para saltar obstáculos.</li><li>Presiona select para ver el mapa.</li><li>Quédate en las plataformas altas para seguridad.</li><li>Usa el ordenador para desactivar alarmas.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Search the furniture to find pieces.</li><li>Avoid the robots by moving quickly.</li><li>Hold the button to jump over obstacles.</li><li>Press select to view the map.</li><li>Stay on high platforms for safety.</li><li>Use the computer to disable alarms.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Fouillez les meubles pour trouver des pièces.</li><li>Évitez les robots en vous déplaçant rapidement.</li><li>Maintenez le bouton enfoncé pour sauter par-dessus les obstacles.</li><li>Appuyez sur Sélectionner pour afficher la carte.</li><li>Restez sur les plates-formes élevées pour plus de sécurité.</li><li>Utilisez l'ordinateur pour désactiver les alarmes.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Cerca i mobili per trovare i pezzi.</li><li>Evita i robot muovendoti velocemente.</li><li>Tieni premuto il pulsante per saltare oltre gli ostacoli.</li><li>Premere Seleziona per visualizzare la mappa.</li><li>Rimani su piattaforme alte per sicurezza.</li><li>Utilizzare il computer per disattivare gli allarmi.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Busca en los muebles para encontrar piezas.</li><li>Evita los robots moviéndote rápido.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Mantén el botón para saltar obstáculos.</li><li>Presiona select para ver el mapa.</li><li>Quédate en las plataformas altas para seguridad.</li><li>Usa el ordenador para desactivar alarmas.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Search the furniture to find pieces.</li><li>Avoid the robots by moving quickly.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Hold the button to jump over obstacles.</li><li>Press select to view the map.</li><li>Stay on high platforms for safety.</li><li>Use the computer to disable alarms.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Fouillez les meubles pour trouver des pièces.</li><li>Évitez les robots en vous déplaçant rapidement.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Maintenez le bouton enfoncé pour sauter par-dessus les obstacles.</li><li>Appuyez sur Sélectionner pour afficher la carte.</li><li>Restez sur les plates-formes élevées pour plus de sécurité.</li><li>Utilisez l'ordinateur pour désactiver les alarmes.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Cerca i mobili per trovare i pezzi.</li><li>Evita i robot muovendoti velocemente.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Tieni premuto il pulsante per saltare oltre gli ostacoli.</li><li>Premere Seleziona per visualizzare la mappa.</li><li>Rimani su piattaforme alte per sicurezza.</li><li>Utilizzare il computer per disattivare gli allarmi.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

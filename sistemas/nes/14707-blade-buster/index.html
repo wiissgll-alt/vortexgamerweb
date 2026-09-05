@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Aprende el jefe final; tiene un patrón muy estricto.</li><li>Es un juego de puntuación rápida; memoriza los *spawns* de enemigos.</li><li>No dejes de disparar nunca; la pantalla se llena muy rápido.</li><li>Prioriza los enemigos que disparan directo hacia ti.</li><li>Recoge todos los *power-ups* que puedas; el daño es tu mayor aliado.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Learn the final boss; It has a very strict pattern.</li><li>It is a quick scoring game; memorize enemy *spawns*.</li><li>Never stop shooting; The screen fills up very quickly.</li><li>Prioritize enemies that shoot straight at you.</li><li>Collect all the *power-ups* you can; Damage is your greatest ally.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Apprenez le boss final ; Son modèle est très strict.</li><li>C'est un jeu de score rapide ; mémorisez les *apparitions* de l'ennemi.</li><li>N'arrêtez jamais de tirer ; L'écran se remplit très vite.</li><li>Donnez la priorité aux ennemis qui tirent directement sur vous.</li><li>Récupérez tous les *power-ups* que vous pouvez ; Les dégâts sont votre meilleur allié.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Impara il boss finale; Ha uno schema molto rigido.</li><li>È un gioco dal punteggio rapido; memorizza gli *spawn* nemici.</li><li>Non smettere mai di sparare; Lo schermo si riempie molto velocemente.</li><li>Dai la priorità ai nemici che ti sparano direttamente.</li><li>Raccogli tutti i *potenziamenti* che puoi; Il danno è il tuo più grande alleato.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Aprende el jefe final; tiene un patrón muy estricto.</li><li>Es un juego de puntuación rápida; memoriza los *spawns* de enemigos.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>No dejes de disparar nunca; la pantalla se llena muy rápido.</li><li>Prioriza los enemigos que disparan directo hacia ti.</li><li>Recoge todos los *power-ups* que puedas; el daño es tu mayor aliado.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Learn the final boss; It has a very strict pattern.</li><li>It is a quick scoring game; memorize enemy *spawns*.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Never stop shooting; The screen fills up very quickly.</li><li>Prioritize enemies that shoot straight at you.</li><li>Collect all the *power-ups* you can; Damage is your greatest ally.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Apprenez le boss final ; Son modèle est très strict.</li><li>C'est un jeu de score rapide ; mémorisez les *apparitions* de l'ennemi.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>N'arrêtez jamais de tirer ; L'écran se remplit très vite.</li><li>Donnez la priorité aux ennemis qui tirent directement sur vous.</li><li>Récupérez tous les *power-ups* que vous pouvez ; Les dégâts sont votre meilleur allié.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Impara il boss finale; Ha uno schema molto rigido.</li><li>È un gioco dal punteggio rapido; memorizza gli *spawn* nemici.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Non smettere mai di sparare; Lo schermo si riempie molto velocemente.</li><li>Dai la priorità ai nemici che ti sparano direttamente.</li><li>Raccogli tutti i *potenziamenti* che puoi; Il danno è il tuo più grande alleato.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

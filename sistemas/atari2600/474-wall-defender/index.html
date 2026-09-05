@@ -64,10 +64,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Dispara a los enemigos que se acercan desde los bordes.</li><li>Mantén el escudo activado con el botón de disparo.</li><li>Muévete rápidamente de izquierda a derecha para cubrir el muro.</li><li>Presiona select para disminuir la velocidad enemiga.</li><li>Quédate en el centro para reacción rápida.</li><li>Recoge los power-ups para restaurar energía.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Shoot enemies approaching from the edges.</li><li>Keep the shield activated with the fire button.</li><li>Move quickly from left to right to cover the wall.</li><li>Press select to decrease enemy speed.</li><li>Stay in the center for quick reaction.</li><li>Collect power-ups to restore energy.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Tirez sur les ennemis qui s'approchent des bords.</li><li>Gardez le bouclier activé avec le bouton de tir.</li><li>Déplacez-vous rapidement de gauche à droite pour couvrir le mur.</li><li>Appuyez sur Sélectionner pour diminuer la vitesse de l'ennemi.</li><li>Restez au centre pour une réaction rapide.</li><li>Collectez des power-ups pour restaurer l'énergie.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Spara ai nemici che si avvicinano dai bordi.</li><li>Mantieni lo scudo attivato con il pulsante di fuoco.</li><li>Muoviti rapidamente da sinistra a destra per coprire il muro.</li><li>Premi Seleziona per diminuire la velocità del nemico.</li><li>Rimani al centro per una reazione rapida.</li><li>Raccogli i potenziamenti per ripristinare l'energia.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Dispara a los enemigos que se acercan desde los bordes.</li><li>Mantén el escudo activado con el botón de disparo.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Muévete rápidamente de izquierda a derecha para cubrir el muro.</li><li>Presiona select para disminuir la velocidad enemiga.</li><li>Quédate en el centro para reacción rápida.</li><li>Recoge los power-ups para restaurar energía.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Shoot enemies approaching from the edges.</li><li>Keep the shield activated with the fire button.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Move quickly from left to right to cover the wall.</li><li>Press select to decrease enemy speed.</li><li>Stay in the center for quick reaction.</li><li>Collect power-ups to restore energy.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Tirez sur les ennemis qui s'approchent des bords.</li><li>Gardez le bouclier activé avec le bouton de tir.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Déplacez-vous rapidement de gauche à droite pour couvrir le mur.</li><li>Appuyez sur Sélectionner pour diminuer la vitesse de l'ennemi.</li><li>Restez au centre pour une réaction rapide.</li><li>Collectez des power-ups pour restaurer l'énergie.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Spara ai nemici che si avvicinano dai bordi.</li><li>Mantieni lo scudo attivato con il pulsante di fuoco.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Muoviti rapidamente da sinistra a destra per coprire il muro.</li><li>Premi Seleziona per diminuire la velocità del nemico.</li><li>Rimani al centro per una reazione rapida.</li><li>Raccogli i potenziamenti per ripristinare l'energia.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -85,6 +109,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

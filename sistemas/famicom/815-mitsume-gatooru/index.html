@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>El salto permite llegar a zonas altas.</li><li>Los jefes caen con ataques de larga distancia.</li><li>Recupera vida con los ítems de comida.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>El ataque de tercer ojo es infinito.</li><li>La invencibilidad se activa con Start+A.</li><li>Pulsa Select para vidas infinitas.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Jumping allows you to reach high areas.</li><li>Bosses fall with long-range attacks.</li><li>Recover life with food items.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>The third eye attack is infinite.</li><li>Invincibility is activated with Start+A.</li><li>Press Select for infinite lives.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Sauter vous permet d'atteindre des zones élevées.</li><li>Les boss tombent avec des attaques à longue portée.</li><li>Récupérez la vie avec des produits alimentaires.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>La crise du troisième œil est infinie.</li><li>L'invincibilité est activée avec Start+A.</li><li>Appuyez sur Select pour des vies infinies.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Saltare ti consente di raggiungere aree elevate.</li><li>I boss cadono con attacchi a lungo raggio.</li><li>Recuperare la vita con gli alimenti.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>L'attacco del terzo occhio è infinito.</li><li>L'invincibilità si attiva con Start+A.</li><li>Premi Seleziona per vite infinite.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>El salto permite llegar a zonas altas.</li><li>Los jefes caen con ataques de larga distancia.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Recupera vida con los ítems de comida.</li><li>El ataque de tercer ojo es infinito.</li><li>La invencibilidad se activa con Start+A.</li><li>Pulsa Select para vidas infinitas.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Jumping allows you to reach high areas.</li><li>Bosses fall with long-range attacks.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Recover life with food items.</li><li>The third eye attack is infinite.</li><li>Invincibility is activated with Start+A.</li><li>Press Select for infinite lives.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Sauter vous permet d'atteindre des zones élevées.</li><li>Les boss tombent avec des attaques à longue portée.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Récupérez la vie avec des produits alimentaires.</li><li>La crise du troisième œil est infinie.</li><li>L'invincibilité est activée avec Start+A.</li><li>Appuyez sur Select pour des vies infinies.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Saltare ti consente di raggiungere aree elevate.</li><li>I boss cadono con attacchi a lungo raggio.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Recuperare la vita con gli alimenti.</li><li>L'attacco del terzo occhio è infinito.</li><li>L'invincibilità si attiva con Start+A.</li><li>Premi Seleziona per vite infinite.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

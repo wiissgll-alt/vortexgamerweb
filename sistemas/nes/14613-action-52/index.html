@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Algunos juegos tienen fallos técnicos graves.</li><li>Es una recopilación de muy baja calidad; no busques lógica.</li><li>La mayoría de los juegos son injugables.</li><li>Usa la paciencia extrema si decides probarlos todos.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Some games have serious technical glitches.</li><li>It is a very low quality compilation; Don't look for logic.</li><li>Most games are unplayable.</li><li>Use extreme patience if you decide to try them all.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Certains jeux présentent de sérieux problèmes techniques.</li><li>Il s'agit d'une compilation de très mauvaise qualité ; Ne cherchez pas de logique.</li><li>La plupart des jeux sont injouables.</li><li>Faites preuve d'une extrême patience si vous décidez de tous les essayer.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Alcuni giochi presentano gravi problemi tecnici.</li><li>È una compilation di qualità molto bassa; Non cercare la logica.</li><li>La maggior parte dei giochi non sono giocabili.</li><li>Usa estrema pazienza se decidi di provarli tutti.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Algunos juegos tienen fallos técnicos graves.</li><li>Es una recopilación de muy baja calidad; no busques lógica.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La mayoría de los juegos son injugables.</li><li>Usa la paciencia extrema si decides probarlos todos.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Some games have serious technical glitches.</li><li>It is a very low quality compilation; Don't look for logic.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Most games are unplayable.</li><li>Use extreme patience if you decide to try them all.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Certains jeux présentent de sérieux problèmes techniques.</li><li>Il s'agit d'une compilation de très mauvaise qualité ; Ne cherchez pas de logique.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La plupart des jeux sont injouables.</li><li>Faites preuve d'une extrême patience si vous décidez de tous les essayer.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Alcuni giochi presentano gravi problemi tecnici.</li><li>È una compilation di qualità molto bassa; Non cercare la logica.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La maggior parte dei giochi non sono giocabili.</li><li>Usa estrema pazienza se decidi di provarli tutti.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

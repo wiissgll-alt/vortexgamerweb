@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>El salto requiere mucha precisión; cuidado con los bordes.</li><li>Explora los caminos alternativos.</li><li>Memoriza el patrón de los jefes.</li><li>No te quedes cerca de los enemigos; su hit-box es grande.</li><li>Usa el arma adecuada para cada enemigo.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>The jump requires a lot of precision; Be careful with the edges.</li><li>Explore alternative paths.</li><li>Memorize the boss pattern.</li><li>Don't stay close to enemies; His hit-box is big.</li><li>Use the appropriate weapon for each enemy.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Le saut demande beaucoup de précision ; Soyez prudent avec les bords.</li><li>Explorez des chemins alternatifs.</li><li>Mémorisez le modèle du patron.</li><li>Ne restez pas près des ennemis ; Sa hit-box est grande.</li><li>Utilisez l'arme appropriée pour chaque ennemi.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Il salto richiede molta precisione; Fare attenzione ai bordi.</li><li>Esplora percorsi alternativi.</li><li>Memorizza lo schema del boss.</li><li>Non stare vicino ai nemici; La sua hit-box è grande.</li><li>Usa l'arma appropriata per ogni nemico.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>El salto requiere mucha precisión; cuidado con los bordes.</li><li>Explora los caminos alternativos.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Memoriza el patrón de los jefes.</li><li>No te quedes cerca de los enemigos; su hit-box es grande.</li><li>Usa el arma adecuada para cada enemigo.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>The jump requires a lot of precision; Be careful with the edges.</li><li>Explore alternative paths.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Memorize the boss pattern.</li><li>Don't stay close to enemies; His hit-box is big.</li><li>Use the appropriate weapon for each enemy.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Le saut demande beaucoup de précision ; Soyez prudent avec les bords.</li><li>Explorez des chemins alternatifs.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Mémorisez le modèle du patron.</li><li>Ne restez pas près des ennemis ; Sa hit-box est grande.</li><li>Utilisez l'arme appropriée pour chaque ennemi.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Il salto richiede molta precisione; Fare attenzione ai bordi.</li><li>Esplora percorsi alternativi.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Memorizza lo schema del boss.</li><li>Non stare vicino ai nemici; La sua hit-box è grande.</li><li>Usa l'arma appropriata per ogni nemico.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

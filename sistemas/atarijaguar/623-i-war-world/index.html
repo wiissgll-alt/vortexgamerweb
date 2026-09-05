@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Las maniobras evasivas consumen combustible.</li><li>Mantén el escudo cargado.</li><li>Prioriza destruir las torretas antes que las naves.</li><li>Usa el modo cámara externa para mejor visibilidad.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Evasive maneuvers consume fuel.</li><li>Keep your shield charged.</li><li>Prioritize destroying the turrets before the ships.</li><li>Use external camera mode for better visibility.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Les manœuvres d'évitement consomment du carburant.</li><li>Gardez votre bouclier chargé.</li><li>Donnez la priorité à la destruction des tourelles avant les navires.</li><li>Utilisez le mode caméra externe pour une meilleure visibilité.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Le manovre evasive consumano carburante.</li><li>Mantieni il tuo scudo carico.</li><li>Dai la priorità alla distruzione delle torrette prima delle navi.</li><li>Utilizza la modalità fotocamera esterna per una migliore visibilità.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Las maniobras evasivas consumen combustible.</li><li>Mantén el escudo cargado.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Prioriza destruir las torretas antes que las naves.</li><li>Usa el modo cámara externa para mejor visibilidad.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Evasive maneuvers consume fuel.</li><li>Keep your shield charged.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Prioritize destroying the turrets before the ships.</li><li>Use external camera mode for better visibility.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Les manœuvres d'évitement consomment du carburant.</li><li>Gardez votre bouclier chargé.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Donnez la priorité à la destruction des tourelles avant les navires.</li><li>Utilisez le mode caméra externe pour une meilleure visibilité.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Le manovre evasive consumano carburante.</li><li>Mantieni il tuo scudo carico.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Dai la priorità alla distruzione delle torrette prima delle navi.</li><li>Utilizza la modalità fotocamera esterna per una migliore visibilità.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

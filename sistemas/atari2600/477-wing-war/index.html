@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Mantén el botón de disparo para daño sostenido.</li><li>Presiona select para activar modo invulnerabilidad.</li><li>Quédate en la parte inferior para evitar ataques frontales.</li><li>Recoge los iconos de ala para velocidad extra.</li><li>Usa el botón de salto para realizar esquivas aéreas.</li><li>Vuela en círculos para evitar el fuego enemigo.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Hold the fire button for sustained damage.</li><li>Press select to activate invulnerability mode.</li><li>Stay at the bottom to avoid frontal attacks.</li><li>Collect the wing icons for extra speed.</li><li>Use the jump button to perform aerial dodges.</li><li>Fly in circles to avoid enemy fire.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Maintenez le bouton de tir pour des dégâts soutenus.</li><li>Appuyez sur Sélectionner pour activer le mode invulnérabilité.</li><li>Restez en bas pour éviter les attaques frontales.</li><li>Collectez les icônes d'ailes pour plus de vitesse.</li><li>Utilisez le bouton de saut pour effectuer des esquives aériennes.</li><li>Volez en rond pour éviter les tirs ennemis.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Tieni premuto il pulsante di fuoco per danni prolungati.</li><li>Premi Seleziona per attivare la modalità invulnerabilità.</li><li>Rimani in basso per evitare attacchi frontali.</li><li>Raccogli le icone delle ali per una maggiore velocità.</li><li>Usa il pulsante di salto per eseguire schivate aeree.</li><li>Vola in tondo per evitare il fuoco nemico.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Mantén el botón de disparo para daño sostenido.</li><li>Presiona select para activar modo invulnerabilidad.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Quédate en la parte inferior para evitar ataques frontales.</li><li>Recoge los iconos de ala para velocidad extra.</li><li>Usa el botón de salto para realizar esquivas aéreas.</li><li>Vuela en círculos para evitar el fuego enemigo.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Hold the fire button for sustained damage.</li><li>Press select to activate invulnerability mode.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Stay at the bottom to avoid frontal attacks.</li><li>Collect the wing icons for extra speed.</li><li>Use the jump button to perform aerial dodges.</li><li>Fly in circles to avoid enemy fire.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Maintenez le bouton de tir pour des dégâts soutenus.</li><li>Appuyez sur Sélectionner pour activer le mode invulnérabilité.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Restez en bas pour éviter les attaques frontales.</li><li>Collectez les icônes d'ailes pour plus de vitesse.</li><li>Utilisez le bouton de saut pour effectuer des esquives aériennes.</li><li>Volez en rond pour éviter les tirs ennemis.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Tieni premuto il pulsante di fuoco per danni prolungati.</li><li>Premi Seleziona per attivare la modalità invulnerabilità.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Rimani in basso per evitare attacchi frontali.</li><li>Raccogli le icone delle ali per una maggiore velocità.</li><li>Usa il pulsante di salto per eseguire schivate aeree.</li><li>Vola in tondo per evitare il fuoco nemico.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

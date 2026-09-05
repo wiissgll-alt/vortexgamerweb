@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Haz un mate con turbo cuando estés libre.</li><li>Pasa el balón rápidamente.</li><li>Presiona el botón de empujón para robar.</li><li>Presiona select para ver estadísticas.</li><li>Quédate frente al aro para el rebote.</li><li>Usa el turbo al entrar a la zona.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Do a turbo dunk when you're free.</li><li>Pass the ball quickly.</li><li>Press the push button to steal.</li><li>Press select to view statistics.</li><li>Stay in front of the rim for the rebound.</li><li>Use the turbo when entering the area.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Faites un turbo dunk lorsque vous êtes libre.</li><li>Passez le ballon rapidement.</li><li>Appuyez sur le bouton poussoir pour voler.</li><li>Appuyez sur Sélectionner pour afficher les statistiques.</li><li>Restez devant la jante pour le rebond.</li><li>Utilisez le turbo en entrant dans la zone.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Fai una schiacciata turbo quando sei libero.</li><li>Passa velocemente la palla.</li><li>Premi il pulsante per rubare.</li><li>Premere Seleziona per visualizzare le statistiche.</li><li>Rimani davanti al cerchio per il rimbalzo.</li><li>Usa il turbo quando entri nell'area.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Haz un mate con turbo cuando estés libre.</li><li>Pasa el balón rápidamente.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Presiona el botón de empujón para robar.</li><li>Presiona select para ver estadísticas.</li><li>Quédate frente al aro para el rebote.</li><li>Usa el turbo al entrar a la zona.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Do a turbo dunk when you're free.</li><li>Pass the ball quickly.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Press the push button to steal.</li><li>Press select to view statistics.</li><li>Stay in front of the rim for the rebound.</li><li>Use the turbo when entering the area.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Faites un turbo dunk lorsque vous êtes libre.</li><li>Passez le ballon rapidement.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Appuyez sur le bouton poussoir pour voler.</li><li>Appuyez sur Sélectionner pour afficher les statistiques.</li><li>Restez devant la jante pour le rebond.</li><li>Utilisez le turbo en entrant dans la zone.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Fai una schiacciata turbo quando sei libero.</li><li>Passa velocemente la palla.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Premi il pulsante per rubare.</li><li>Premere Seleziona per visualizzare le statistiche.</li><li>Rimani davanti al cerchio per il rimbalzo.</li><li>Usa il turbo quando entri nell'area.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

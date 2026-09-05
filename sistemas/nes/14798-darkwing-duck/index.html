@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Aprende a disparar desde el salto.</li><li>El diseño de nivel es plataformero clásico; ten cuidado.</li><li>La capa es muy útil para protegerte de balas.</li><li>Mejora tu arma tan pronto como puedas.</li><li>Memoriza el ataque de los jefes.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Learn to shoot from the jump.</li><li>The level design is classic platformer; be careful.</li><li>The cape is very useful to protect you from bullets.</li><li>Upgrade your weapon as soon as you can.</li><li>Memorize the bosses attack.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Apprenez à tirer depuis le saut.</li><li>La conception des niveaux est un jeu de plateforme classique ; sois prudent.</li><li>La cape est très utile pour vous protéger des balles.</li><li>Améliorez votre arme dès que vous le pouvez.</li><li>Mémorisez l'attaque des boss.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Impara a sparare dal salto.</li><li>Il design dei livelli è quello classico del platform; stai attento.</li><li>Il mantello è molto utile per proteggerti dai proiettili.</li><li>Aggiorna la tua arma il più presto possibile.</li><li>Memorizza l'attacco del boss.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Aprende a disparar desde el salto.</li><li>El diseño de nivel es plataformero clásico; ten cuidado.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La capa es muy útil para protegerte de balas.</li><li>Mejora tu arma tan pronto como puedas.</li><li>Memoriza el ataque de los jefes.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Learn to shoot from the jump.</li><li>The level design is classic platformer; be careful.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>The cape is very useful to protect you from bullets.</li><li>Upgrade your weapon as soon as you can.</li><li>Memorize the bosses attack.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Apprenez à tirer depuis le saut.</li><li>La conception des niveaux est un jeu de plateforme classique ; sois prudent.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La cape est très utile pour vous protéger des balles.</li><li>Améliorez votre arme dès que vous le pouvez.</li><li>Mémorisez l'attaque des boss.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Impara a sparare dal salto.</li><li>Il design dei livelli è quello classico del platform; stai attento.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Il mantello è molto utile per proteggerti dai proiettili.</li><li>Aggiorna la tua arma il più presto possibile.</li><li>Memorizza l'attacco del boss.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

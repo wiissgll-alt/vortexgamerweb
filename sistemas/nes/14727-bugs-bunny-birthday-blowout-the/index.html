@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Cuidado con los enemigos que lanzan proyectiles.</li><li>El salto requiere control para evitar caer.</li><li>Explora todas las puertas; algunas llevan a bonus.</li><li>Recoge las zanahorias para puntos.</li><li>Usa el mazo para golpear a los enemigos; tiene buen rango.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Be careful with enemies that launch projectiles.</li><li>Jumping requires control to avoid falling.</li><li>Explore all doors; some lead to bonuses.</li><li>Collect carrots for points.</li><li>Use the mallet to hit enemies; It has good range.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Soyez prudent avec les ennemis qui lancent des projectiles.</li><li>Sauter nécessite du contrôle pour éviter de tomber.</li><li>Explorez toutes les portes ; certains donnent lieu à des bonus.</li><li>Collectez des carottes pour des points.</li><li>Utilisez le maillet pour frapper les ennemis ; Il a une bonne portée.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Fai attenzione ai nemici che lanciano proiettili.</li><li>Saltare richiede controllo per evitare di cadere.</li><li>Esplora tutte le porte; alcuni portano a bonus.</li><li>Raccogli le carote per ottenere punti.</li><li>Usa il martello per colpire i nemici; Ha una buona portata.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Cuidado con los enemigos que lanzan proyectiles.</li><li>El salto requiere control para evitar caer.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Explora todas las puertas; algunas llevan a bonus.</li><li>Recoge las zanahorias para puntos.</li><li>Usa el mazo para golpear a los enemigos; tiene buen rango.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Be careful with enemies that launch projectiles.</li><li>Jumping requires control to avoid falling.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Explore all doors; some lead to bonuses.</li><li>Collect carrots for points.</li><li>Use the mallet to hit enemies; It has good range.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Soyez prudent avec les ennemis qui lancent des projectiles.</li><li>Sauter nécessite du contrôle pour éviter de tomber.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Explorez toutes les portes ; certains donnent lieu à des bonus.</li><li>Collectez des carottes pour des points.</li><li>Utilisez le maillet pour frapper les ennemis ; Il a une bonne portée.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Fai attenzione ai nemici che lanciano proiettili.</li><li>Saltare richiede controllo per evitare di cadere.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Esplora tutte le porte; alcuni portano a bonus.</li><li>Raccogli le carote per ottenere punti.</li><li>Usa il martello per colpire i nemici; Ha una buona portata.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

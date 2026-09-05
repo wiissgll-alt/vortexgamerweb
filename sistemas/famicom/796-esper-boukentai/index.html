@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>El ataque final se recarga al instante con B+Select.</li><li>El nivel de salto aumenta pulsando Arriba repetidamente.</li><li>No recibes daño de caídas con la habilidad de levitación.</li><li>Pulsa Select para alternar entre personajes invencibles.</li><li>Supera los niveles rápidamente con el truco de teletransporte.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>La energía psíquica es infinita con el ítem de cristal.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>The final attack recharges instantly with B+Select.</li><li>The jump level is increased by pressing Up repeatedly.</li><li>You do not take fall damage with the levitation ability.</li><li>Press Select to switch between invincible characters.</li><li>Clear levels quickly with the teleportation trick.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Psychic energy is infinite with the crystal item.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>L'attaque finale se recharge instantanément avec B+Select.</li><li>Le niveau de saut augmente en appuyant plusieurs fois sur Haut.</li><li>Vous ne subissez pas de dégâts de chute avec la capacité de lévitation.</li><li>Appuyez sur Sélectionner pour basculer entre les personnages invincibles.</li><li>Terminez les niveaux rapidement avec l'astuce de téléportation.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>L'énergie psychique est infinie avec l'objet en cristal.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>L'attacco finale si ricarica istantaneamente con B+Select.</li><li>Il livello di salto viene aumentato premendo ripetutamente Su.</li><li>Non subisci danni da caduta con l'abilità di levitazione.</li><li>Premi Seleziona per passare da un personaggio invincibile all'altro.</li><li>Completa rapidamente i livelli con il trucco del teletrasporto.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>L'energia psichica è infinita con l'oggetto di cristallo.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>El ataque final se recarga al instante con B+Select.</li><li>El nivel de salto aumenta pulsando Arriba repetidamente.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>No recibes daño de caídas con la habilidad de levitación.</li><li>Pulsa Select para alternar entre personajes invencibles.</li><li>Supera los niveles rápidamente con el truco de teletransporte.</li><li>La energía psíquica es infinita con el ítem de cristal.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>The final attack recharges instantly with B+Select.</li><li>The jump level is increased by pressing Up repeatedly.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>You do not take fall damage with the levitation ability.</li><li>Press Select to switch between invincible characters.</li><li>Clear levels quickly with the teleportation trick.</li><li>Psychic energy is infinite with the crystal item.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>L'attaque finale se recharge instantanément avec B+Select.</li><li>Le niveau de saut augmente en appuyant plusieurs fois sur Haut.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Vous ne subissez pas de dégâts de chute avec la capacité de lévitation.</li><li>Appuyez sur Sélectionner pour basculer entre les personnages invincibles.</li><li>Terminez les niveaux rapidement avec l'astuce de téléportation.</li><li>L'énergie psychique est infinie avec l'objet en cristal.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>L'attacco finale si ricarica istantaneamente con B+Select.</li><li>Il livello di salto viene aumentato premendo ripetutamente Su.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Non subisci danni da caduta con l'abilità di levitazione.</li><li>Premi Seleziona per passare da un personaggio invincibile all'altro.</li><li>Completa rapidamente i livelli con il trucco del teletrasporto.</li><li>L'energia psichica è infinita con l'oggetto di cristallo.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

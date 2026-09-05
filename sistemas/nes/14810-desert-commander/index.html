@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Coordina tus ataques.</li><li>El terreno es clave para la defensa.</li><li>Estrategia bélica; mueve tus unidades con inteligencia.</li><li>No dejes unidades aisladas.</li><li>Piensa en la mejor ruta.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Coordinate your attacks.</li><li>The terrain is key for defense.</li><li>war strategy; Move your units intelligently.</li><li>Do not leave units isolated.</li><li>Think about the best route.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Coordonnez vos attaques.</li><li>Le terrain est essentiel pour la défense.</li><li>stratégie de guerre; Déplacez vos unités intelligemment.</li><li>Ne laissez pas les unités isolées.</li><li>Pensez au meilleur itinéraire.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Coordina i tuoi attacchi.</li><li>Il terreno è fondamentale per la difesa.</li><li>strategia di guerra; Muovi le tue unità in modo intelligente.</li><li>Non lasciare le unità isolate.</li><li>Pensa al percorso migliore.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Coordina tus ataques.</li><li>El terreno es clave para la defensa.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Estrategia bélica; mueve tus unidades con inteligencia.</li><li>No dejes unidades aisladas.</li><li>Piensa en la mejor ruta.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Coordinate your attacks.</li><li>The terrain is key for defense.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>war strategy; Move your units intelligently.</li><li>Do not leave units isolated.</li><li>Think about the best route.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Coordonnez vos attaques.</li><li>Le terrain est essentiel pour la défense.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>stratégie de guerre; Déplacez vos unités intelligemment.</li><li>Ne laissez pas les unités isolées.</li><li>Pensez au meilleur itinéraire.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Coordina i tuoi attacchi.</li><li>Il terreno è fondamentale per la difesa.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>strategia di guerra; Muovi le tue unità in modo intelligente.</li><li>Non lasciare le unità isolate.</li><li>Pensa al percorso migliore.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

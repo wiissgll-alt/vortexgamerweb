@@ -64,10 +64,34 @@ Rayman è un platform a scorrimento laterale con protagonista Rayman, un ragazzo
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Presiona el botón para lanzar el puño.</li><li>Presiona select para ver el mapa.</li><li>Quédate en plataformas seguras.</li><li>Recoge los lums para bonus.</li><li>Salta sobre los enemigos.</li><li>Usa el puño para atacar a distancia.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Press the button to throw the fist.</li><li>Press select to view the map.</li><li>Stay on safe platforms.</li><li>Collect the lums for bonus.</li><li>Jump over the enemies.</li><li>Use your fist to attack from a distance.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Appuyez sur le bouton pour lancer le poing.</li><li>Appuyez sur Sélectionner pour afficher la carte.</li><li>Restez sur des plateformes sécurisées.</li><li>Récupérez les lums pour obtenir un bonus.</li><li>Sautez par-dessus les ennemis.</li><li>Utilisez votre poing pour attaquer à distance.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Premi il pulsante per lanciare il pugno.</li><li>Premere Seleziona per visualizzare la mappa.</li><li>Rimani su piattaforme sicure.</li><li>Raccogli i lum per il bonus.</li><li>Salta sopra i nemici.</li><li>Usa il pugno per attaccare a distanza.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Presiona el botón para lanzar el puño.</li><li>Presiona select para ver el mapa.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Quédate en plataformas seguras.</li><li>Recoge los lums para bonus.</li><li>Salta sobre los enemigos.</li><li>Usa el puño para atacar a distancia.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Press the button to throw the fist.</li><li>Press select to view the map.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Stay on safe platforms.</li><li>Collect the lums for bonus.</li><li>Jump over the enemies.</li><li>Use your fist to attack from a distance.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Appuyez sur le bouton pour lancer le poing.</li><li>Appuyez sur Sélectionner pour afficher la carte.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Restez sur des plateformes sécurisées.</li><li>Récupérez les lums pour obtenir un bonus.</li><li>Sautez par-dessus les ennemis.</li><li>Utilisez votre poing pour attaquer à distance.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Premi il pulsante per lanciare il pugno.</li><li>Premere Seleziona per visualizzare la mappa.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Rimani su piattaforme sicure.</li><li>Raccogli i lum per il bonus.</li><li>Salta sopra i nemici.</li><li>Usa il pugno per attaccare a distanza.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -85,6 +109,15 @@ Rayman è un platform a scorrimento laterale con protagonista Rayman, un ragazzo
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

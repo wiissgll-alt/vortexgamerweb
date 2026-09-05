@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Ajusta el efecto de la bola en el aire.</li><li>Analiza el green antes del putt.</li><li>Conoce tu distancia de vuelo real con cada palo.</li><li>El control es más avanzado que en otros juegos de golf.</li><li>El viento es muy traicionero.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Adjusts the effect of the ball in the air.</li><li>Analyze the green before putting.</li><li>Know your actual flight distance with each club.</li><li>The control is more advanced than in other golf games.</li><li>The wind is very treacherous.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Ajuste l'effet de la balle dans les airs.</li><li>Analysez le green avant de mettre.</li><li>Connaissez votre distance de vol réelle avec chaque club.</li><li>Le contrôle est plus avancé que dans les autres jeux de golf.</li><li>Le vent est très traître.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Regola l'effetto della palla in aria.</li><li>Analizza il green prima di mettere.</li><li>Conosci la distanza effettiva del tuo volo con ciascun club.</li><li>Il controllo è più avanzato rispetto ad altri giochi di golf.</li><li>Il vento è molto insidioso.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Ajusta el efecto de la bola en el aire.</li><li>Analiza el green antes del putt.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Conoce tu distancia de vuelo real con cada palo.</li><li>El control es más avanzado que en otros juegos de golf.</li><li>El viento es muy traicionero.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Adjusts the effect of the ball in the air.</li><li>Analyze the green before putting.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Know your actual flight distance with each club.</li><li>The control is more advanced than in other golf games.</li><li>The wind is very treacherous.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Ajuste l'effet de la balle dans les airs.</li><li>Analysez le green avant de mettre.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Connaissez votre distance de vol réelle avec chaque club.</li><li>Le contrôle est plus avancé que dans les autres jeux de golf.</li><li>Le vent est très traître.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Regola l'effetto della palla in aria.</li><li>Analizza il green prima di mettere.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Conosci la distanza effettiva del tuo volo con ciascun club.</li><li>Il controllo è più avanzato rispetto ad altri giochi di golf.</li><li>Il vento è molto insidioso.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

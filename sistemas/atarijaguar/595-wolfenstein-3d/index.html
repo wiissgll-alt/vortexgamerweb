@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Busca paredes ocultas para secretos.</li><li>Dispara a los guardias desde lejos.</li><li>Presiona el botón para abrir puertas.</li><li>Presiona select para ver el mapa.</li><li>Quédate en las esquinas para cubrirte.</li><li>Recoge salud y munición siempre.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Search hidden walls for secrets.</li><li>Shoot the guards from afar.</li><li>Press the button to open doors.</li><li>Press select to view the map.</li><li>Stay in the corners for cover.</li><li>Always collect health and ammunition.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Cherchez des secrets dans les murs cachés.</li><li>Tirez sur les gardes à distance.</li><li>Appuyez sur le bouton pour ouvrir les portes.</li><li>Appuyez sur Sélectionner pour afficher la carte.</li><li>Restez dans les coins pour vous couvrir.</li><li>Récupérez toujours de la santé et des munitions.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Cerca segreti nei muri nascosti.</li><li>Spara alle guardie da lontano.</li><li>Premere il pulsante per aprire le porte.</li><li>Premere Seleziona per visualizzare la mappa.</li><li>Rimani negli angoli per ripararti.</li><li>Raccogli sempre salute e munizioni.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Busca paredes ocultas para secretos.</li><li>Dispara a los guardias desde lejos.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Presiona el botón para abrir puertas.</li><li>Presiona select para ver el mapa.</li><li>Quédate en las esquinas para cubrirte.</li><li>Recoge salud y munición siempre.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Search hidden walls for secrets.</li><li>Shoot the guards from afar.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Press the button to open doors.</li><li>Press select to view the map.</li><li>Stay in the corners for cover.</li><li>Always collect health and ammunition.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Cherchez des secrets dans les murs cachés.</li><li>Tirez sur les gardes à distance.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Appuyez sur le bouton pour ouvrir les portes.</li><li>Appuyez sur Sélectionner pour afficher la carte.</li><li>Restez dans les coins pour vous couvrir.</li><li>Récupérez toujours de la santé et des munitions.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Cerca segreti nei muri nascosti.</li><li>Spara alle guardie da lontano.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Premere il pulsante per aprire le porte.</li><li>Premere Seleziona per visualizzare la mappa.</li><li>Rimani negli angoli per ripararti.</li><li>Raccogli sempre salute e munizioni.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

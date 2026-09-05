@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Dispara a los misiles enemigos antes de impactar.</li><li>Presiona el botón para disparar defensas.</li><li>Presiona select para cambiar el ángulo de vista.</li><li>Quédate en el centro de tu base.</li><li>Recoge bonos para más proyectiles.</li><li>Usa el modo 3D para mejor precisión.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Shoot enemy missiles before they hit.</li><li>Press the button to fire defenses.</li><li>Press select to change the view angle.</li><li>Stay in the center of your base.</li><li>Collect bonuses for more projectiles.</li><li>Use 3D mode for better precision.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Tirez sur les missiles ennemis avant qu'ils ne frappent.</li><li>Appuyez sur le bouton pour tirer les défenses.</li><li>Appuyez sur Sélectionner pour modifier l'angle de vue.</li><li>Restez au centre de votre base.</li><li>Collectez des bonus pour plus de projectiles.</li><li>Utilisez le mode 3D pour une meilleure précision.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Spara ai missili nemici prima che colpiscano.</li><li>Premi il pulsante per sparare alle difese.</li><li>Premere Seleziona per modificare l'angolo di visualizzazione.</li><li>Rimani al centro della tua base.</li><li>Raccogli i bonus per più proiettili.</li><li>Utilizza la modalità 3D per una migliore precisione.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Dispara a los misiles enemigos antes de impactar.</li><li>Presiona el botón para disparar defensas.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Presiona select para cambiar el ángulo de vista.</li><li>Quédate en el centro de tu base.</li><li>Recoge bonos para más proyectiles.</li><li>Usa el modo 3D para mejor precisión.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Shoot enemy missiles before they hit.</li><li>Press the button to fire defenses.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Press select to change the view angle.</li><li>Stay in the center of your base.</li><li>Collect bonuses for more projectiles.</li><li>Use 3D mode for better precision.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Tirez sur les missiles ennemis avant qu'ils ne frappent.</li><li>Appuyez sur le bouton pour tirer les défenses.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Appuyez sur Sélectionner pour modifier l'angle de vue.</li><li>Restez au centre de votre base.</li><li>Collectez des bonus pour plus de projectiles.</li><li>Utilisez le mode 3D pour une meilleure précision.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Spara ai missili nemici prima che colpiscano.</li><li>Premi il pulsante per sparare alle difese.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Premere Seleziona per modificare l'angolo di visualizzazione.</li><li>Rimani al centro della tua base.</li><li>Raccogli i bonus per più proiettili.</li><li>Utilizza la modalità 3D per una migliore precisione.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

@@ -167,6 +167,21 @@ function renderFooter(canonicalPath) {
 <script src="${rel(canonicalPath, '/assets/i18n.js')}"></script>`;
 }
 
+// Popup compartido: se abre al tocar cualquier elemento marcado con data-require-app
+// (filas de precios, el aviso encima de trucos/consejos difuminados...) en vez de dejar
+// ver/enlazar todo gratis. Un solo modal por página, controlado desde i18n.js.
+function renderDownloadModal(canonicalPath) {
+  return `<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="${rel(canonicalPath, '/assets/logo.png')}" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="${PLAY_STORE_URL}" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
+</div>`;
+}
+
 function page({ canonicalPath, title, description, image, jsonLd, body }) {
   return `<!doctype html>
 <html lang="es">
@@ -178,6 +193,7 @@ ${renderHeader(canonicalPath)}
 ${body}
 ${renderFooter(canonicalPath)}
 ${renderDownloadBar()}
+${renderDownloadModal(canonicalPath)}
 </body>
 </html>`;
 }
@@ -273,12 +289,29 @@ async function main() {
   ${hasCheatsOrTips ? `<div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
     ${langBlocks(l => {
-      const tips = (tipsByLang && tipsByLang[l]) || [];
-      const cheats = (cheatsByLang && cheatsByLang[l]) || [];
-      if (!tips.length && !cheats.length) return `<p>—</p>`;
-      let html = '';
-      if (tips.length) html += `<ul>${tips.map(t => `<li>${escapeHtml(t)}</li>`).join('')}</ul>`;
-      if (cheats.length) html += `<h3 data-i18n="game.cheats">Trucos</h3><ul>${cheats.map(t => `<li>${escapeHtml(t)}</li>`).join('')}</ul>`;
+      const tips = ((tipsByLang && tipsByLang[l]) || []).map(t => ({ t, isCheat: false }));
+      const cheats = ((cheatsByLang && cheatsByLang[l]) || []).map(t => ({ t, isCheat: true }));
+      const all = [...tips, ...cheats];
+      if (!all.length) return `<p>—</p>`;
+
+      // Adelanto: las 2 primeras entradas se ven enteras -para que Google indexe contenido
+      // real y el usuario vea que hay algo de valor-, el resto se difumina con una llamada
+      // a descargar la app en vez de enseñarlo todo gratis (el texto sigue en el HTML).
+      const VISIBLE = 2;
+      const visible = all.slice(0, VISIBLE);
+      const rest = all.slice(VISIBLE);
+      const itemHtml = item => `<li>${escapeHtml(item.t)}</li>`;
+
+      let html = `<ul>${visible.map(itemHtml).join('')}</ul>`;
+      if (rest.length) {
+        html += `<div class="gated-wrap">
+          <ul class="gated-blur">${rest.map(itemHtml).join('')}</ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div>`;
+      }
       return html;
     })}
   </div>` : ''}
@@ -313,17 +346,38 @@ async function main() {
         <div class="body"><div class="name">${escapeHtml(gl.name)}</div></div>
       </a>`).join('\n');
 
+      // OJO: la página 1 vive en /sistemas/{sistema}/ (no dentro de una subcarpeta "page/"),
+      // mientras que el resto vive en /sistemas/{sistema}/page/N/ -por eso el enlace a una
+      // página >1 visto DESDE la página 1 es "page/N/" (bajar), pero visto desde otra página
+      // >1 es "../N/" (hermana dentro de la misma carpeta "page/"). Mezclar ambos casos con
+      // la misma fórmula fue justo el bug que daba 404 al paginar.
+      const pageLink = n => {
+        if (n === 1) return p === 1 ? '#' : '../../';
+        return p === 1 ? `page/${n}/` : `../${n}/`;
+      };
+
+      // Con listados de cientos/miles de juegos salen decenas de páginas (MAME: 33) -mostrar
+      // los 33 números de golpe es un muro en el móvil-, así que se acortan con "…" dejando
+      // siempre visibles: primera, última, y un par de vecinas a la actual.
+      const pageNumbers = [];
+      for (let n = 1; n <= totalPages; n++) {
+        if (n === 1 || n === totalPages || Math.abs(n - p) <= 1) pageNumbers.push(n);
+        else if (pageNumbers[pageNumbers.length - 1] !== '…') pageNumbers.push('…');
+      }
+
       const pager = totalPages > 1 ? `<div class="pagination">
-        ${p > 1 ? `<a href="${p === 2 ? '../../' : '../' + (p - 1) + '/'}" data-i18n="pagination.prev">Anterior</a>` : ''}
-        ${Array.from({ length: totalPages }, (_, i) => i + 1).map(n => n === p
-          ? `<span class="current">${n}</span>`
-          : `<a href="${n === 1 ? (p === 1 ? '#' : '../../') : '../' + n + '/'}">${n}</a>`).join('\n        ')}
-        ${p < totalPages ? `<a href="../${p + 1}/" data-i18n="pagination.next">Siguiente</a>` : ''}
+        <a class="arrow" href="${pageLink(Math.max(1, p - 1))}" data-i18n="pagination.prev" aria-label="anterior">${p > 1 ? '◀' : ''}</a>
+        ${pageNumbers.map(n => n === '…'
+          ? `<span class="ellipsis">…</span>`
+          : n === p
+            ? `<span class="current">${n}</span>`
+            : `<a href="${pageLink(n)}">${n}</a>`).join('\n        ')}
+        <a class="arrow" href="${pageLink(Math.min(totalPages, p + 1))}" data-i18n="pagination.next" aria-label="siguiente">${p < totalPages ? '▶' : ''}</a>
       </div>` : '';
 
       const body = `<main class="wrap">
   <p class="breadcrumb"><a href="${p === 1 ? '../index.html' : '../../../index.html'}" data-i18n="nav.systems">Sistemas</a> / ${escapeHtml(systemName)}</p>
-  <h1>${escapeHtml(systemName)}</h1>
+  <h1 class="title-with-icon"><img src="${rel(listUrl, '/assets/consoles/' + systemId + '.png')}" alt="">${escapeHtml(systemName)}</h1>
   <p class="section-sub">${gameLinks.length} <span data-i18n="systems.count">juegos</span></p>
   <input id="game-search" class="search-box" type="search" data-i18n-placeholder="search.placeholder" placeholder="Buscar un juego por nombre...">
   <div class="grid">
@@ -348,7 +402,7 @@ async function main() {
   {
     const cards = systemIds
       .sort((a, b) => games[b].length - games[a].length)
-      .map(s => `<a class="system-card" href="${s}/index.html">${escapeHtml(SYSTEM_NAMES[s] || s.toUpperCase())}<span class="count">${games[s].length} <span data-i18n="systems.count">juegos</span></span></a>`)
+      .map(s => `<a class="system-card" href="${s}/index.html"><img class="system-icon" src="${rel('/sistemas/', '/assets/consoles/' + s + '.png')}" alt="">${escapeHtml(SYSTEM_NAMES[s] || s.toUpperCase())}<span class="count">${games[s].length} <span data-i18n="systems.count">juegos</span></span></a>`)
       .join('\n');
 
     const body = `<main class="wrap section">
@@ -373,7 +427,7 @@ async function main() {
     for (const systemId of priceSystemIds) {
       const systemName = SYSTEM_NAMES[systemId] || systemId.toUpperCase();
       const items = prices.systems[systemId].slice(0, 20);
-      const rows = items.map(it => `<tr>
+      const rows = items.map(it => `<tr data-require-app>
         <td class="rank">#${it.rank}</td>
         <td>${escapeHtml(it.name)}</td>
         <td class="price">$${Number(it.price_usd).toFixed(2)} / ${Number(it.price_eur).toFixed(2)}€</td>
@@ -381,15 +435,16 @@ async function main() {
 
       const body = `<main class="wrap section">
   <p class="breadcrumb"><a href="../index.html" data-i18n="nav.prices">Precios</a> / ${escapeHtml(systemName)}</p>
-  <h1>🔥 Top 20 ${escapeHtml(systemName)} <span data-i18n="prices.title"></span></h1>
-  <p class="updated-note"><span data-i18n="prices.updated">Actualizado el</span> ${escapeHtml(prices.updated)} — <span data-i18n="prices.source">Fuente: PriceCharting</span></p>
+  <h1 class="title-with-icon"><img src="${rel(`/precios/${systemId}/`, '/assets/consoles/' + systemId + '.png')}" alt="">🔥 Top 20 ${escapeHtml(systemName)}</h1>
+  <p class="updated-note"><span data-i18n="prices.updated">Actualizado el</span> ${escapeHtml(prices.updated)}</p>
   <div class="price-table-wrap">
   <table class="price-table">
     <thead><tr><th data-i18n="prices.rank">Puesto</th><th data-i18n="prices.name">Juego</th><th data-i18n="prices.price">Precio</th></tr></thead>
     <tbody>${rows}</tbody>
   </table>
   </div>
-  <div class="panel-box" style="text-align:center;margin-top:24px;">
+  <p class="updated-note" data-i18n="prices.tapinfo">Toca una fila para ver más detalles en la app</p>
+  <div class="panel-box" style="text-align:center;margin-top:12px;">
     <a class="btn btn-primary" href="${PLAY_STORE_URL}" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
   </div>
 </main>`;
@@ -403,9 +458,10 @@ async function main() {
       addSitemap(`/precios/${systemId}/`, 0.8);
     }
 
-    const hubCards = priceSystemIds.map(s => `<a class="system-card" href="${s}/index.html">🔥 ${escapeHtml(SYSTEM_NAMES[s] || s.toUpperCase())}</a>`).join('\n');
+    const hubCards = priceSystemIds.map(s => `<a class="system-card" href="${s}/index.html"><img class="system-icon" src="${rel('/precios/', '/assets/consoles/' + s + '.png')}" alt="">🔥 ${escapeHtml(SYSTEM_NAMES[s] || s.toUpperCase())}</a>`).join('\n');
     const hubBody = `<main class="wrap section">
   <h1 data-i18n="prices.hub.title">Los juegos retro más caros del mercado</h1>
+  <p class="section-sub" data-i18n="prices.hub.sub">¿Cuánto valen tus juegos clásicos? Consulta el ranking por consola.</p>
   <p class="updated-note"><span data-i18n="prices.updated">Actualizado el</span> ${escapeHtml(prices.updated)}</p>
   <div class="system-grid">${hubCards}</div>
 </main>`;
@@ -454,7 +510,7 @@ async function main() {
   // ---------- Home ----------
   {
     const topSystems = systemIds.sort((a, b) => games[b].length - games[a].length).slice(0, 8);
-    const cards = topSystems.map(s => `<a class="system-card" href="sistemas/${s}/index.html">${escapeHtml(SYSTEM_NAMES[s] || s.toUpperCase())}<span class="count">${games[s].length} <span data-i18n="systems.count">juegos</span></span></a>`).join('\n');
+    const cards = topSystems.map(s => `<a class="system-card" href="sistemas/${s}/index.html"><img class="system-icon" src="assets/consoles/${s}.png" alt="">${escapeHtml(SYSTEM_NAMES[s] || s.toUpperCase())}<span class="count">${games[s].length} <span data-i18n="systems.count">juegos</span></span></a>`).join('\n');
 
     const body = `<main>
   <section class="hero wrap">
@@ -464,7 +520,7 @@ async function main() {
     <div class="cta-row">
       <a class="btn btn-primary" href="${PLAY_STORE_URL}" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
       <a class="btn btn-ghost" href="sistemas/index.html" data-i18n="hero.explore">Explorar sistemas</a>
-      <a class="btn btn-ghost" href="precios/index.html" data-i18n="hero.prices">Ver top de precios</a>
+      <a class="btn btn-ghost" href="precios/index.html" data-i18n="hero.prices">💰 ¿Cuánto valen tus juegos?</a>
     </div>
   </section>
 

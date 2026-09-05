@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Controla el centro del tablero.</li><li>No sacrifiques piezas sin una ventaja clara.</li><li>Prepara trampas para capturar múltiples fichas.</li><li>Protege a tus fichas rey.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Control the center of the board.</li><li>Don't sacrifice pieces without a clear advantage.</li><li>Prepare traps to capture multiple tokens.</li><li>Protect your king pieces.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Contrôlez le centre du tableau.</li><li>Ne sacrifiez pas de pièces sans un avantage évident.</li><li>Préparez des pièges pour capturer plusieurs jetons.</li><li>Protégez vos pièces de roi.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Controlla il centro del tabellone.</li><li>Non sacrificare i pezzi senza un chiaro vantaggio.</li><li>Prepara trappole per catturare più token.</li><li>Proteggi i tuoi pezzi del Re.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Controla el centro del tablero.</li><li>No sacrifiques piezas sin una ventaja clara.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Prepara trampas para capturar múltiples fichas.</li><li>Protege a tus fichas rey.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Control the center of the board.</li><li>Don't sacrifice pieces without a clear advantage.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Prepare traps to capture multiple tokens.</li><li>Protect your king pieces.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Contrôlez le centre du tableau.</li><li>Ne sacrifiez pas de pièces sans un avantage évident.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Préparez des pièges pour capturer plusieurs jetons.</li><li>Protégez vos pièces de roi.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Controlla il centro del tabellone.</li><li>Non sacrificare i pezzi senza un chiaro vantaggio.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Prepara trappole per catturare più token.</li><li>Proteggi i tuoi pezzi del Re.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

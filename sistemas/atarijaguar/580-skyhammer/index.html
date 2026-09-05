@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Presiona el botón para ataque principal.</li><li>Presiona select para ver el mapa de misión.</li><li>Quédate en movimiento constante.</li><li>Recoge energía en las zonas de aterrizaje.</li><li>Usa misiles contra objetivos grandes.</li><li>Vuela bajo para ocultarte de enemigos.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Press the button for main attack.</li><li>Press select to view the mission map.</li><li>Stay in constant motion.</li><li>Collect energy at landing zones.</li><li>Use missiles against large targets.</li><li>Fly low to hide from enemies.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Appuyez sur le bouton pour l'attaque principale.</li><li>Appuyez sur Sélectionner pour afficher la carte de la mission.</li><li>Restez en mouvement constant.</li><li>Collectez de l'énergie dans les zones d'atterrissage.</li><li>Utilisez des missiles contre de grandes cibles.</li><li>Volez bas pour vous cacher des ennemis.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Premi il pulsante per l'attacco principale.</li><li>Premi Seleziona per visualizzare la mappa della missione.</li><li>Rimani in costante movimento.</li><li>Raccogli energia nelle zone di atterraggio.</li><li>Usa i missili contro obiettivi di grandi dimensioni.</li><li>Vola basso per nasconderti dai nemici.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Presiona el botón para ataque principal.</li><li>Presiona select para ver el mapa de misión.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Quédate en movimiento constante.</li><li>Recoge energía en las zonas de aterrizaje.</li><li>Usa misiles contra objetivos grandes.</li><li>Vuela bajo para ocultarte de enemigos.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Press the button for main attack.</li><li>Press select to view the mission map.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Stay in constant motion.</li><li>Collect energy at landing zones.</li><li>Use missiles against large targets.</li><li>Fly low to hide from enemies.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Appuyez sur le bouton pour l'attaque principale.</li><li>Appuyez sur Sélectionner pour afficher la carte de la mission.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Restez en mouvement constant.</li><li>Collectez de l'énergie dans les zones d'atterrissage.</li><li>Utilisez des missiles contre de grandes cibles.</li><li>Volez bas pour vous cacher des ennemis.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Premi il pulsante per l'attacco principale.</li><li>Premi Seleziona per visualizzare la mappa della missione.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Rimani in costante movimento.</li><li>Raccogli energia nelle zone di atterraggio.</li><li>Usa i missili contro obiettivi di grandi dimensioni.</li><li>Vola basso per nasconderti dai nemici.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

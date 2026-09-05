@@ -92,10 +92,34 @@ gioco 1 (tabellone): dopo ogni round, tutte le lettere vengono rimescolate, in m
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Conoce tu vocabulario básico.</li><li>La estrategia de palabras largas da más puntos.</li><li>Sé rápido antes de que se agote el tiempo.</li><li>Usa las letras más comunes primero.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Know your basic vocabulary.</li><li>The long word strategy gives more points.</li><li>Be quick before time runs out.</li><li>Use the most common letters first.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Connaissez votre vocabulaire de base.</li><li>La stratégie des mots longs donne plus de points.</li><li>Soyez rapide avant que le temps ne soit écoulé.</li><li>Utilisez d'abord les lettres les plus courantes.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Conosci il tuo vocabolario di base.</li><li>La strategia delle parole lunghe dà più punti.</li><li>Sii veloce prima che scada il tempo.</li><li>Utilizza prima le lettere più comuni.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Conoce tu vocabulario básico.</li><li>La estrategia de palabras largas da más puntos.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Sé rápido antes de que se agote el tiempo.</li><li>Usa las letras más comunes primero.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Know your basic vocabulary.</li><li>The long word strategy gives more points.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Be quick before time runs out.</li><li>Use the most common letters first.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Connaissez votre vocabulaire de base.</li><li>La stratégie des mots longs donne plus de points.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Soyez rapide avant que le temps ne soit écoulé.</li><li>Utilisez d'abord les lettres les plus courantes.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Conosci il tuo vocabolario di base.</li><li>La strategia delle parole lunghe dà più punti.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Sii veloce prima che scada il tempo.</li><li>Utilizza prima le lettere più comuni.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -113,6 +137,15 @@ gioco 1 (tabellone): dopo ogni round, tutte le lettere vengono rimescolate, in m
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Controla la altura con cuidado.</li><li>Dispara a los objetivos terrestres.</li><li>Mantén el helicóptero estable.</li><li>Presiona select para ver el radar.</li><li>Quédate en el aire para observar.</li><li>Usa el botón de disparo para misiles.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Check the height carefully.</li><li>Shoot at ground targets.</li><li>Keep the helicopter stable.</li><li>Press select to view the radar.</li><li>Stay in the air to observe.</li><li>Use the fire button for missiles.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Vérifiez soigneusement la hauteur.</li><li>Tirez sur des cibles au sol.</li><li>Gardez l'hélicoptère stable.</li><li>Appuyez sur Sélectionner pour afficher le radar.</li><li>Restez en l’air pour observer.</li><li>Utilisez le bouton de tir pour les missiles.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Controllare attentamente l'altezza.</li><li>Spara a bersagli terrestri.</li><li>Mantieni stabile l'elicottero.</li><li>Premere Seleziona per visualizzare il radar.</li><li>Resta in aria per osservare.</li><li>Usa il pulsante di fuoco per i missili.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Controla la altura con cuidado.</li><li>Dispara a los objetivos terrestres.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Mantén el helicóptero estable.</li><li>Presiona select para ver el radar.</li><li>Quédate en el aire para observar.</li><li>Usa el botón de disparo para misiles.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Check the height carefully.</li><li>Shoot at ground targets.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Keep the helicopter stable.</li><li>Press select to view the radar.</li><li>Stay in the air to observe.</li><li>Use the fire button for missiles.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Vérifiez soigneusement la hauteur.</li><li>Tirez sur des cibles au sol.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Gardez l'hélicoptère stable.</li><li>Appuyez sur Sélectionner pour afficher le radar.</li><li>Restez en l’air pour observer.</li><li>Utilisez le bouton de tir pour les missiles.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Controllare attentamente l'altezza.</li><li>Spara a bersagli terrestri.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Mantieni stabile l'elicottero.</li><li>Premere Seleziona per visualizzare il radar.</li><li>Resta in aria per osservare.</li><li>Usa il pulsante di fuoco per i missili.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

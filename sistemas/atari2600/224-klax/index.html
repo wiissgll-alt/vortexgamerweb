@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Céntrate en el centro de la cinta.</li><li>Haz combinaciones de tres colores iguales.</li><li>La velocidad aumenta, prepárate.</li><li>No dejes que se acumulen bloques.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Focus on the center of the tape.</li><li>Make combinations of three equal colors.</li><li>The speed increases, get ready.</li><li>Don't let blocks accumulate.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Concentrez-vous sur le centre de la bande.</li><li>Faites des combinaisons de trois couleurs égales.</li><li>La vitesse augmente, préparez-vous.</li><li>Ne laissez pas les blocs s'accumuler.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Concentrarsi sul centro del nastro.</li><li>Crea combinazioni di tre colori uguali.</li><li>La velocità aumenta, preparati.</li><li>Non lasciare che i blocchi si accumulino.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Céntrate en el centro de la cinta.</li><li>Haz combinaciones de tres colores iguales.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La velocidad aumenta, prepárate.</li><li>No dejes que se acumulen bloques.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Focus on the center of the tape.</li><li>Make combinations of three equal colors.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>The speed increases, get ready.</li><li>Don't let blocks accumulate.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Concentrez-vous sur le centre de la bande.</li><li>Faites des combinaisons de trois couleurs égales.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La vitesse augmente, préparez-vous.</li><li>Ne laissez pas les blocs s'accumuler.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Concentrarsi sul centro del nastro.</li><li>Crea combinazioni di tre colori uguali.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La velocità aumenta, preparati.</li><li>Non lasciare che i blocchi si accumulino.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

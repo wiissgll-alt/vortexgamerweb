@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Dispara continuamente para mantener el escudo.</li><li>Mantente en el centro para cubrir más terreno.</li><li>Muévete por la parte superior para evitar enemigos.</li><li>Presiona el botón para ataque especial de área.</li><li>Recoge los objetos de energía para restaurar salud.</li><li>Usa el reset para reiniciar el nivel con escudo lleno.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Shoot continuously to maintain the shield.</li><li>Stay in the center to cover more ground.</li><li>Move along the top to avoid enemies.</li><li>Press the button for special area attack.</li><li>Collect energy items to restore health.</li><li>Use the reset to restart the level with a full shield.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Tirez en continu pour maintenir le bouclier.</li><li>Restez au centre pour couvrir plus de terrain.</li><li>Déplacez-vous vers le haut pour éviter les ennemis.</li><li>Appuyez sur le bouton pour une attaque de zone spéciale.</li><li>Collectez des objets énergétiques pour restaurer la santé.</li><li>Utilisez la réinitialisation pour redémarrer le niveau avec un bouclier complet.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Spara continuamente per mantenere lo scudo.</li><li>Rimani al centro per coprire più terreno.</li><li>Muoviti lungo la parte superiore per evitare i nemici.</li><li>Premi il pulsante per un attacco ad area speciale.</li><li>Raccogli oggetti energetici per ripristinare la salute.</li><li>Usa il ripristino per riavviare il livello con lo scudo completo.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Dispara continuamente para mantener el escudo.</li><li>Mantente en el centro para cubrir más terreno.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Muévete por la parte superior para evitar enemigos.</li><li>Presiona el botón para ataque especial de área.</li><li>Recoge los objetos de energía para restaurar salud.</li><li>Usa el reset para reiniciar el nivel con escudo lleno.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Shoot continuously to maintain the shield.</li><li>Stay in the center to cover more ground.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Move along the top to avoid enemies.</li><li>Press the button for special area attack.</li><li>Collect energy items to restore health.</li><li>Use the reset to restart the level with a full shield.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Tirez en continu pour maintenir le bouclier.</li><li>Restez au centre pour couvrir plus de terrain.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Déplacez-vous vers le haut pour éviter les ennemis.</li><li>Appuyez sur le bouton pour une attaque de zone spéciale.</li><li>Collectez des objets énergétiques pour restaurer la santé.</li><li>Utilisez la réinitialisation pour redémarrer le niveau avec un bouclier complet.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Spara continuamente per mantenere lo scudo.</li><li>Rimani al centro per coprire più terreno.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Muoviti lungo la parte superiore per evitare i nemici.</li><li>Premi il pulsante per un attacco ad area speciale.</li><li>Raccogli oggetti energetici per ripristinare la salute.</li><li>Usa il ripristino per riavviare il livello con lo scudo completo.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

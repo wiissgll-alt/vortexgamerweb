@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Aprende los combos.</li><li>Baloncesto callejero; sé agresivo.</li><li>Defiende bien el aro.</li><li>El tiro desde fuera es difícil.</li><li>Haz jugadas individuales.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Learn the combos.</li><li>Street basketball; be aggressive.</li><li>Defends the rim well.</li><li>Shooting from outside is difficult.</li><li>Make individual plays.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Apprenez les combos.</li><li>Basket-ball de rue ; être agressif.</li><li>Défend bien la jante.</li><li>Tirer de l’extérieur est difficile.</li><li>Faites des jeux individuels.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Impara le combo.</li><li>Basket di strada; essere aggressivo.</li><li>Difende bene il cerchio.</li><li>È difficile sparare da fuori.</li><li>Fai giocate individuali.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Aprende los combos.</li><li>Baloncesto callejero; sé agresivo.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Defiende bien el aro.</li><li>El tiro desde fuera es difícil.</li><li>Haz jugadas individuales.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Learn the combos.</li><li>Street basketball; be aggressive.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Defends the rim well.</li><li>Shooting from outside is difficult.</li><li>Make individual plays.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Apprenez les combos.</li><li>Basket-ball de rue ; être agressif.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Défend bien la jante.</li><li>Tirer de l’extérieur est difficile.</li><li>Faites des jeux individuels.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Impara le combo.</li><li>Basket di strada; essere aggressivo.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Difende bene il cerchio.</li><li>È difficile sparare da fuori.</li><li>Fai giocate individuali.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

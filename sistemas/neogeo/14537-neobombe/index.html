@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Juega en modo cooperativo para flanquear a los enemigos.</li><li>La bomba de tiempo te permite colocarla y huir; es ideal para jefes.</li><li>Las bombas de fuego tienen mayor alcance; úsalas para atrapar enemigos en pasillos.</li><li>No te encierres a ti mismo con tus propias bombas.</li><li>Recoge los ítems de velocidad apenas puedas.</li><li>Usa las bombas para abrir camino rápido y evitar oleadas grandes.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Play cooperatively to outflank enemies.</li><li>The time bomb allows you to place it and run away; It is ideal for bosses.</li><li>Fire bombs have longer range; use them to trap enemies in hallways.</li><li>Don't lock yourself in with your own bombs.</li><li>Collect speed items as soon as you can.</li><li>Use the bombs to clear a path quickly and avoid large waves.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Jouez en coopération pour déborder les ennemis.</li><li>La bombe à retardement vous permet de la placer et de vous enfuir ; C'est idéal pour les patrons.</li><li>Les bombes incendiaires ont une portée plus longue ; utilisez-les pour piéger les ennemis dans les couloirs.</li><li>Ne vous enfermez pas avec vos propres bombes.</li><li>Collectez des objets rapides dès que vous le pouvez.</li><li>Utilisez les bombes pour dégager un chemin rapidement et éviter les grosses vagues.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Gioca in modalità cooperativa per aggirare i nemici.</li><li>La bomba a orologeria ti permette di posizionarla e scappare; È l'ideale per i capi.</li><li>Le bombe incendiarie hanno una portata più lunga; usali per intrappolare i nemici nei corridoi.</li><li>Non chiuderti dentro con le tue stesse bombe.</li><li>Raccogli oggetti di velocità il prima possibile.</li><li>Usa le bombe per liberare rapidamente un percorso ed evitare grandi onde.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Juega en modo cooperativo para flanquear a los enemigos.</li><li>La bomba de tiempo te permite colocarla y huir; es ideal para jefes.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Las bombas de fuego tienen mayor alcance; úsalas para atrapar enemigos en pasillos.</li><li>No te encierres a ti mismo con tus propias bombas.</li><li>Recoge los ítems de velocidad apenas puedas.</li><li>Usa las bombas para abrir camino rápido y evitar oleadas grandes.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Play cooperatively to outflank enemies.</li><li>The time bomb allows you to place it and run away; It is ideal for bosses.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Fire bombs have longer range; use them to trap enemies in hallways.</li><li>Don't lock yourself in with your own bombs.</li><li>Collect speed items as soon as you can.</li><li>Use the bombs to clear a path quickly and avoid large waves.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Jouez en coopération pour déborder les ennemis.</li><li>La bombe à retardement vous permet de la placer et de vous enfuir ; C'est idéal pour les patrons.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Les bombes incendiaires ont une portée plus longue ; utilisez-les pour piéger les ennemis dans les couloirs.</li><li>Ne vous enfermez pas avec vos propres bombes.</li><li>Collectez des objets rapides dès que vous le pouvez.</li><li>Utilisez les bombes pour dégager un chemin rapidement et éviter les grosses vagues.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Gioca in modalità cooperativa per aggirare i nemici.</li><li>La bomba a orologeria ti permette di posizionarla e scappare; È l'ideale per i capi.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Le bombe incendiarie hanno una portata più lunga; usali per intrappolare i nemici nei corridoi.</li><li>Non chiuderti dentro con le tue stesse bombe.</li><li>Raccogli oggetti di velocità il prima possibile.</li><li>Usa le bombe per liberare rapidamente un percorso ed evitare grandi onde.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

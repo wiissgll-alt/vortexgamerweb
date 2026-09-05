@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Calcula las probabilidades de los dados.</li><li>La estrategia supera a la suerte.</li><li>No te quedes sin espacio.</li><li>Organiza los dados según sus valores.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Calculate the probabilities of the dice.</li><li>Strategy beats luck.</li><li>Don't run out of space.</li><li>Arrange the dice according to their values.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Calculez les probabilités des dés.</li><li>La stratégie bat la chance.</li><li>Ne manquez pas d'espace.</li><li>Disposez les dés selon leurs valeurs.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Calcolare le probabilità dei dadi.</li><li>La strategia batte la fortuna.</li><li>Non rimanere senza spazio.</li><li>Disporre i dadi in base ai loro valori.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Calcula las probabilidades de los dados.</li><li>La estrategia supera a la suerte.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>No te quedes sin espacio.</li><li>Organiza los dados según sus valores.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Calculate the probabilities of the dice.</li><li>Strategy beats luck.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Don't run out of space.</li><li>Arrange the dice according to their values.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Calculez les probabilités des dés.</li><li>La stratégie bat la chance.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Ne manquez pas d'espace.</li><li>Disposez les dés selon leurs valeurs.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Calcolare le probabilità dei dadi.</li><li>La strategia batte la fortuna.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Non rimanere senza spazio.</li><li>Disporre i dadi in base ai loro valori.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

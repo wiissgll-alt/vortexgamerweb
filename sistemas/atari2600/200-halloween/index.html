@@ -68,10 +68,34 @@ Facendo da babysitter a un gruppo di bambini in una grande casa a due piani, i g
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Escóndete cuando escuches música.</li><li>Mantén la distancia con Michael Myers.</li><li>No te quedes bloqueado en una habitación.</li><li>Usa las puertas a tu favor.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Hide when you listen to music.</li><li>Keep your distance from Michael Myers.</li><li>Don't get stuck in a room.</li><li>Use the doors to your advantage.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Cachez-vous lorsque vous écoutez de la musique.</li><li>Gardez vos distances avec Michael Myers.</li><li>Ne restez pas coincé dans une pièce.</li><li>Utilisez les portes à votre avantage.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Nasconditi quando ascolti musica.</li><li>Mantieni le distanze da Michael Myers.</li><li>Non rimanere bloccato in una stanza.</li><li>Usa le porte a tuo vantaggio.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Escóndete cuando escuches música.</li><li>Mantén la distancia con Michael Myers.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>No te quedes bloqueado en una habitación.</li><li>Usa las puertas a tu favor.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Hide when you listen to music.</li><li>Keep your distance from Michael Myers.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Don't get stuck in a room.</li><li>Use the doors to your advantage.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Cachez-vous lorsque vous écoutez de la musique.</li><li>Gardez vos distances avec Michael Myers.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Ne restez pas coincé dans une pièce.</li><li>Utilisez les portes à votre avantage.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Nasconditi quando ascolti musica.</li><li>Mantieni le distanze da Michael Myers.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Non rimanere bloccato in una stanza.</li><li>Usa le porte a tuo vantaggio.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -89,6 +113,15 @@ Facendo da babysitter a un gruppo di bambini in una grande casa a due piani, i g
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

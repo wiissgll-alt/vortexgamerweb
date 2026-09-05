@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Atrapa los animales.</li><li>La agilidad es clave.</li><li>Sé rápido.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Catch the animals.</li><li>Agility is key.</li><li>Be quick.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Attrapez les animaux.</li><li>L'agilité est la clé.</li><li>Soyez rapide.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Cattura gli animali.</li><li>L’agilità è la chiave.</li><li>Sii veloce.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Atrapa los animales.</li><li>La agilidad es clave.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Sé rápido.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Catch the animals.</li><li>Agility is key.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Be quick.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Attrapez les animaux.</li><li>L'agilité est la clé.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Soyez rapide.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Cattura gli animali.</li><li>L’agilità è la chiave.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Sii veloce.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

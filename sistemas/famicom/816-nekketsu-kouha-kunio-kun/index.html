@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>El ataque de patada rompe defensas.</li><li>El jefe final es vulnerable a los agarres.</li><li>Gana los enfrentamientos con un solo golpe.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>El dash es infinito.</li><li>La invencibilidad se obtiene tras el primer nivel.</li><li>Pulsa Select para vida infinita.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>The kick attack breaks defenses.</li><li>The final boss is vulnerable to grabs.</li><li>Win confrontations with a single hit.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>The dash is infinite.</li><li>Invincibility is obtained after the first level.</li><li>Press Select for infinite life.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>L’attaque au pied brise les défenses.</li><li>Le boss final est vulnérable aux captures.</li><li>Gagnez des confrontations d’un seul coup.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Le tiret est infini.</li><li>L'invincibilité est obtenue après le premier niveau.</li><li>Appuyez sur Select pour une durée de vie infinie.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>L'attacco con il calcio rompe le difese.</li><li>Il boss finale è vulnerabile alle prese.</li><li>Vinci gli scontri con un solo colpo.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Il trattino è infinito.</li><li>L'invincibilità si ottiene dopo il primo livello.</li><li>Premi Seleziona per una vita infinita.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>El ataque de patada rompe defensas.</li><li>El jefe final es vulnerable a los agarres.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Gana los enfrentamientos con un solo golpe.</li><li>El dash es infinito.</li><li>La invencibilidad se obtiene tras el primer nivel.</li><li>Pulsa Select para vida infinita.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>The kick attack breaks defenses.</li><li>The final boss is vulnerable to grabs.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Win confrontations with a single hit.</li><li>The dash is infinite.</li><li>Invincibility is obtained after the first level.</li><li>Press Select for infinite life.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>L’attaque au pied brise les défenses.</li><li>Le boss final est vulnérable aux captures.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Gagnez des confrontations d’un seul coup.</li><li>Le tiret est infini.</li><li>L'invincibilité est obtenue après le premier niveau.</li><li>Appuyez sur Select pour une durée de vie infinie.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>L'attacco con il calcio rompe le difese.</li><li>Il boss finale è vulnerabile alle prese.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Vinci gli scontri con un solo colpo.</li><li>Il trattino è infinito.</li><li>L'invincibilità si ottiene dopo il primo livello.</li><li>Premi Seleziona per una vita infinita.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

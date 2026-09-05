@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Aprende los 'skill shots' iniciales.</li><li>Controla la bola con el flipper levantado.</li><li>Golpea las rampas para activar misiones.</li><li>No dispares sin sentido.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Learn the initial 'skill shots'.</li><li>Control the ball with the flipper raised.</li><li>Hit the ramps to activate missions.</li><li>Don't shoot without meaning.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Apprenez les premiers « coups d'habileté ».</li><li>Contrôlez le ballon avec le flipper relevé.</li><li>Frappez les rampes pour activer les missions.</li><li>Ne tirez pas sans le vouloir.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Impara i primi &quot;tiri abilità&quot;.</li><li>Controlla la palla con la paletta sollevata.</li><li>Colpisci le rampe per attivare le missioni.</li><li>Non sparare senza significato.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Aprende los 'skill shots' iniciales.</li><li>Controla la bola con el flipper levantado.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Golpea las rampas para activar misiones.</li><li>No dispares sin sentido.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Learn the initial 'skill shots'.</li><li>Control the ball with the flipper raised.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Hit the ramps to activate missions.</li><li>Don't shoot without meaning.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Apprenez les premiers « coups d'habileté ».</li><li>Contrôlez le ballon avec le flipper relevé.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Frappez les rampes pour activer les missions.</li><li>Ne tirez pas sans le vouloir.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Impara i primi &quot;tiri abilità&quot;.</li><li>Controlla la palla con la paletta sollevata.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Colpisci le rampe per attivare le missioni.</li><li>Non sparare senza significato.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

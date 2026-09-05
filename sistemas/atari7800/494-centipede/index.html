@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Destruye las setas para ralentizar al enemigo.</li><li>Dispara a la cabeza del ciempiés para dividirlo.</li><li>Dispara al escorpión para puntaje extra.</li><li>Mantén el botón de disparo presionado siempre.</li><li>Presiona reset para reiniciar la pantalla.</li><li>Quédate en la parte inferior para mayor seguridad.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Destroy the mushrooms to slow down the enemy.</li><li>Shoot the centipede's head to split it.</li><li>Shoot the scorpion for extra score.</li><li>Always keep the fire button pressed.</li><li>Press reset to restart the screen.</li><li>Stay at the bottom for safety.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Détruisez les champignons pour ralentir l'ennemi.</li><li>Tirez sur la tête du mille-pattes pour la fendre.</li><li>Tirez sur le scorpion pour un score supplémentaire.</li><li>Maintenez toujours le bouton de tir enfoncé.</li><li>Appuyez sur réinitialiser pour redémarrer l'écran.</li><li>Restez en bas pour plus de sécurité.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Distruggi i funghi per rallentare il nemico.</li><li>Spara alla testa del millepiedi per dividerlo.</li><li>Spara allo scorpione per un punteggio extra.</li><li>Tieni sempre premuto il pulsante di fuoco.</li><li>Premere reset per riavviare lo schermo.</li><li>Rimani in fondo per sicurezza.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Destruye las setas para ralentizar al enemigo.</li><li>Dispara a la cabeza del ciempiés para dividirlo.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Dispara al escorpión para puntaje extra.</li><li>Mantén el botón de disparo presionado siempre.</li><li>Presiona reset para reiniciar la pantalla.</li><li>Quédate en la parte inferior para mayor seguridad.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Destroy the mushrooms to slow down the enemy.</li><li>Shoot the centipede's head to split it.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Shoot the scorpion for extra score.</li><li>Always keep the fire button pressed.</li><li>Press reset to restart the screen.</li><li>Stay at the bottom for safety.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Détruisez les champignons pour ralentir l'ennemi.</li><li>Tirez sur la tête du mille-pattes pour la fendre.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Tirez sur le scorpion pour un score supplémentaire.</li><li>Maintenez toujours le bouton de tir enfoncé.</li><li>Appuyez sur réinitialiser pour redémarrer l'écran.</li><li>Restez en bas pour plus de sécurité.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Distruggi i funghi per rallentare il nemico.</li><li>Spara alla testa del millepiedi per dividerlo.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Spara allo scorpione per un punteggio extra.</li><li>Tieni sempre premuto il pulsante di fuoco.</li><li>Premere reset per riavviare lo schermo.</li><li>Rimani in fondo per sicurezza.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

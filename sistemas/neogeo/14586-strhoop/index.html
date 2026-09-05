@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>El baloncesto callejero es agresivo; roba el balón constantemente.</li><li>El tiro de 3 puntos es arriesgado; busca mates fáciles.</li><li>Los bloqueos son muy efectivos.</li><li>No te quedes parado; el jugador sin balón debe buscar espacio.</li><li>Usa el tablero para los tiros cercanos.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Street basketball is aggressive; Steals the ball constantly.</li><li>The 3-point shot is risky; look for easy dunks.</li><li>Blocks are very effective.</li><li>Don't stand still; The player without the ball must look for space.</li><li>Use the board for close shots.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Le basket de rue est agressif ; Vole le ballon constamment.</li><li>Le tir à 3 points est risqué ; recherchez des dunks faciles.</li><li>Les blocs sont très efficaces.</li><li>Ne restez pas immobile ; Le joueur sans ballon doit chercher de l'espace.</li><li>Utilisez la planche pour des plans rapprochés.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Il basket di strada è aggressivo; Ruba costantemente la palla.</li><li>Il tiro da 3 punti è rischioso; cerca schiacciate facili.</li><li>I blocchi sono molto efficaci.</li><li>Non stare fermo; Il giocatore senza palla deve cercare lo spazio.</li><li>Usa il tabellone per i tiri ravvicinati.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>El baloncesto callejero es agresivo; roba el balón constantemente.</li><li>El tiro de 3 puntos es arriesgado; busca mates fáciles.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Los bloqueos son muy efectivos.</li><li>No te quedes parado; el jugador sin balón debe buscar espacio.</li><li>Usa el tablero para los tiros cercanos.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Street basketball is aggressive; Steals the ball constantly.</li><li>The 3-point shot is risky; look for easy dunks.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Blocks are very effective.</li><li>Don't stand still; The player without the ball must look for space.</li><li>Use the board for close shots.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Le basket de rue est agressif ; Vole le ballon constamment.</li><li>Le tir à 3 points est risqué ; recherchez des dunks faciles.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Les blocs sont très efficaces.</li><li>Ne restez pas immobile ; Le joueur sans ballon doit chercher de l'espace.</li><li>Utilisez la planche pour des plans rapprochés.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Il basket di strada è aggressivo; Ruba costantemente la palla.</li><li>Il tiro da 3 punti è rischioso; cerca schiacciate facili.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>I blocchi sono molto efficaci.</li><li>Non stare fermo; Il giocatore senza palla deve cercare lo spazio.</li><li>Usa il tabellone per i tiri ravvicinati.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

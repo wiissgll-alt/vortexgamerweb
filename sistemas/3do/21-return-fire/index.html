@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Destruye los puntos de defensa enemigos desde lejos.</li><li>Gestiona las municiones del tanque con cuidado.</li><li>La bandera es prioritaria; úsala como cebo.</li><li>Utiliza el helicóptero para reconocimiento rápido.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Destroy enemy defense points from afar.</li><li>Manage tank ammunition carefully.</li><li>The flag is priority; use it as bait.</li><li>Use the helicopter for quick reconnaissance.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Détruisez les points de défense ennemis à distance.</li><li>Gérez soigneusement les munitions des chars.</li><li>Le drapeau est prioritaire ; utilisez-le comme appât.</li><li>Utilisez l'hélicoptère pour une reconnaissance rapide.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Distruggi i punti di difesa nemici da lontano.</li><li>Gestisci attentamente le munizioni del carro armato.</li><li>La bandiera è prioritaria; usarlo come esca.</li><li>Usa l'elicottero per una rapida ricognizione.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Destruye los puntos de defensa enemigos desde lejos.</li><li>Gestiona las municiones del tanque con cuidado.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La bandera es prioritaria; úsala como cebo.</li><li>Utiliza el helicóptero para reconocimiento rápido.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Destroy enemy defense points from afar.</li><li>Manage tank ammunition carefully.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>The flag is priority; use it as bait.</li><li>Use the helicopter for quick reconnaissance.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Détruisez les points de défense ennemis à distance.</li><li>Gérez soigneusement les munitions des chars.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Le drapeau est prioritaire ; utilisez-le comme appât.</li><li>Utilisez l'hélicoptère pour une reconnaissance rapide.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Distruggi i punti di difesa nemici da lontano.</li><li>Gestisci attentamente le munizioni del carro armato.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La bandiera è prioritaria; usarlo come esca.</li><li>Usa l'elicottero per una rapida ricognizione.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

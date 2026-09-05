@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Defiende el rebote activamente.</li><li>El alley-oop es la mejor forma de anotar.</li><li>No fuerces el triple si estás marcado.</li><li>Usa los bloqueos para abrir huecos.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Actively defend the rebound.</li><li>The alley-oop is the best way to score.</li><li>Don't force a triple if you're marked.</li><li>Use the blocks to open gaps.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Défendre activement le rebond.</li><li>Le alley-oop est la meilleure façon de marquer.</li><li>Ne forcez pas un triple si vous êtes marqué.</li><li>Utilisez les blocs pour ouvrir les espaces.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Difendi attivamente il rimbalzo.</li><li>L'alley-oop è il modo migliore per segnare.</li><li>Non forzare una tripla se sei segnato.</li><li>Usa i blocchi per aprire gli spazi vuoti.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Defiende el rebote activamente.</li><li>El alley-oop es la mejor forma de anotar.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>No fuerces el triple si estás marcado.</li><li>Usa los bloqueos para abrir huecos.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Actively defend the rebound.</li><li>The alley-oop is the best way to score.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Don't force a triple if you're marked.</li><li>Use the blocks to open gaps.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Défendre activement le rebond.</li><li>Le alley-oop est la meilleure façon de marquer.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Ne forcez pas un triple si vous êtes marqué.</li><li>Utilisez les blocs pour ouvrir les espaces.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Difendi attivamente il rimbalzo.</li><li>L'alley-oop è il modo migliore per segnare.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Non forzare una tripla se sei segnato.</li><li>Usa i blocchi per aprire gli spazi vuoti.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

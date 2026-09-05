@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Combina las habilidades de ambos mundos.</li><li>Elige al personaje que mejor se adapte a tu estilo.</li><li>La dificultad es más equilibrada que en el primer Battletoads.</li><li>No intentes pelear contra los jefes de forma directa.</li><li>Usa los ataques de agarre para controlar el flujo.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Combine the skills of both worlds.</li><li>Choose the character that best suits your style.</li><li>The difficulty is more balanced than in the first Battletoads.</li><li>Don't try to fight the bosses directly.</li><li>Use grab attacks to control the flow.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Combinez les compétences des deux mondes.</li><li>Choisissez le personnage qui correspond le mieux à votre style.</li><li>La difficulté est plus équilibrée que dans le premier Battletoads.</li><li>N'essayez pas de combattre directement les patrons.</li><li>Utilisez des attaques de saisie pour contrôler le flux.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Combina le abilità di entrambi i mondi.</li><li>Scegli il personaggio che più si adatta al tuo stile.</li><li>La difficoltà è più equilibrata rispetto al primo Battletoads.</li><li>Non provare a combattere direttamente i boss.</li><li>Usa gli attacchi con presa per controllare il flusso.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Combina las habilidades de ambos mundos.</li><li>Elige al personaje que mejor se adapte a tu estilo.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La dificultad es más equilibrada que en el primer Battletoads.</li><li>No intentes pelear contra los jefes de forma directa.</li><li>Usa los ataques de agarre para controlar el flujo.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Combine the skills of both worlds.</li><li>Choose the character that best suits your style.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>The difficulty is more balanced than in the first Battletoads.</li><li>Don't try to fight the bosses directly.</li><li>Use grab attacks to control the flow.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Combinez les compétences des deux mondes.</li><li>Choisissez le personnage qui correspond le mieux à votre style.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La difficulté est plus équilibrée que dans le premier Battletoads.</li><li>N'essayez pas de combattre directement les patrons.</li><li>Utilisez des attaques de saisie pour contrôler le flux.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Combina le abilità di entrambi i mondi.</li><li>Scegli il personaggio che più si adatta al tuo stile.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La difficoltà è più equilibrata rispetto al primo Battletoads.</li><li>Non provare a combattere direttamente i boss.</li><li>Usa gli attacchi con presa per controllare il flusso.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

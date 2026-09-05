@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Aprende el mapa; es fácil perderse.</li><li>En los niveles a pie, busca siempre el generador.</li><li>Gestiona tu energía; es para todo (disparo y vida).</li><li>No gastes disparos si puedes esquivar.</li><li>Recoge las recargas de energía siempre que puedas.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Learn the map; It's easy to get lost.</li><li>In the walking levels, always look for the generator.</li><li>Manage your energy; It's for everything (shooting and life).</li><li>Don't waste shots if you can dodge.</li><li>Collect energy recharges whenever you can.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Apprenez la carte ; Il est facile de se perdre.</li><li>Dans les niveaux de marche, cherchez toujours le générateur.</li><li>Gérez votre énergie; C'est pour tout (le tournage et la vie).</li><li>Ne gaspillez pas vos tirs si vous pouvez esquiver.</li><li>Collectez des recharges d'énergie chaque fois que vous le pouvez.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Impara la mappa; È facile perdersi.</li><li>Nei livelli pedonali, cerca sempre il generatore.</li><li>Gestisci la tua energia; È per tutto (riprese e vita).</li><li>Non sprecare colpi se puoi schivare.</li><li>Raccogli ricariche di energia ogni volta che puoi.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Aprende el mapa; es fácil perderse.</li><li>En los niveles a pie, busca siempre el generador.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Gestiona tu energía; es para todo (disparo y vida).</li><li>No gastes disparos si puedes esquivar.</li><li>Recoge las recargas de energía siempre que puedas.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Learn the map; It's easy to get lost.</li><li>In the walking levels, always look for the generator.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Manage your energy; It's for everything (shooting and life).</li><li>Don't waste shots if you can dodge.</li><li>Collect energy recharges whenever you can.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Apprenez la carte ; Il est facile de se perdre.</li><li>Dans les niveaux de marche, cherchez toujours le générateur.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Gérez votre énergie; C'est pour tout (le tournage et la vie).</li><li>Ne gaspillez pas vos tirs si vous pouvez esquiver.</li><li>Collectez des recharges d'énergie chaque fois que vous le pouvez.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Impara la mappa; È facile perdersi.</li><li>Nei livelli pedonali, cerca sempre il generatore.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Gestisci la tua energia; È per tutto (riprese e vita).</li><li>Non sprecare colpi se puoi schivare.</li><li>Raccogli ricariche di energia ogni volta che puoi.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Cuidado con el movimiento del laberinto.</li><li>Evita el contacto con el diablo.</li><li>Memoriza el patrón del laberinto.</li><li>Recoge las cruces y limpia los puntos.</li><li>Usa los poderes especiales.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Be careful with the movement of the maze.</li><li>Avoid contact with the devil.</li><li>Memorize the maze pattern.</li><li>Collect the crosses and clear the points.</li><li>Use the special powers.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Soyez prudent avec le mouvement du labyrinthe.</li><li>Évitez tout contact avec le diable.</li><li>Mémorisez le motif du labyrinthe.</li><li>Récupérez les croix et effacez les points.</li><li>Utilisez les pouvoirs spéciaux.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Fai attenzione al movimento del labirinto.</li><li>Evita il contatto con il diavolo.</li><li>Memorizza lo schema del labirinto.</li><li>Raccogli le croci e cancella i punti.</li><li>Usa i poteri speciali.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Cuidado con el movimiento del laberinto.</li><li>Evita el contacto con el diablo.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Memoriza el patrón del laberinto.</li><li>Recoge las cruces y limpia los puntos.</li><li>Usa los poderes especiales.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Be careful with the movement of the maze.</li><li>Avoid contact with the devil.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Memorize the maze pattern.</li><li>Collect the crosses and clear the points.</li><li>Use the special powers.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Soyez prudent avec le mouvement du labyrinthe.</li><li>Évitez tout contact avec le diable.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Mémorisez le motif du labyrinthe.</li><li>Récupérez les croix et effacez les points.</li><li>Utilisez les pouvoirs spéciaux.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Fai attenzione al movimento del labirinto.</li><li>Evita il contatto con il diavolo.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Memorizza lo schema del labirinto.</li><li>Raccogli le croci e cancella i punti.</li><li>Usa i poteri speciali.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

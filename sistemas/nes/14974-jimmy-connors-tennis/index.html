@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Aprende el golpe liftado y el cortado.</li><li>Busca el lado débil de tu oponente.</li><li>No te quedes siempre en el fondo de la pista.</li><li>Practica el saque para ganar puntos fáciles.</li><li>Sube a la red solo cuando tengas ventaja.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Learn the topspin and the slice.</li><li>Look for your opponent's weak side.</li><li>Don't always stay at the back of the track.</li><li>Practice serving to earn easy points.</li><li>Go up to the net only when you have an advantage.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Apprenez le topspin et le slice.</li><li>Recherchez le côté faible de votre adversaire.</li><li>Ne restez pas toujours au fond de la piste.</li><li>Entraînez-vous à servir pour gagner des points faciles.</li><li>Montez au filet uniquement lorsque vous avez un avantage.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Impara il topspin e lo slice.</li><li>Cerca il lato debole del tuo avversario.</li><li>Non restare sempre in fondo alla pista.</li><li>Esercitati a servire per guadagnare punti facili.</li><li>Vai a rete solo quando sei in vantaggio.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Aprende el golpe liftado y el cortado.</li><li>Busca el lado débil de tu oponente.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>No te quedes siempre en el fondo de la pista.</li><li>Practica el saque para ganar puntos fáciles.</li><li>Sube a la red solo cuando tengas ventaja.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Learn the topspin and the slice.</li><li>Look for your opponent's weak side.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Don't always stay at the back of the track.</li><li>Practice serving to earn easy points.</li><li>Go up to the net only when you have an advantage.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Apprenez le topspin et le slice.</li><li>Recherchez le côté faible de votre adversaire.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Ne restez pas toujours au fond de la piste.</li><li>Entraînez-vous à servir pour gagner des points faciles.</li><li>Montez au filet uniquement lorsque vous avez un avantage.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Impara il topspin e lo slice.</li><li>Cerca il lato debole del tuo avversario.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Non restare sempre in fondo alla pista.</li><li>Esercitati a servire per guadagnare punti facili.</li><li>Vai a rete solo quando sei in vantaggio.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

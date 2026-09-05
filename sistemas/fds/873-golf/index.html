@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>El golpe siempre es recto.</li><li>Gana el torneo con el truco del menú.</li><li>La bola es magnética al hoyo.</li><li>La potencia es máxima con A.</li><li>No recibes penalización.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Pulsa Select para golpes infinitos.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>The blow is always straight.</li><li>Win the tournament with the menu trick.</li><li>The ball is magnetic to the hole.</li><li>The power is maximum with A.</li><li>You do not receive a penalty.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Press Select for infinite hits.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Le coup est toujours droit.</li><li>Gagnez le tournoi avec l'astuce du menu.</li><li>La balle est magnétique au trou.</li><li>La puissance est maximale avec A.</li><li>Vous ne recevez pas de pénalité.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Appuyez sur Sélectionner pour des hits infinis.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Il colpo è sempre dritto.</li><li>Vinci il torneo con il trucco del menu.</li><li>La palla è magnetica per la buca.</li><li>La potenza è massima con A.</li><li>Non ricevi una penalità.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Premi Seleziona per risultati infiniti.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>El golpe siempre es recto.</li><li>Gana el torneo con el truco del menú.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La bola es magnética al hoyo.</li><li>La potencia es máxima con A.</li><li>No recibes penalización.</li><li>Pulsa Select para golpes infinitos.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>The blow is always straight.</li><li>Win the tournament with the menu trick.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>The ball is magnetic to the hole.</li><li>The power is maximum with A.</li><li>You do not receive a penalty.</li><li>Press Select for infinite hits.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Le coup est toujours droit.</li><li>Gagnez le tournoi avec l'astuce du menu.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La balle est magnétique au trou.</li><li>La puissance est maximale avec A.</li><li>Vous ne recevez pas de pénalité.</li><li>Appuyez sur Sélectionner pour des hits infinis.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Il colpo è sempre dritto.</li><li>Vinci il torneo con il trucco del menu.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La palla è magnetica per la buca.</li><li>La potenza è massima con A.</li><li>Non ricevi una penalità.</li><li>Premi Seleziona per risultati infiniti.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

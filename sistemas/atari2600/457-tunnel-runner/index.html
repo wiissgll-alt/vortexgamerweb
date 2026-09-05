@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Busca el icono secreto para energía completa.</li><li>Corre sin parar para mantener la invulnerabilidad.</li><li>Evita los pasillos rojos para no perder tiempo.</li><li>Pega tu personaje a la pared derecha para evitar choques.</li><li>Presiona el botón al tocar una pared para atravesarla.</li><li>Recoge los cristales azules para revelar el mapa.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Look for the secret icon for full energy.</li><li>Run non-stop to maintain invulnerability.</li><li>Avoid red hallways to avoid wasting time.</li><li>Stick your character to the right wall to avoid collisions.</li><li>Press the button when touching a wall to go through it.</li><li>Collect the blue crystals to reveal the map.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Recherchez l’icône secrète pour une pleine énergie.</li><li>Courez sans arrêt pour maintenir votre invulnérabilité.</li><li>Évitez les couloirs rouges pour ne pas perdre de temps.</li><li>Collez votre personnage sur le mur de droite pour éviter les collisions.</li><li>Appuyez sur le bouton lorsque vous touchez un mur pour le traverser.</li><li>Récupérez les cristaux bleus pour révéler la carte.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Cerca l'icona segreta per la piena energia.</li><li>Corri senza sosta per mantenere l'invulnerabilità.</li><li>Evita i corridoi rossi per evitare perdite di tempo.</li><li>Attacca il tuo personaggio alla parete destra per evitare collisioni.</li><li>Premi il pulsante quando tocchi un muro per attraversarlo.</li><li>Raccogli i cristalli blu per rivelare la mappa.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Busca el icono secreto para energía completa.</li><li>Corre sin parar para mantener la invulnerabilidad.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Evita los pasillos rojos para no perder tiempo.</li><li>Pega tu personaje a la pared derecha para evitar choques.</li><li>Presiona el botón al tocar una pared para atravesarla.</li><li>Recoge los cristales azules para revelar el mapa.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Look for the secret icon for full energy.</li><li>Run non-stop to maintain invulnerability.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Avoid red hallways to avoid wasting time.</li><li>Stick your character to the right wall to avoid collisions.</li><li>Press the button when touching a wall to go through it.</li><li>Collect the blue crystals to reveal the map.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Recherchez l’icône secrète pour une pleine énergie.</li><li>Courez sans arrêt pour maintenir votre invulnérabilité.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Évitez les couloirs rouges pour ne pas perdre de temps.</li><li>Collez votre personnage sur le mur de droite pour éviter les collisions.</li><li>Appuyez sur le bouton lorsque vous touchez un mur pour le traverser.</li><li>Récupérez les cristaux bleus pour révéler la carte.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Cerca l'icona segreta per la piena energia.</li><li>Corri senza sosta per mantenere l'invulnerabilità.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Evita i corridoi rossi per evitare perdite di tempo.</li><li>Attacca il tuo personaggio alla parete destra per evitare collisioni.</li><li>Premi il pulsante quando tocchi un muro per attraversarlo.</li><li>Raccogli i cristalli blu per rivelare la mappa.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

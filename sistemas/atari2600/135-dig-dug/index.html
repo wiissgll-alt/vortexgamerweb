@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Atrapa enemigos con la bomba de aire.</li><li>La puntuación depende de la profundidad.</li><li>No te dejes acorralar en los túneles.</li><li>Usa las rocas para aplastar enemigos.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Catch enemies with the air bomb.</li><li>The score depends on the depth.</li><li>Don't let yourself be cornered in the tunnels.</li><li>Use rocks to crush enemies.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Attrapez les ennemis avec la bombe aérienne.</li><li>Le score dépend de la profondeur.</li><li>Ne vous laissez pas acculer dans les tunnels.</li><li>Utilisez des pierres pour écraser les ennemis.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Cattura i nemici con la bomba aerea.</li><li>Il punteggio dipende dalla profondità.</li><li>Non lasciarti mettere con le spalle al muro nei tunnel.</li><li>Usa le rocce per schiacciare i nemici.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Atrapa enemigos con la bomba de aire.</li><li>La puntuación depende de la profundidad.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>No te dejes acorralar en los túneles.</li><li>Usa las rocas para aplastar enemigos.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Catch enemies with the air bomb.</li><li>The score depends on the depth.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Don't let yourself be cornered in the tunnels.</li><li>Use rocks to crush enemies.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Attrapez les ennemis avec la bombe aérienne.</li><li>Le score dépend de la profondeur.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Ne vous laissez pas acculer dans les tunnels.</li><li>Utilisez des pierres pour écraser les ennemis.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Cattura i nemici con la bomba aerea.</li><li>Il punteggio dipende dalla profondità.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Non lasciarti mettere con le spalle al muro nei tunnel.</li><li>Usa le rocce per schiacciare i nemici.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

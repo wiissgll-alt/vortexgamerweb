@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Bloquea las líneas diagonales desde el principio.</li><li>Intenta crear una situación de doble amenaza.</li><li>Observa los movimientos del rival en las esquinas.</li><li>Planifica tus movimientos en varios niveles a la vez.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Block the diagonal lines from the beginning.</li><li>Try to create a double threat situation.</li><li>Observe the opponent's movements in the corners.</li><li>Plan your movements on several levels at once.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Bloquez les lignes diagonales depuis le début.</li><li>Essayez de créer une situation de double menace.</li><li>Observez les mouvements de l'adversaire dans les coins.</li><li>Planifiez vos mouvements sur plusieurs niveaux à la fois.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Blocca le linee diagonali dall'inizio.</li><li>Prova a creare una situazione di doppia minaccia.</li><li>Osserva i movimenti dell'avversario negli angoli.</li><li>Pianifica i tuoi movimenti su più livelli contemporaneamente.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Bloquea las líneas diagonales desde el principio.</li><li>Intenta crear una situación de doble amenaza.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Observa los movimientos del rival en las esquinas.</li><li>Planifica tus movimientos en varios niveles a la vez.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Block the diagonal lines from the beginning.</li><li>Try to create a double threat situation.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Observe the opponent's movements in the corners.</li><li>Plan your movements on several levels at once.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Bloquez les lignes diagonales depuis le début.</li><li>Essayez de créer une situation de double menace.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Observez les mouvements de l'adversaire dans les coins.</li><li>Planifiez vos mouvements sur plusieurs niveaux à la fois.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Blocca le linee diagonali dall'inizio.</li><li>Prova a creare una situazione di doppia minaccia.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Osserva i movimenti dell'avversario negli angoli.</li><li>Pianifica i tuoi movimenti su più livelli contemporaneamente.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

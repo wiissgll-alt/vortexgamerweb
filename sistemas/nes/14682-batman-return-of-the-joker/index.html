@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Aprende los patrones de los jefes.</li><li>Es un juego de acción; no te detengas nunca.</li><li>La movilidad es tu ventaja principal.</li><li>Los gráficos son increíbles para la consola; aprovecha el detalle.</li><li>Tu arma principal es muy poderosa; mejórala.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Learn boss patterns.</li><li>It is an action game; never stop.</li><li>Mobility is your main advantage.</li><li>The graphics are incredible for the console; Take advantage of the detail.</li><li>Your main weapon is very powerful; improve it</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Apprenez les modèles de patron.</li><li>C'est un jeu d'action ; ne jamais s'arrêter.</li><li>La mobilité est votre principal avantage.</li><li>Les graphismes sont incroyables pour la console ; Profitez du détail.</li><li>Votre arme principale est très puissante ; l'améliorer</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Impara gli schemi dei boss.</li><li>È un gioco d'azione; non fermarsi mai.</li><li>La mobilità è il tuo vantaggio principale.</li><li>La grafica è incredibile per la console; Approfitta del dettaglio.</li><li>La tua arma principale è molto potente; migliorarlo</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Aprende los patrones de los jefes.</li><li>Es un juego de acción; no te detengas nunca.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La movilidad es tu ventaja principal.</li><li>Los gráficos son increíbles para la consola; aprovecha el detalle.</li><li>Tu arma principal es muy poderosa; mejórala.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Learn boss patterns.</li><li>It is an action game; never stop.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Mobility is your main advantage.</li><li>The graphics are incredible for the console; Take advantage of the detail.</li><li>Your main weapon is very powerful; improve it</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Apprenez les modèles de patron.</li><li>C'est un jeu d'action ; ne jamais s'arrêter.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La mobilité est votre principal avantage.</li><li>Les graphismes sont incroyables pour la console ; Profitez du détail.</li><li>Votre arme principale est très puissante ; l'améliorer</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Impara gli schemi dei boss.</li><li>È un gioco d'azione; non fermarsi mai.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La mobilità è il tuo vantaggio principale.</li><li>La grafica è incredibile per la console; Approfitta del dettaglio.</li><li>La tua arma principale è molto potente; migliorarlo</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

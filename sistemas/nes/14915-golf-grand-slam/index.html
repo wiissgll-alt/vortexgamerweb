@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>El putt es donde se ganan los partidos.</li><li>No te arriesgues desde el bunker si no tienes buen tiro.</li><li>Practica en el modo entrenamiento.</li><li>Simulación algo más compleja; fíjate en el terreno.</li><li>Usa los palos con cabeza.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Putting is where games are won.</li><li>Don't take risks from the bunker if you don't have a good shot.</li><li>Practice in training mode.</li><li>Somewhat more complex simulation; look at the terrain.</li><li>Use clubs with heads.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Le putting est l'endroit où les jeux sont gagnés.</li><li>Ne prenez pas de risques depuis le bunker si vous n'avez pas un bon tir.</li><li>Entraînez-vous en mode entraînement.</li><li>Simulation un peu plus complexe ; regarde le terrain.</li><li>Utilisez des clubs avec des têtes.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Putt è dove si vincono le partite.</li><li>Non correre rischi dal bunker se non hai un buon tiro.</li><li>Esercitati in modalità allenamento.</li><li>Simulazione un po' più complessa; guarda il terreno.</li><li>Usa mazze con la testa.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>El putt es donde se ganan los partidos.</li><li>No te arriesgues desde el bunker si no tienes buen tiro.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Practica en el modo entrenamiento.</li><li>Simulación algo más compleja; fíjate en el terreno.</li><li>Usa los palos con cabeza.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Putting is where games are won.</li><li>Don't take risks from the bunker if you don't have a good shot.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Practice in training mode.</li><li>Somewhat more complex simulation; look at the terrain.</li><li>Use clubs with heads.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Le putting est l'endroit où les jeux sont gagnés.</li><li>Ne prenez pas de risques depuis le bunker si vous n'avez pas un bon tir.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Entraînez-vous en mode entraînement.</li><li>Simulation un peu plus complexe ; regarde le terrain.</li><li>Utilisez des clubs avec des têtes.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Putt è dove si vincono le partite.</li><li>Non correre rischi dal bunker se non hai un buon tiro.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Esercitati in modalità allenamento.</li><li>Simulazione un po' più complessa; guarda il terreno.</li><li>Usa mazze con la testa.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

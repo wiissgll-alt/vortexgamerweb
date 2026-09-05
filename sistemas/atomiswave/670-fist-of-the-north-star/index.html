@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Aprende a romper la guardia enemiga.</li><li>El uso de la barra de 'Boost' cambia el daño.</li><li>Los combos son extremadamente largos; práctica el timing.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Learn to break the enemy guard.</li><li>Using the 'Boost' bar changes the damage.</li><li>The combos are extremely long; practice timing.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Apprenez à briser la garde ennemie.</li><li>L'utilisation de la barre « Boost » modifie les dégâts.</li><li>Les combos sont extrêmement longs ; pratiquer le timing.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Impara a rompere la guardia nemica.</li><li>L'uso della barra &quot;Boost&quot; modifica il danno.</li><li>Le combo sono estremamente lunghe; pratica il cronometraggio.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Aprende a romper la guardia enemiga.</li><li>El uso de la barra de 'Boost' cambia el daño.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Los combos son extremadamente largos; práctica el timing.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Learn to break the enemy guard.</li><li>Using the 'Boost' bar changes the damage.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>The combos are extremely long; practice timing.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Apprenez à briser la garde ennemie.</li><li>L'utilisation de la barre « Boost » modifie les dégâts.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Les combos sont extrêmement longs ; pratiquer le timing.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Impara a rompere la guardia nemica.</li><li>L'uso della barra &quot;Boost&quot; modifica il danno.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Le combo sono estremamente lunghe; pratica il cronometraggio.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

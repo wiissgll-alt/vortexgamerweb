@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Mantén el botón presionado para velocidad constante.</li><li>No recojas aceite rojo para evitar colisiones.</li><li>No te detengas en las curvas para nivel avanzado.</li><li>Usa el cambio de dirección para evitar enemigos.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Recoge los barriles verdes para puntaje infinito.</li><li>Usa el interruptor de dificultad para vidas infinitas.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Keep the button pressed for constant speed.</li><li>Don't pick up red oil to avoid collisions.</li><li>Don't stop at the curves for advanced level.</li><li>Use direction change to avoid enemies.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Collect the green barrels for infinite score.</li><li>Use the difficulty switch for infinite lives.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Maintenez le bouton enfoncé pour une vitesse constante.</li><li>Ne ramassez pas d'huile rouge pour éviter les collisions.</li><li>Ne vous arrêtez pas aux courbes du niveau avancé.</li><li>Utilisez le changement de direction pour éviter les ennemis.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Récupérez les barils verts pour un score infini.</li><li>Utilisez le commutateur de difficulté pour des vies infinies.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Tenere premuto il pulsante per una velocità costante.</li><li>Non raccogliere olio rosso per evitare collisioni.</li><li>Non fermarti alle curve per il livello avanzato.</li><li>Usa il cambio di direzione per evitare i nemici.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Raccogli i barili verdi per un punteggio infinito.</li><li>Usa l'interruttore di difficoltà per vite infinite.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Mantén el botón presionado para velocidad constante.</li><li>No recojas aceite rojo para evitar colisiones.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>No te detengas en las curvas para nivel avanzado.</li><li>Usa el cambio de dirección para evitar enemigos.</li><li>Recoge los barriles verdes para puntaje infinito.</li><li>Usa el interruptor de dificultad para vidas infinitas.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Keep the button pressed for constant speed.</li><li>Don't pick up red oil to avoid collisions.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Don't stop at the curves for advanced level.</li><li>Use direction change to avoid enemies.</li><li>Collect the green barrels for infinite score.</li><li>Use the difficulty switch for infinite lives.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Maintenez le bouton enfoncé pour une vitesse constante.</li><li>Ne ramassez pas d'huile rouge pour éviter les collisions.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Ne vous arrêtez pas aux courbes du niveau avancé.</li><li>Utilisez le changement de direction pour éviter les ennemis.</li><li>Récupérez les barils verts pour un score infini.</li><li>Utilisez le commutateur de difficulté pour des vies infinies.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Tenere premuto il pulsante per una velocità costante.</li><li>Non raccogliere olio rosso per evitare collisioni.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Non fermarti alle curve per il livello avanzato.</li><li>Usa il cambio di direzione per evitare i nemici.</li><li>Raccogli i barili verdi per un punteggio infinito.</li><li>Usa l'interruttore di difficoltà per vite infinite.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

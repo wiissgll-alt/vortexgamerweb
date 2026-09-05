@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Elimina los virus.</li><li>La precisión en el movimiento es clave.</li><li>Navega por las venas.</li><li>No te quedes sin oxígeno.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Eliminates viruses.</li><li>Precision in movement is key.</li><li>Navigate through the veins.</li><li>Don't run out of oxygen.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Élimine les virus.</li><li>La précision du mouvement est essentielle.</li><li>Naviguez dans les veines.</li><li>Ne manquez pas d'oxygène.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Elimina i virus.</li><li>La precisione nel movimento è fondamentale.</li><li>Navigare attraverso le vene.</li><li>Non rimanere senza ossigeno.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Elimina los virus.</li><li>La precisión en el movimiento es clave.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Navega por las venas.</li><li>No te quedes sin oxígeno.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Eliminates viruses.</li><li>Precision in movement is key.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Navigate through the veins.</li><li>Don't run out of oxygen.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Élimine les virus.</li><li>La précision du mouvement est essentielle.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Naviguez dans les veines.</li><li>Ne manquez pas d'oxygène.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Elimina i virus.</li><li>La precisione nel movimento è fondamentale.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Navigare attraverso le vene.</li><li>Non rimanere senza ossigeno.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

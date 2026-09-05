@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>El control del balón es más realista y difícil.</li><li>El pase al hueco es muy efectivo.</li><li>La defensa es agresiva, anticípate.</li><li>No intentes conducir el balón con un solo jugador.</li><li>Practica los disparos desde fuera del área.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Ball control is more realistic and difficult.</li><li>The through ball is very effective.</li><li>The defense is aggressive, anticipate.</li><li>Don't try to drive the ball with just one player.</li><li>Practice shooting from outside the area.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Le contrôle du ballon est plus réaliste et plus difficile.</li><li>Le ballon en profondeur est très efficace.</li><li>La défense est agressive, anticipez.</li><li>N'essayez pas de conduire le ballon avec un seul joueur.</li><li>Entraînez-vous à tirer depuis l’extérieur de la zone.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Il controllo della palla è più realistico e difficile.</li><li>Il passaggio filtrante è molto efficace.</li><li>La difesa è aggressiva, anticipa.</li><li>Non provare a guidare la palla con un solo giocatore.</li><li>Esercitati a tirare da fuori area.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>El control del balón es más realista y difícil.</li><li>El pase al hueco es muy efectivo.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La defensa es agresiva, anticípate.</li><li>No intentes conducir el balón con un solo jugador.</li><li>Practica los disparos desde fuera del área.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Ball control is more realistic and difficult.</li><li>The through ball is very effective.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>The defense is aggressive, anticipate.</li><li>Don't try to drive the ball with just one player.</li><li>Practice shooting from outside the area.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Le contrôle du ballon est plus réaliste et plus difficile.</li><li>Le ballon en profondeur est très efficace.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La défense est agressive, anticipez.</li><li>N'essayez pas de conduire le ballon avec un seul joueur.</li><li>Entraînez-vous à tirer depuis l’extérieur de la zone.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Il controllo della palla è più realistico e difficile.</li><li>Il passaggio filtrante è molto efficace.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La difesa è aggressiva, anticipa.</li><li>Non provare a guidare la palla con un solo giocatore.</li><li>Esercitati a tirare da fuori area.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

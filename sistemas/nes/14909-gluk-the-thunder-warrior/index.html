@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Cuidado con las caídas fatales.</li><li>Explora los niveles para encontrar aumentos de salud.</li><li>La agilidad es mejor que la fuerza bruta en algunos niveles.</li><li>Mantén tu ataque especial cargado para emergencias.</li><li>No subestimes a los enemigos pequeños.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Beware of fatal falls.</li><li>Explore the levels to find health boosts.</li><li>Agility is better than brute strength at some levels.</li><li>Keep your special attack charged for emergencies.</li><li>Don't underestimate small enemies.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Attention aux chutes mortelles.</li><li>Explorez les niveaux pour trouver des améliorations de santé.</li><li>L'agilité vaut mieux que la force brute à certains niveaux.</li><li>Gardez votre attaque spéciale chargée en cas d'urgence.</li><li>Ne sous-estimez pas les petits ennemis.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Attenzione alle cadute mortali.</li><li>Esplora i livelli per trovare potenziamenti di salute.</li><li>L’agilità è migliore della forza bruta ad alcuni livelli.</li><li>Mantieni il tuo attacco speciale carico per le emergenze.</li><li>Non sottovalutare i piccoli nemici.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Cuidado con las caídas fatales.</li><li>Explora los niveles para encontrar aumentos de salud.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La agilidad es mejor que la fuerza bruta en algunos niveles.</li><li>Mantén tu ataque especial cargado para emergencias.</li><li>No subestimes a los enemigos pequeños.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Beware of fatal falls.</li><li>Explore the levels to find health boosts.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Agility is better than brute strength at some levels.</li><li>Keep your special attack charged for emergencies.</li><li>Don't underestimate small enemies.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Attention aux chutes mortelles.</li><li>Explorez les niveaux pour trouver des améliorations de santé.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>L'agilité vaut mieux que la force brute à certains niveaux.</li><li>Gardez votre attaque spéciale chargée en cas d'urgence.</li><li>Ne sous-estimez pas les petits ennemis.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Attenzione alle cadute mortali.</li><li>Esplora i livelli per trovare potenziamenti di salute.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>L’agilità è migliore della forza bruta ad alcuni livelli.</li><li>Mantieni il tuo attacco speciale carico per le emergenze.</li><li>Non sottovalutare i piccoli nemici.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

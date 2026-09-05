@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Cambia de marcha en el momento exacto.</li><li>La práctica mejora los tiempos.</li><li>La salida es el momento más crítico.</li><li>No sobrecalientes el motor.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Change gears at the exact moment.</li><li>Practice improves times.</li><li>The exit is the most critical moment.</li><li>Do not overheat the engine.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Changez de vitesse au moment précis.</li><li>La pratique améliore les temps.</li><li>La sortie est le moment le plus critique.</li><li>Ne surchauffez pas le moteur.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Cambia marcia nel momento esatto.</li><li>La pratica migliora i tempi.</li><li>L’uscita è il momento più critico.</li><li>Non surriscaldare il motore.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Cambia de marcha en el momento exacto.</li><li>La práctica mejora los tiempos.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La salida es el momento más crítico.</li><li>No sobrecalientes el motor.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Change gears at the exact moment.</li><li>Practice improves times.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>The exit is the most critical moment.</li><li>Do not overheat the engine.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Changez de vitesse au moment précis.</li><li>La pratique améliore les temps.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La sortie est le moment le plus critique.</li><li>Ne surchauffez pas le moteur.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Cambia marcia nel momento esatto.</li><li>La pratica migliora i tempi.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>L’uscita è il momento più critico.</li><li>Non surriscaldare il motore.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

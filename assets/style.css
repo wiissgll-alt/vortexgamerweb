@@ -319,3 +319,85 @@ img { max-width: 100%; display: block; }
 
   .price-table th, .price-table td { padding: 10px; font-size: 13px; white-space: nowrap; }
 }
+
+/* ---------- Icono de consola (junto al nombre del sistema) ---------- */
+.system-icon { width: 32px; height: 32px; object-fit: contain; margin-bottom: 8px; }
+.system-card { display: flex; flex-direction: column; align-items: center; }
+.title-with-icon { display: flex; align-items: center; gap: 12px; }
+.title-with-icon img { width: 40px; height: 40px; object-fit: contain; }
+
+/* ---------- Fila de precio, clicable -> popup de descarga (no enlaza a fuentes externas) --- */
+.price-table tbody tr { cursor: pointer; }
+.price-table tbody tr:hover { background: rgba(168, 85, 247, 0.08); }
+
+/* ---------- Contenido "adelanto" (trucos/consejos): las primeras entradas se ven bien,
+   el resto se difumina con una llamada a descargar la app encima -el texto sigue en el
+   HTML para que Google lo indexe igual, solo se oculta visualmente-. */
+.gated-wrap { position: relative; }
+.gated-blur {
+  filter: blur(5px);
+  user-select: none;
+  pointer-events: none;
+  max-height: 160px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, black 30%, transparent 95%);
+  mask-image: linear-gradient(to bottom, black 30%, transparent 95%);
+}
+.gated-cta {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 14px;
+  cursor: pointer;
+  background: linear-gradient(to bottom, transparent, var(--surface-solid) 75%);
+}
+.gated-cta .btn { pointer-events: none; }
+.gated-cta p { font-size: 12.5px; color: var(--text-dim); margin: 0 0 10px; text-align: center; padding: 0 12px; }
+
+/* ---------- Popup / modal de descarga ---------- */
+.app-modal-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 5, 12, 0.75);
+  backdrop-filter: blur(3px);
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.app-modal-backdrop.open { display: flex; }
+.app-modal {
+  background: var(--surface-solid);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px 24px;
+  max-width: 340px;
+  width: 100%;
+  text-align: center;
+  box-shadow: var(--shadow-glow);
+  position: relative;
+}
+.app-modal img { width: 64px; height: 64px; margin: 0 auto 14px; }
+.app-modal h3 { font-size: 17px; margin-bottom: 10px; }
+.app-modal p { font-size: 13.5px; color: var(--text-dim); margin: 0 0 20px; }
+.app-modal .btn { width: 100%; justify-content: center; }
+.app-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  font-size: 20px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* ---------- Paginación con flechas + elipsis ---------- */
+.pagination { align-items: center; }
+.pagination .arrow { font-weight: 800; }
+.pagination .ellipsis { border: none; background: none; padding: 8px 4px; color: var(--text-dim); }

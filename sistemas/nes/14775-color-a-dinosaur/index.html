@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Diviértete experimentando con los colores.</li><li>Es un juego de dibujo para niños, no tiene estrategia.</li><li>Es una obra de arte digital sencilla.</li><li>No hay enemigo ni límite, así que relájate.</li><li>Usa la paleta para probar distintas combinaciones.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Have fun experimenting with colors.</li><li>It is a drawing game for children, it has no strategy.</li><li>It is a simple piece of digital art.</li><li>There is no enemy or limit, so relax.</li><li>Use the palette to try different combinations.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Amusez-vous à expérimenter les couleurs.</li><li>C'est un jeu de dessin pour enfants, il n'a pas de stratégie.</li><li>Il s’agit d’une simple œuvre d’art numérique.</li><li>Il n'y a pas d'ennemi ni de limite, alors détendez-vous.</li><li>Utilisez la palette pour essayer différentes combinaisons.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Divertitevi a sperimentare con i colori.</li><li>È un gioco di disegno per bambini, non ha strategia.</li><li>È un semplice pezzo di arte digitale.</li><li>Non ci sono nemici o limiti, quindi rilassati.</li><li>Usa la tavolozza per provare diverse combinazioni.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Diviértete experimentando con los colores.</li><li>Es un juego de dibujo para niños, no tiene estrategia.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Es una obra de arte digital sencilla.</li><li>No hay enemigo ni límite, así que relájate.</li><li>Usa la paleta para probar distintas combinaciones.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Have fun experimenting with colors.</li><li>It is a drawing game for children, it has no strategy.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>It is a simple piece of digital art.</li><li>There is no enemy or limit, so relax.</li><li>Use the palette to try different combinations.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Amusez-vous à expérimenter les couleurs.</li><li>C'est un jeu de dessin pour enfants, il n'a pas de stratégie.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Il s’agit d’une simple œuvre d’art numérique.</li><li>Il n'y a pas d'ennemi ni de limite, alors détendez-vous.</li><li>Utilisez la palette pour essayer différentes combinaisons.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Divertitevi a sperimentare con i colori.</li><li>È un gioco di disegno per bambini, non ha strategia.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>È un semplice pezzo di arte digitale.</li><li>Non ci sono nemici o limiti, quindi rilassati.</li><li>Usa la tavolozza per provare diverse combinazioni.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

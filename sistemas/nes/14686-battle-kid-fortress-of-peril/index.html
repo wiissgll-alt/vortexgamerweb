@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Aprende el patrón exacto de los jefes.</li><li>La precisión en el control es lo único que te salvará.</li><li>Memoriza cada pantalla; el error es mortal.</li><li>No te frustres si mueres muchas veces.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Es extremadamente difícil; requiere paciencia infinita.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Learn the exact boss pattern.</li><li>Precision control is the only thing that will save you.</li><li>Memorize each screen; error is deadly.</li><li>Don't get frustrated if you die too many times.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>It is extremely difficult; requires infinite patience.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Apprenez le modèle exact du patron.</li><li>Un contrôle précis est la seule chose qui vous sauvera.</li><li>Mémorisez chaque écran ; l'erreur est mortelle.</li><li>Ne soyez pas frustré si vous mourez trop de fois.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>C'est extrêmement difficile ; demande une patience infinie.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Impara lo schema esatto del boss.</li><li>Il controllo di precisione è l’unica cosa che ti salverà.</li><li>Memorizza ogni schermata; l'errore è mortale.</li><li>Non sentirti frustrato se muori troppe volte.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>È estremamente difficile; richiede una pazienza infinita.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Aprende el patrón exacto de los jefes.</li><li>La precisión en el control es lo único que te salvará.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Memoriza cada pantalla; el error es mortal.</li><li>No te frustres si mueres muchas veces.</li><li>Es extremadamente difícil; requiere paciencia infinita.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Learn the exact boss pattern.</li><li>Precision control is the only thing that will save you.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Memorize each screen; error is deadly.</li><li>Don't get frustrated if you die too many times.</li><li>It is extremely difficult; requires infinite patience.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Apprenez le modèle exact du patron.</li><li>Un contrôle précis est la seule chose qui vous sauvera.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Mémorisez chaque écran ; l'erreur est mortelle.</li><li>Ne soyez pas frustré si vous mourez trop de fois.</li><li>C'est extrêmement difficile ; demande une patience infinie.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Impara lo schema esatto del boss.</li><li>Il controllo di precisione è l’unica cosa che ti salverà.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Memorizza ogni schermata; l'errore è mortale.</li><li>Non sentirti frustrato se muori troppe volte.</li><li>È estremamente difficile; richiede una pazienza infinita.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Es una aventura gráfica de investigación.</li><li>La historia es la clave.</li><li>Lee todo, busca pistas minuciosamente.</li><li>No tomes decisiones sin pensar.</li><li>Si te bloqueas, revisa los objetos de tu inventario.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>It is a graphic investigation adventure.</li><li>History is the key.</li><li>Read everything, look for clues carefully.</li><li>Don't make decisions without thinking.</li><li>If you get stuck, check the items in your inventory.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Il s'agit d'une aventure d'enquête graphique.</li><li>L’histoire est la clé.</li><li>Lisez tout, cherchez attentivement les indices.</li><li>Ne prenez pas de décisions sans réfléchir.</li><li>Si vous êtes bloqué, vérifiez les objets de votre inventaire.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>È un'avventura di investigazione grafica.</li><li>La storia è la chiave.</li><li>Leggi tutto, cerca attentamente gli indizi.</li><li>Non prendere decisioni senza pensare.</li><li>Se rimani bloccato, controlla gli oggetti nel tuo inventario.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Es una aventura gráfica de investigación.</li><li>La historia es la clave.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Lee todo, busca pistas minuciosamente.</li><li>No tomes decisiones sin pensar.</li><li>Si te bloqueas, revisa los objetos de tu inventario.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>It is a graphic investigation adventure.</li><li>History is the key.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Read everything, look for clues carefully.</li><li>Don't make decisions without thinking.</li><li>If you get stuck, check the items in your inventory.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Il s'agit d'une aventure d'enquête graphique.</li><li>L’histoire est la clé.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Lisez tout, cherchez attentivement les indices.</li><li>Ne prenez pas de décisions sans réfléchir.</li><li>Si vous êtes bloqué, vérifiez les objets de votre inventaire.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>È un'avventura di investigazione grafica.</li><li>La storia è la chiave.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Leggi tutto, cerca attentamente gli indizi.</li><li>Non prendere decisioni senza pensare.</li><li>Se rimani bloccato, controlla gli oggetti nel tuo inventario.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

@@ -39,7 +39,7 @@
 </header>
 <main class="wrap">
   <p class="breadcrumb"><a href="../../../index.html" data-i18n="nav.systems">Sistemas</a> / Nintendo 64</p>
-  <h1>Nintendo 64</h1>
+  <h1 class="title-with-icon"><img src="../../../../assets/consoles/n64.png" alt="">Nintendo 64</h1>
   <p class="section-sub">306 <span data-i18n="systems.count">juegos</span></p>
   <input id="game-search" class="search-box" type="search" data-i18n-placeholder="search.placeholder" placeholder="Buscar un juego por nombre...">
   <div class="grid">
@@ -469,10 +469,10 @@
       </a>
   </div>
   <div class="pagination">
-        <a href="../../" data-i18n="pagination.prev">Anterior</a>
+        <a class="arrow" href="../../" data-i18n="pagination.prev" aria-label="anterior">◀</a>
         <a href="../../">1</a>
         <span class="current">2</span>
-        
+        <a class="arrow" href="../2/" data-i18n="pagination.next" aria-label="siguiente"></a>
       </div>
 </main>
 <footer class="site-footer">
@@ -485,6 +485,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

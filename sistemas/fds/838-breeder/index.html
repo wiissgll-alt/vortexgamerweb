@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Accede a todos los animales.</li><li>Gana todas las competiciones.</li><li>La mascota crece instantáneamente.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>La comida es infinita.</li><li>La invencibilidad de la mascota.</li><li>Pulsa Select para dinero infinito.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Access all animals.</li><li>Win all competitions.</li><li>The pet grows instantly.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>The food is endless.</li><li>The invincibility of the pet.</li><li>Press Select for infinite money.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Accédez à tous les animaux.</li><li>Gagnez toutes les compétitions.</li><li>L'animal grandit instantanément.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>La nourriture est infinie.</li><li>L'invincibilité de l'animal.</li><li>Appuyez sur Sélectionner pour de l'argent infini.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Accedi a tutti gli animali.</li><li>Vinci tutte le competizioni.</li><li>L'animale cresce all'istante.</li></ul><h3 data-i18n="game.cheats">Trucos</h3><ul><li>Il cibo è infinito.</li><li>L'invincibilità dell'animale domestico.</li><li>Premi Seleziona per soldi infiniti.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Accede a todos los animales.</li><li>Gana todas las competiciones.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La mascota crece instantáneamente.</li><li>La comida es infinita.</li><li>La invencibilidad de la mascota.</li><li>Pulsa Select para dinero infinito.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Access all animals.</li><li>Win all competitions.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>The pet grows instantly.</li><li>The food is endless.</li><li>The invincibility of the pet.</li><li>Press Select for infinite money.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Accédez à tous les animaux.</li><li>Gagnez toutes les compétitions.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>L'animal grandit instantanément.</li><li>La nourriture est infinie.</li><li>L'invincibilité de l'animal.</li><li>Appuyez sur Sélectionner pour de l'argent infini.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Accedi a tutti gli animali.</li><li>Vinci tutte le competizioni.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>L'animale cresce all'istante.</li><li>Il cibo è infinito.</li><li>L'invincibilità dell'animale domestico.</li><li>Premi Seleziona per soldi infiniti.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

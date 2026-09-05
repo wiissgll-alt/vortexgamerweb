@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Cada personaje tiene un estilo único de combate (espada, manos, agilidad).</li><li>El bloqueo es esencial; los enemigos hacen combos largos.</li><li>Los ataques especiales gastan una barra; no los malgastes.</li><li>Sistema de lucha muy pulido; encadena ataques normales.</li><li>Usa los ataques de 'team' si juegas con alguien.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Each character has a unique combat style (sword, hands, agility).</li><li>Lockdown is essential; Enemies make long combos.</li><li>Special attacks spend one bar; don't waste them.</li><li>Very polished fighting system; chain normal attacks.</li><li>Use 'team' attacks if you are playing with someone.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Chaque personnage possède un style de combat unique (épée, mains, agilité).</li><li>Le confinement est essentiel ; Les ennemis font de longs combos.</li><li>Les attaques spéciales dépensent une barre ; ne les gaspillez pas.</li><li>Système de combat très perfectionné ; enchaîner les attaques normales.</li><li>Utilisez des attaques « en équipe » si vous jouez avec quelqu'un.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Ogni personaggio ha uno stile di combattimento unico (spada, mani, agilità).</li><li>Il blocco è essenziale; I nemici effettuano lunghe combo.</li><li>Gli attacchi speciali spendono una barra; non sprecarli.</li><li>Sistema di combattimento molto raffinato; attacchi normali a catena.</li><li>Usa gli attacchi di &quot;squadra&quot; se stai giocando con qualcuno.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Cada personaje tiene un estilo único de combate (espada, manos, agilidad).</li><li>El bloqueo es esencial; los enemigos hacen combos largos.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Los ataques especiales gastan una barra; no los malgastes.</li><li>Sistema de lucha muy pulido; encadena ataques normales.</li><li>Usa los ataques de 'team' si juegas con alguien.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Each character has a unique combat style (sword, hands, agility).</li><li>Lockdown is essential; Enemies make long combos.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Special attacks spend one bar; don't waste them.</li><li>Very polished fighting system; chain normal attacks.</li><li>Use 'team' attacks if you are playing with someone.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Chaque personnage possède un style de combat unique (épée, mains, agilité).</li><li>Le confinement est essentiel ; Les ennemis font de longs combos.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Les attaques spéciales dépensent une barre ; ne les gaspillez pas.</li><li>Système de combat très perfectionné ; enchaîner les attaques normales.</li><li>Utilisez des attaques « en équipe » si vous jouez avec quelqu'un.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Ogni personaggio ha uno stile di combattimento unico (spada, mani, agilità).</li><li>Il blocco è essenziale; I nemici effettuano lunghe combo.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Gli attacchi speciali spendono una barra; non sprecarli.</li><li>Sistema di combattimento molto raffinato; attacchi normali a catena.</li><li>Usa gli attacchi di &quot;squadra&quot; se stai giocando con qualcuno.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

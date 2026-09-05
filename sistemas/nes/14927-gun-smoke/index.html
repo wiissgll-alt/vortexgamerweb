@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Aprende a disparar en las tres direcciones (izquierda, derecha, centro).</li><li>Las mejoras de armas son fundamentales para los jefes.</li><li>Memoriza el recorrido de los niveles.</li><li>No te quedes en la parte inferior de la pantalla.</li><li>Usa el caballo cuando puedas; te da un extra de vida.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Learn to shoot in three directions (left, right, center).</li><li>Weapon upgrades are essential for bosses.</li><li>Memorize the route of the levels.</li><li>Don't stay at the bottom of the screen.</li><li>Use the horse when you can; It gives you extra life.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Apprenez à tirer dans trois directions (gauche, droite, centre).</li><li>Les améliorations d'armes sont essentielles pour les boss.</li><li>Mémorisez le parcours des niveaux.</li><li>Ne restez pas en bas de l'écran.</li><li>Utilisez le cheval quand vous le pouvez ; Cela vous donne une vie supplémentaire.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Impara a sparare in tre direzioni (sinistra, destra, centro).</li><li>Gli aggiornamenti delle armi sono essenziali per i boss.</li><li>Memorizza il percorso dei livelli.</li><li>Non rimanere nella parte inferiore dello schermo.</li><li>Usa il cavallo quando puoi; Ti dà vita extra.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Aprende a disparar en las tres direcciones (izquierda, derecha, centro).</li><li>Las mejoras de armas son fundamentales para los jefes.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Memoriza el recorrido de los niveles.</li><li>No te quedes en la parte inferior de la pantalla.</li><li>Usa el caballo cuando puedas; te da un extra de vida.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Learn to shoot in three directions (left, right, center).</li><li>Weapon upgrades are essential for bosses.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Memorize the route of the levels.</li><li>Don't stay at the bottom of the screen.</li><li>Use the horse when you can; It gives you extra life.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Apprenez à tirer dans trois directions (gauche, droite, centre).</li><li>Les améliorations d'armes sont essentielles pour les boss.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Mémorisez le parcours des niveaux.</li><li>Ne restez pas en bas de l'écran.</li><li>Utilisez le cheval quand vous le pouvez ; Cela vous donne une vie supplémentaire.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Impara a sparare in tre direzioni (sinistra, destra, centro).</li><li>Gli aggiornamenti delle armi sono essenziali per i boss.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Memorizza il percorso dei livelli.</li><li>Non rimanere nella parte inferiore dello schermo.</li><li>Usa il cavallo quando puoi; Ti dà vita extra.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

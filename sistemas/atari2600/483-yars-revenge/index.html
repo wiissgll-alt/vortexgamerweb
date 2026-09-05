@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Come el caparazón para cargar el cañón Zorlon.</li><li>Dispara el cañón Zorlon cuando el enemigo brille.</li><li>Esquiva el misil guiado moviéndote en círculos.</li><li>Presiona reset al morir para reiniciar nivel.</li><li>Quédate en el lado izquierdo para evitar el misil.</li><li>Usa el escudo para refugiarte del misil.</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Eat the shell to charge the Zorlon cannon.</li><li>Fire the Zorlon cannon when the enemy glows.</li><li>Dodge the guided missile by moving in circles.</li><li>Press reset when you die to restart the level.</li><li>Stay on the left side to avoid the missile.</li><li>Use the shield to take shelter from the missile.</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Mangez la coquille pour charger le canon Zorlon.</li><li>Tirez avec le canon Zorlon lorsque l'ennemi brille.</li><li>Esquivez le missile guidé en vous déplaçant en rond.</li><li>Appuyez sur Réinitialiser lorsque vous mourez pour redémarrer le niveau.</li><li>Restez sur le côté gauche pour éviter le missile.</li><li>Utilisez le bouclier pour vous abriter du missile.</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Mangia il guscio per caricare il cannone Zorlon.</li><li>Spara con il cannone Zorlon quando il nemico brilla.</li><li>Schiva il missile guidato muovendoti in tondo.</li><li>Premi Reset quando muori per riavviare il livello.</li><li>Rimani sul lato sinistro per evitare il missile.</li><li>Usa lo scudo per ripararti dal missile.</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Come el caparazón para cargar el cañón Zorlon.</li><li>Dispara el cañón Zorlon cuando el enemigo brille.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Esquiva el misil guiado moviéndote en círculos.</li><li>Presiona reset al morir para reiniciar nivel.</li><li>Quédate en el lado izquierdo para evitar el misil.</li><li>Usa el escudo para refugiarte del misil.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Eat the shell to charge the Zorlon cannon.</li><li>Fire the Zorlon cannon when the enemy glows.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Dodge the guided missile by moving in circles.</li><li>Press reset when you die to restart the level.</li><li>Stay on the left side to avoid the missile.</li><li>Use the shield to take shelter from the missile.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Mangez la coquille pour charger le canon Zorlon.</li><li>Tirez avec le canon Zorlon lorsque l'ennemi brille.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Esquivez le missile guidé en vous déplaçant en rond.</li><li>Appuyez sur Réinitialiser lorsque vous mourez pour redémarrer le niveau.</li><li>Restez sur le côté gauche pour éviter le missile.</li><li>Utilisez le bouclier pour vous abriter du missile.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Mangia il guscio per caricare il cannone Zorlon.</li><li>Spara con il cannone Zorlon quando il nemico brilla.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Schiva il missile guidato muovendoti in tondo.</li><li>Premi Reset quando muori per riavviare il livello.</li><li>Rimani sul lato sinistro per evitare il missile.</li><li>Usa lo scudo per ripararti dal missile.</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>

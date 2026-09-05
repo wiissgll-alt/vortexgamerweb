@@ -56,10 +56,34 @@
 
   <div class="panel-box">
     <h3 data-i18n="game.tips">Consejos</h3>
-    <div class="lang-panel active" data-lang="es"><ul><li>Aprende los patrones de aparición de los enemigos, son fijos.</li><li>Juego de dificultad brutal; no te frustres si mueres mucho.</li><li>La paciencia es la única forma de avanzar.</li><li>No te arriesgues a saltos innecesarios.</li><li>Prioriza el arma que mejor te funcione en cada fase (la cruz es muy útil).</li></ul></div>
-<div class="lang-panel" data-lang="en"><ul><li>Learn the spawn patterns of enemies, they are fixed.</li><li>Brutal difficulty game; Don't get frustrated if you die a lot.</li><li>Patience is the only way to move forward.</li><li>Don't risk unnecessary jumps.</li><li>Prioritize the weapon that works best for you in each phase (the cross is very useful).</li></ul></div>
-<div class="lang-panel" data-lang="fr"><ul><li>Apprenez les modèles d'apparition des ennemis, ils sont corrigés.</li><li>Jeu de difficulté brutale ; Ne soyez pas frustré si vous mourez souvent.</li><li>La patience est la seule façon d'avancer.</li><li>Ne risquez pas de sauts inutiles.</li><li>Priorisez l’arme qui vous convient le mieux à chaque phase (la croix est très utile).</li></ul></div>
-<div class="lang-panel" data-lang="it"><ul><li>Impara i modelli di spawn dei nemici, sono fissi.</li><li>Gioco di difficoltà brutale; Non sentirti frustrato se muori spesso.</li><li>La pazienza è l’unico modo per andare avanti.</li><li>Non rischiare salti inutili.</li><li>Dai la priorità all'arma che funziona meglio per te in ogni fase (la croce è molto utile).</li></ul></div>
+    <div class="lang-panel active" data-lang="es"><ul><li>Aprende los patrones de aparición de los enemigos, son fijos.</li><li>Juego de dificultad brutal; no te frustres si mueres mucho.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La paciencia es la única forma de avanzar.</li><li>No te arriesgues a saltos innecesarios.</li><li>Prioriza el arma que mejor te funcione en cada fase (la cruz es muy útil).</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="en"><ul><li>Learn the spawn patterns of enemies, they are fixed.</li><li>Brutal difficulty game; Don't get frustrated if you die a lot.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>Patience is the only way to move forward.</li><li>Don't risk unnecessary jumps.</li><li>Prioritize the weapon that works best for you in each phase (the cross is very useful).</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="fr"><ul><li>Apprenez les modèles d'apparition des ennemis, ils sont corrigés.</li><li>Jeu de difficulté brutale ; Ne soyez pas frustré si vous mourez souvent.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La patience est la seule façon d'avancer.</li><li>Ne risquez pas de sauts inutiles.</li><li>Priorisez l’arme qui vous convient le mieux à chaque phase (la croix est très utile).</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
+<div class="lang-panel" data-lang="it"><ul><li>Impara i modelli di spawn dei nemici, sono fissi.</li><li>Gioco di difficoltà brutale; Non sentirti frustrato se muori spesso.</li></ul><div class="gated-wrap">
+          <ul class="gated-blur"><li>La pazienza è l’unico modo per andare avanti.</li><li>Non rischiare salti inutili.</li><li>Dai la priorità all'arma che funziona meglio per te in ogni fase (la croce è molto utile).</li></ul>
+          <div class="gated-cta" data-require-app>
+            <p data-i18n="game.playonapp">Consulta la ficha completa y más juegos como este en la app</p>
+            <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+          </div>
+        </div></div>
   </div>
 
   <div class="panel-box" style="text-align:center;">
@@ -77,6 +101,15 @@
 <div class="download-bar">
   <span data-i18n="download.cta">Descargar gratis en Google Play</span>
   <a href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener">▶ <span data-i18n="download.short">Descargar</span></a>
+</div>
+<div class="app-modal-backdrop" id="app-modal-backdrop">
+  <div class="app-modal">
+    <button class="app-modal-close" aria-label="cerrar">✕</button>
+    <img src="../../../assets/logo.png" alt="">
+    <h3 data-i18n="modal.title">Esto es solo un adelanto</h3>
+    <p data-i18n="modal.msg">Descarga la app gratis para ver toda la información: fichas completas, trucos, consejos y precios al detalle.</p>
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.vortex.gamer" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
+  </div>
 </div>
 </body>
 </html>
