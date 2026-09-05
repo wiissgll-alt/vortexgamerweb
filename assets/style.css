@@ -260,13 +260,24 @@ img { max-width: 100%; display: block; }
 .panel-box ul { margin: 0; padding-left: 20px; }
 .panel-box li { margin-bottom: 6px; font-size: 14px; }
 
-/* ---------- Tabla de precios ---------- */
-.price-table { width: 100%; border-collapse: collapse; background: var(--surface-solid); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); }
-.price-table th, .price-table td { padding: 12px 16px; text-align: left; font-size: 14px; border-bottom: 1px solid var(--border); }
-.price-table th { color: var(--text-dim); font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; }
-.price-table tr:last-child td { border-bottom: none; }
-.price-table .rank { font-family: 'Orbitron', sans-serif; color: var(--orange); font-weight: 800; }
-.price-table .price { color: var(--cyan); font-weight: 700; }
+/* ---------- Lista de precios (no tabla: así no hay scroll horizontal en móvil, cada
+   fila se adapta sola al ancho que tenga en vez de cortar columnas) ---------- */
+.price-list { background: var(--surface-solid); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); }
+.price-row {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+}
+.price-list > .price-row:last-child,
+.gated-blur .price-row:last-child { border-bottom: none; }
+.price-row:hover { background: rgba(168, 85, 247, 0.08); }
+.price-row__rank { font-family: 'Orbitron', sans-serif; color: var(--orange); font-weight: 800; font-size: 13px; flex-shrink: 0; width: 34px; }
+.price-row__name { flex: 1 1 160px; min-width: 0; font-size: 14px; }
+.price-row__amount { color: var(--cyan); font-weight: 700; font-size: 13px; white-space: nowrap; margin-inline-start: auto; }
 .updated-note { color: var(--text-dim); font-size: 12px; margin-bottom: 20px; }
 
 /* ---------- Noticias ---------- */
@@ -307,8 +318,6 @@ img { max-width: 100%; display: block; }
 }
 .search-box::placeholder { color: var(--text-dim); }
 
-.price-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-
 /* ---------- Responsive / móvil ---------- */
 @media (max-width: 640px) {
   .wrap { padding: 0 14px; }
@@ -335,7 +344,7 @@ img { max-width: 100%; display: block; }
 
   .download-bar { flex-direction: column; gap: 8px; font-size: 13px; padding: 10px 14px; }
 
-  .price-table th, .price-table td { padding: 10px; font-size: 13px; white-space: nowrap; }
+  .price-row { padding: 10px 12px; font-size: 13px; }
 }
 
 /* ---------- Icono de consola (junto al nombre del sistema) ---------- */
@@ -343,10 +352,6 @@ img { max-width: 100%; display: block; }
 .system-card { display: flex; flex-direction: column; align-items: center; }
 .title-with-icon { display: flex; align-items: center; gap: 12px; }
 .title-with-icon img { width: 40px; height: 40px; object-fit: contain; }
-
-/* ---------- Fila de precio, clicable -> popup de descarga (no enlaza a fuentes externas) --- */
-.price-table tbody tr { cursor: pointer; }
-.price-table tbody tr:hover { background: rgba(168, 85, 247, 0.08); }
 
 /* ---------- Contenido "adelanto" (trucos/consejos): las primeras entradas se ven bien,
    el resto se difumina con una llamada a descargar la app encima -el texto sigue en el

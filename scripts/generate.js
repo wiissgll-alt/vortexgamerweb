@@ -471,23 +471,32 @@ async function main() {
     for (const systemId of priceSystemIds) {
       const systemName = SYSTEM_NAMES[systemId] || systemId.toUpperCase();
       const items = prices.systems[systemId].slice(0, 20);
-      const rows = items.map(it => `<tr data-require-app>
-        <td class="rank">#${it.rank}</td>
-        <td>${escapeHtml(it.name)}</td>
-        <td class="price">$${Number(it.price_usd).toFixed(2)} / ${Number(it.price_eur).toFixed(2)}€</td>
-      </tr>`).join('\n');
+      const rowHtml = it => `<div class="price-row" data-require-app>
+        <span class="price-row__rank">#${it.rank}</span>
+        <span class="price-row__name">${escapeHtml(it.name)}</span>
+        <span class="price-row__amount">$${Number(it.price_usd).toFixed(2)} / ${Number(it.price_eur).toFixed(2)}€</span>
+      </div>`;
+
+      // Mismo "adelanto" que en el catálogo: la app enseña el top 20/30 completo, aquí solo
+      // los 3 primeros -que no haya diferencia entre entrar por la web o quedarse sin la
+      // app quita justo el motivo para descargarla-. Sin tabla con scroll horizontal:
+      // una lista que se adapta sola a cualquier ancho, nada que cortar en móvil.
+      const VISIBLE_PRICES = 3;
+      const visibleRows = items.slice(0, VISIBLE_PRICES).map(rowHtml).join('\n');
+      const restRows = items.slice(VISIBLE_PRICES).map(rowHtml).join('\n');
 
       const body = `<main class="wrap section">
   <p class="breadcrumb"><a href="../index.html" data-i18n="nav.prices">Precios</a> / ${escapeHtml(systemName)}</p>
   <h1 class="title-with-icon"><img src="${rel(`/precios/${systemId}/`, '/assets/consoles/' + systemId + '.png')}" alt="">🔥 Top 20 ${escapeHtml(systemName)}</h1>
   <p class="updated-note"><span data-i18n="prices.updated">Actualizado el</span> ${escapeHtml(prices.updated)}</p>
-  <div class="price-table-wrap">
-  <table class="price-table">
-    <thead><tr><th data-i18n="prices.rank">Puesto</th><th data-i18n="prices.name">Juego</th><th data-i18n="prices.price">Precio</th></tr></thead>
-    <tbody>${rows}</tbody>
-  </table>
-  </div>
-  <p class="updated-note" data-i18n="prices.tapinfo">Toca una fila para ver más detalles en la app</p>
+  <div class="price-list">${visibleRows}</div>
+  ${restRows ? `<div class="gated-wrap">
+    <div class="price-list gated-blur">${restRows}</div>
+    <div class="gated-cta" data-require-app>
+      <p data-i18n="prices.seeAllInApp">Ver el top 20 completo, con búsqueda por consola, en la app</p>
+      <span class="btn btn-primary" data-i18n="download.cta">Descargar gratis en Google Play</span>
+    </div>
+  </div>` : ''}
   <div class="panel-box" style="text-align:center;margin-top:12px;">
     <a class="btn btn-primary" href="${PLAY_STORE_URL}" rel="noopener" data-i18n="download.cta">Descargar gratis en Google Play</a>
   </div>
