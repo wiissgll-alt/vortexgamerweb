@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://wsapps.dpdns.org/vortexgamerweb/sitemap.xml
+Sitemap: https://vortexgamerweb.wiissapps.com/sitemap.xml

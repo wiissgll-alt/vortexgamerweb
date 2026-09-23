@@ -18,7 +18,7 @@ const OUT_DIR = 'C:/Projects/vortexgamerweb';
 
 // Cambia esto por la ruta final real cuando esté conectada al Worker (mismo dominio que
 // menuforgeweb, otra carpeta). Se usa solo para <link rel="canonical">, og:url y sitemap.xml.
-const BASE_URL = 'https://wsapps.dpdns.org/vortexgamerweb';
+const BASE_URL = 'https://vortexgamerweb.wiissapps.com';
 
 const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.vortex.gamer';
 
